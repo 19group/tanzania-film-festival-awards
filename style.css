@@ -58,7 +58,7 @@ a {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    color: #555;
+    color: #fefdfd;
 }
 a:hover {
     color: #E4B34C;
