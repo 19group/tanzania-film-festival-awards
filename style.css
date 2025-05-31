@@ -274,8 +274,8 @@ a.btn-def:hover {
     color: #fff;
 }
 a.btn-def.bnt-2 {
-    border: 1px solid #555;
-    color: #555;
+    border: 1px solid #f5f5f5;
+    color: #ebe8e8;
     padding: 10px 20px;
 }
 a.btn-def.bnt-2:hover {
