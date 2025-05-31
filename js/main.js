@@ -205,4 +205,10 @@ $(".see-demo-btn").on('click', function (e) {
     }, 'slow');
 });
 
-})(jQuery); 
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+    });
+});
+
+})(jQuery);
