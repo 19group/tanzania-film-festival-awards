@@ -213,7 +213,29 @@ ul {
 /*----------------------------------------*/
 ul li { display: inline-block }
 .main-menu ul li a { color: #ddd }
-.logo-menu-area { padding: 35px 0 }
+.logo-menu-area { 
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+}
+.logo-menu-area .logo img{
+    height: 100px !important;
+    width: 100px !important;
+}
 .main-menu ul li { margin-right: 40px }
 .main-menu ul li:last-child { margin: 0 }
 .header-area {
@@ -286,11 +308,16 @@ ul li { display: inline-block }
     margin: 10px 0;
     overflow: hidden;
 }
-.nivoSlider img { height: 100vh !important }
+.nivoSlider img { 
+    height: 100vh !important;
+    object-fit: cover; 
+}
 .hero-img img{
-    height: 400px !important;
-    width: 300px;
+    height: 400px !important; 
+    width: auto;
     object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 0;
 }
 /* btn-style */
 a.btn-def {
