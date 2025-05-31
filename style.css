@@ -356,6 +356,11 @@ a.btn-def.bnt-2.big {
     border-left: 2px solid #f5f4f4;
     padding-left: 40px;
 }
+.total-step .detail-event li {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    display: list-item !important;
+}
 .about-step:last-child { margin: 0 }
 .about-right > ul li {
     color: #f5f1f1;
@@ -369,9 +374,10 @@ a.btn-def.bnt-2.big {
 }
 .about-btn { margin-top: 15px }
 .about-right {
-    border: 10px solid #f7f7f7;
-    padding: 35px 40px 50px;
-}
+    border: 5px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, #f4c765, #FFD700, #E4B34C) 1;
+    padding: 35px 40px 50px;}
 .nav.happen-tab { 
     position: relative;
     display: block;
@@ -758,7 +764,7 @@ a.btn-def.bnt-2.big {
 .special-offer-area { background: rgba(0, 0, 0, 0) url("img/bg/special-bg.jpg") no-repeat scroll 0 0 / cover }
 .white-color { color: #fff }
 .brand-area {
-    background: rgba(0, 0, 0, 0) url("img/bg/brand-bg.jpg") no-repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("img/bg/brand-bg.png") no-repeat scroll 0 0 / cover;
     padding: 40px 0;
 }
 .single-brand {
