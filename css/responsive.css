@@ -306,7 +306,17 @@ a.btn-def {
 }
 .mobile-menu-area {
   background: transparent none repeat scroll 0 0;
-  position:relative
+  position:relative;
+  height: 80px;
+}
+.slide1-text .cap-title h1{
+  font-size: 40px;
+  line-height: 40px;
+}
+.slide1-text p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 .logo-menu-area {
   padding: 0;
@@ -519,7 +529,7 @@ a.btn-def {
   display: inline-block;
 }
 .nivoSlider{
-  height:90vh;
+  height:80vh;
 }
 .nivo-caption {
   top: 40%;
