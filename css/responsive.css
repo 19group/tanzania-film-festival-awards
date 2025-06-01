@@ -316,7 +316,7 @@ a.btn-def {
   height: auto !important;
 }
 .slide1-text {
-  display: none;
+  display: block;
 }
 .header-area {
   position: static;
