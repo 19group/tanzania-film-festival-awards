@@ -305,7 +305,7 @@ a.btn-def {
   padding: 0 0 20px 0;
 }
 .mobile-menu-area {
-  background: #E4B34C none repeat scroll 0 0;
+  background: transparent none repeat scroll 0 0;
   position:relative
 }
 .logo-menu-area {
@@ -517,6 +517,9 @@ a.btn-def {
 }
 .slider-btn {
   display: inline-block;
+}
+.nivoSlider{
+  height:90vh;
 }
 .nivo-caption {
   top: 40%;
