@@ -314,8 +314,8 @@ a.btn-def {
   line-height: 40px;
 }
 .slide1-text p {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 14px !important;
+  line-height: 20px !important;
   margin-bottom: 10px;
 }
 .logo-menu-area {
@@ -334,6 +334,7 @@ a.btn-def {
 .header-top .col-xs-12 {
   text-align: center;
 }
+
 .login-register {
   display: inline-block;
   float: none;
