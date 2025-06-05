@@ -847,9 +847,20 @@ a.btn-def.bnt-2.big {
     background: rgba(0, 0, 0, 0) url("img/bg/brand-bg.png") no-repeat scroll 0 0 / cover;
     padding: 40px 0;
 }
-.single-brand {
-    padding: 60px 0;
-    text-align: center;
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.single-brand img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
 }
 .active .single-brand { border-right: 1px solid #eee }
 .bg-overlay {

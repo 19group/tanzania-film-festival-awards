@@ -149,6 +149,9 @@
 .nivoSlider img {
   height: 650px !important;
 }
+.brand-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 .slide1-text .cap-title h1 {
   font-size: 40px;
   line-height: 40px;
