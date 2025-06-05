@@ -1513,7 +1513,6 @@ select {
 /* 23.breadcrumb
 /*----------------------------------------*/
 .breadcumb-area {
-    background: rgba(0, 0, 0, 0) url("img/bg/breadcumb.jpg") repeat scroll 0 0;
     padding: 150px 0;
     text-align: center;
 }
@@ -1525,6 +1524,14 @@ select {
     padding: 0;
     position: relative;
     justify-content: center;
+}
+.eapp-events-calendar-load-more-button-component {
+    background: #E4B34C none repeat scroll 0 0 !important;
+    border-color: #E4B34C;
+    color: #fff !important;
+    padding: 9px 33px;
+    border-radius: 10px !important;
+    max-width: 145px !important;
 }
 .breadcrumb > li + li:before {
     color: #fff;
