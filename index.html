@@ -102,7 +102,7 @@
             <div class="slider-container pt-5 bg-overlay">
                 <!-- Slider Image -->
                 <div id="mainSlider" class="nivoSlider slider-image">
-                    <img src="img/bg/bg.png" alt="main slider" title="#htmlcaption1" />
+                    <img id="heroImage" src="img/bg/bg.png" alt="main slider" title="#htmlcaption1" />
                 </div>
                 <!-- Slider Caption 1 -->
                 <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
@@ -593,14 +593,15 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="total-brand">
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
-                            <div class="single-brand"><img src="img/logo.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/TAFFA-FESTIVAL-LOGO-PNG-1.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/TANZANIA-FILM-BOARD-1.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/CDEA-master-logo -1.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/19-RENTALS-LOGO-PNG-1.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/STUDIO-19-LOGO-1.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/NEMBO-YA-TAIFA-LOGO-1.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/taiplus.png" alt=""></div>
+                            <div class="single-brand"><img src="img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" alt=""></div>
+                            
                             
                         </div>
                     </div>
@@ -683,7 +684,16 @@
         <!--footer area are start-->
     </div>
     <!--body-wraper-are-end-->
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var sliderImage = document.getElementById("heroImage");
+            if (window.innerWidth < 768) {
+                sliderImage.src = "img/bg/sm-bg.png"; 
+        } else {
+            sliderImage.src = "img/bg/bg.png"; 
+         }
+        });
+    </script>
     <!--==== all js here====-->
     <!-- jquery latest version -->
     <script src="js/vendor/jquery-3.6.0.min.js"></script>
