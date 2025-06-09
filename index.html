@@ -66,7 +66,7 @@
                                         <ul id="nav">
                                             <li><a href="#home" data-i18n="nav.home"></a></li>
                                             <li><a href="#about-event" data-i18n="nav.about"></a></li>
-                                            <li><a href="#Program" data-i18n="nav.program"></a></li>
+                                            <li><a href="./program.html" data-i18n="nav.program"></a></li>
                                             <li class="language-dropdown">
                                                 <a href="#" id="languageToggle" data-i18n="nav.language"></a>
                                                 <ul class="language-options">
@@ -90,14 +90,14 @@
                                 <div class="col-xs-12">
                                     <nav id="dropdown">
                                         <ul>
-                                            <li><a href="#home">Home</a></li>
-                                            <li><a href="#about-event">About</a></li>
-                                            <li><a href="program.html">Program</a></li>
+                                            <li><a href="#home" data-i18n="nav.home"></a></li>
+                                            <li><a href="#about-event" data-i18n="nav.about"></a></li>
+                                            <li><a href="./program.html" data-i18n="nav.program"></a></li>
                                             <li class="language-dropdown">
-                                                <a href="#" id="languageToggle">Kiswahili <i class="zmdi zmdi-caret-down"></i></a>
+                                                <a href="#" id="languageToggle" data-i18n="nav.language"></a>
                                                 <ul class="language-options">
-                                                    <li><a href="#" onclick="setLanguage('sw')">Kiswahili</a></li>
-                                                    <li><a href="#" onclick="setLanguage('en')">English</a></li>
+                                                <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw"></a></li>
+                                                <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en"></a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -142,7 +142,7 @@
           <div class="cap-description wow fadeInDown pt-5" data-wow-duration=".9s" data-wow-delay="0.8s">
             <p data-i18n="hero.description"></p>
           </div>
-          <div class="date-address wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
+          <div class="date-address ">
             <div class="event-date">
               <i class="zmdi zmdi-calendar-note"></i>
               <span data-i18n="hero.date"></span>
@@ -152,7 +152,7 @@
               <span data-i18n="hero.location"></span>
             </div>
           </div>
-          <div class="slider-btn wow fadeInUp" data-wow-duration=".9s" data-wow-delay="0.8s">
+          <div class="slider-btn ">
             <a class="btn-def" href="#" data-i18n="hero.cta"></a>
           </div>
         </div>
@@ -218,383 +218,7 @@
 <!-- About Area End -->
 
         <!--what-happen-area start-->
-        <div id="happen" class="what-happen-area ptb100 dark-knight fix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="section-title">What Will Happen</h1>
-                        <div class="clearfix"></div>
-                        <div class="tab-menu-list pt20 mb70 text-center">
-                            <ul class="nav d-block happen-tab" role="tablist">
-                                <li role="presentation"><a class="active" href="#day-one" aria-controls="day-one"
-                                        role="tab" data-bs-toggle="tab">06, Jun 2025</a></li>
-                                <li role="presentation"><a href="#day-two" aria-controls="day-two" role="tab"
-                                        data-bs-toggle="tab">14, Dec 2025</a></li>
-                                
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade show active" id="day-one">
-                                <div class="row">
-                                    <div class="total-happen">
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-rise"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>7.10 am to 9.00 am</h3>
-                                                        <p>06 Jun 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Pocket</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-alt"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>9.10 am to 11.50 am</h3>
-                                                        <p>06 Jun 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Video grapher</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-set"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>12.10 am to 04.00 pm</h3>
-                                                        <p>06 Jun 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Chief Editor</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-full-night"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>4.10 am to 8.00 pm</h3>
-                                                        <p>06 Jun 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Post Production</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="day-two">
-                                <div class="row">
-                                    <div class="total-happen">
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-set"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>12.10 am to 04.00 pm</h3>
-                                                        <p>14 Dec 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Sound Engineer</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-rise"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>7.10 am to 9.00 am</h3>
-                                                        <p>14 Dec 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>DOP</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-alt"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>9.10 am to 11.50 am</h3>
-                                                        <p>14 Dec 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Director</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-full-night"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>4.10 am to 8.00 pm</h3>
-                                                        <p>14 Dec 2025</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Director</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="day-three">
-                                <div class="row">
-                                    <div class="total-happen">
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-alt"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>9.10 am to 11.50 am</h3>
-                                                        <p>14 Feb 2021</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>DOP</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-set"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>12.10 am to 04.00 pm</h3>
-                                                        <p>14 Feb 2021</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Camera Man</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-sun-rise"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>7.10 am to 9.00 am</h3>
-                                                        <p>14 Feb 2021</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Field Scout</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                        <!--single happen start-->
-                                        <div class="col-lg-12">
-                                            <div class="single-happen">
-                                                <div class="happen-top mb30">
-                                                    <div class="happen-icon">
-                                                        <i class="icofont icofont-full-night"></i>
-                                                    </div>
-                                                    <div class="happen-time-date">
-                                                        <h3>4.10 am to 8.00 pm</h3>
-                                                        <p>14 Feb 2021</p>
-                                                    </div>
-                                                </div>
-                                                <div class="happen-bottom">
-                                                    <h3 class="happen-heading uppercase">Get Together All Filmers </h3>
-                                                    <div class="happen-details">
-                                                        <div class="happen-img">
-                                                            <img src="img/temp-hold.png" alt="">
-                                                        </div>
-                                                        <div class="happen-text">
-                                                            <p class="uppercase"><strong>Lenao Lorem</strong></p>
-                                                            <p>Investor</p>
-                                                            <p class="uppercase">Vanue : Roof 1</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--single happen end-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!--what-happen-area end-->
 
         <!--brand-area start-->
