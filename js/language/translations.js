@@ -1,6 +1,13 @@
 // js/translation.js
 const translations = {
   en: {
+    "nav.home": "Home",
+    "nav.about": "About",
+    "nav.program": "Program",
+    "nav.language": "Language",
+    "lang.en": "English",
+    "lang.sw": "Kiswahili",
+
     "hero.title1": "TANZANIA",
     "hero.title2": "FILM FESTIVAL",
     "hero.title3": "AWARD 2025",
@@ -29,6 +36,13 @@ const translations = {
     "about.register": "Register"
   },
   sw: {
+    "nav.home": "Nyumbani",
+    "nav.about": "Kuhusu",
+    "nav.program": "Ratiba",
+    "nav.language": "Lugha",
+    "lang.en": "Kiingereza",
+    "lang.sw": "Kiswahili",
+    
     "hero.title1": "TANZANIA",
     "hero.title2": "TAMASHA LA FILAMU",
     "hero.title3": "TUZO 2025",
