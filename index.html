@@ -67,6 +67,13 @@
                                             <li><a href="#home">Home</a></li>
                                             <li><a href="#about-event">About</a></li>
                                             <li><a href="/program.html">Program</a></li>
+                                            <li class="language-dropdown">
+                                                <a href="#" id="languageToggle">Kiswahili <i class="zmdi zmdi-caret-down"></i></a>
+                                                <ul class="language-options">
+                                                    <li><a href="#" onclick="setLanguage('sw')">Kiswahili</a></li>
+                                                    <li><a href="#" onclick="setLanguage('en')">English</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -86,6 +93,13 @@
                                             <li><a href="#home">Home</a></li>
                                             <li><a href="#about-event">About</a></li>
                                             <li><a href="program.html">Program</a></li>
+                                            <li class="language-dropdown">
+                                                <a href="#" id="languageToggle">Kiswahili <i class="zmdi zmdi-caret-down"></i></a>
+                                                <ul class="language-options">
+                                                    <li><a href="#" onclick="setLanguage('sw')">Kiswahili</a></li>
+                                                    <li><a href="#" onclick="setLanguage('en')">English</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -98,115 +112,110 @@
             </div>
             <!-- header End-->
 
-            <!--slider area are start-->
-            <div class="slider-container pt-5 bg-overlay">
-                <!-- Slider Image -->
-                <div id="mainSlider" class="nivoSlider slider-image">
-                    <img id="heroImage" src="img/bg/bg.png" alt="main slider" title="#htmlcaption1" />
-                </div>
-                <!-- Slider Caption 1 -->
-                <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
-                    <div class="container">
-                        <div class="slide1-text">
-                            <div class="middle-text slide-def">
-                                <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                                    <h1>TANZANIA</h1>
-                                </div>
-                                <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                                    <h1><span> FILM FESTIVAL</span> </h1>
-                                </div>
-                                <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                                    <h1> AWARD <span>2025</span></h1>
-                                </div>
-                                <div class="cap-description wow fadeInDown pt-5" data-wow-duration=".9s" data-wow-delay="0.8s">
-                                    <p> Join us for a dynamic celebration of African storytelling, innovation, 
-                                        and industry transformation. From film screenings and workshops 
-                                        to investment pitches and the prestigious TAFFA Awards, 
-                                        this is more than a festival <span>it’s a movement.</span>
-                                    </p>
-                                </div>
-                                <div class="date-address wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
-                                    <div class="event-date"> <i class="zmdi zmdi-calendar-note"></i>Jun 6, 2025 </div>
-                                    <div class="event-location"> <i class="zmdi zmdi-pin"></i>Dar es Salaam,
-                                        Tanzania</div>
-                                </div>
-                                <div class="slider-btn wow fadeInUp" data-wow-duration=".9s" data-wow-delay="0.8s"> 
-                                    <a class="btn-def" href="#">Register</a> 
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <!-- <div class="col-md-6">
-                            <div class="hero-img wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.2s">
-                                <img src="img/hero-imgico.png" alt="">
-                            </div>
-                        </div> -->
-                        
-                    </div>
-                </div>
-                
-                <!-- home slider end -->
-            </div>
-            <!--slider area are End-->
-            <div class="down-arrow"> <a class="see-demo-btn" href="#about-event"><i
-                        class="zmdi zmdi-long-arrow-down"></i></a> </div>
-        </div>
-        <!--slider header area are end-->
+            <!-- Language Switcher -->
+<!-- <div class="language-switcher">
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('sw')">Swahili</button>
+</div> -->
 
-        
-        <!--about area are start-->
-        <div class="about-area ptb100 fix" id="about-event">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="about-left">
-                            <div class="about-top">
-                                <h1 class="section-title">About the Festival</h1>
-                                <div class="total-step">
-                                    <div class="descp">
-                                        <p>TAFFA is a powerful platform championing the film industry as a catalyst for social transformation 
-                                            and economic growth. Held annually, TAFFA unites filmmakers, media professionals, policymakers, investors, 
-                                            development partners, and the public for a three-month-long celebration of cinema, culture, and collaboration.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <h1 class="section-title">Festival Highlight</h1>
-                            <div class="total-step">
-                                <div class="about-step">
-                                    <div class="descp">
-                                        <ul class="detail-event">
-                                            <li>Film Screenings & Premieres</li>
-                                            <li>Hands-On Workshops & Masterclasses</li>
-                                            <li>Forums & Dialogues with Thought Leaders</li>
-                                            <li>Investment Pitches & Dealrooms</li>
-                                            <li>Exhibitions & Tech Showcases</li>
-                                            <li>Creative Studio & Heritage Tours</li>
-                                            <li>Awards Gala</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-right">
-                            <ul>
-                                <li><i class="zmdi zmdi-calendar-note"></i>Jun 06, 2025</li>
-                                <li><i class="zmdi zmdi-pin"></i>Dar es Salaam, Tanzania</li>
-                                <li><i class="zmdi zmdi-videocam"></i>250+ Local & International Filmmakers</li>
-                                <li><i class="zmdi zmdi-mic-setting"></i>3,000+ Stakeholders in Panels & Forums</li>
-                                <li><i class="zmdi zmdi-accounts"></i>10,000+ Audience Members at Screenings</li>
-                                <li><i class="zmdi zmdi-globe"></i>Millions Reached Through Media Coverage</li>
-                            </ul>
-                            <div class="about-btn"> <a href="#" class="btn-def bnt-2">Register</a> </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Slider Area Start -->
+<div class="slider-container pt-5 bg-overlay">
+  <!-- Slider Image -->
+  <div id="mainSlider" class="nivoSlider slider-image">
+    <img id="heroImage" src="img/bg/bg.png" alt="main slider" title="#htmlcaption1" />
+  </div>
+
+  <!-- Slider Caption -->
+  <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
+    <div class="container">
+      <div class="slide1-text">
+        <div class="middle-text slide-def">
+          <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
+            <h1 data-i18n="hero.title1"></h1>
+          </div>
+          <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
+            <h1><span data-i18n="hero.title2"></span></h1>
+          </div>
+          <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
+            <h1 data-i18n="hero.title3"></h1>
+          </div>
+          <div class="cap-description wow fadeInDown pt-5" data-wow-duration=".9s" data-wow-delay="0.8s">
+            <p data-i18n="hero.description"></p>
+          </div>
+          <div class="date-address wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
+            <div class="event-date">
+              <i class="zmdi zmdi-calendar-note"></i>
+              <span data-i18n="hero.date"></span>
             </div>
+            <div class="event-location">
+              <i class="zmdi zmdi-pin"></i>
+              <span data-i18n="hero.location"></span>
+            </div>
+          </div>
+          <div class="slider-btn wow fadeInUp" data-wow-duration=".9s" data-wow-delay="0.8s">
+            <a class="btn-def" href="#" data-i18n="hero.cta"></a>
+          </div>
         </div>
-        <!--about area are end-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="down-arrow">
+  <a class="see-demo-btn" href="#about-event"><i class="zmdi zmdi-long-arrow-down"></i></a>
+</div>
+<!-- Slider Area End -->
+
+<!-- About Area Start -->
+<div class="about-area ptb100 fix" id="about-event">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-left">
+          <div class="about-top">
+            <h1 class="section-title" data-i18n="about.title"></h1>
+            <div class="total-step">
+              <div class="descp">
+                <p data-i18n="about.description"></p>
+              </div>
+            </div>
+          </div>
+          <h1 class="section-title" data-i18n="about.highlights"></h1>
+          <div class="total-step">
+            <div class="about-step">
+              <div class="descp">
+                <ul class="detail-event">
+                  <li data-i18n="about.item1"></li>
+                  <li data-i18n="about.item2"></li>
+                  <li data-i18n="about.item3"></li>
+                  <li data-i18n="about.item4"></li>
+                  <li data-i18n="about.item5"></li>
+                  <li data-i18n="about.item6"></li>
+                  <li data-i18n="about.item7"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-right">
+          <ul>
+            <li><i class="zmdi zmdi-calendar-note"></i> <span data-i18n="about.stats.date"></span></li>
+            <li><i class="zmdi zmdi-pin"></i> <span data-i18n="about.stats.location"></span></li>
+            <li><i class="zmdi zmdi-videocam"></i> <span data-i18n="about.stats.filmmakers"></span></li>
+            <li><i class="zmdi zmdi-mic-setting"></i> <span data-i18n="about.stats.stakeholders"></span></li>
+            <li><i class="zmdi zmdi-accounts"></i> <span data-i18n="about.stats.audience"></span></li>
+            <li><i class="zmdi zmdi-globe"></i> <span data-i18n="about.stats.reach"></span></li>
+          </ul>
+          <div class="about-btn">
+            <a href="#" class="btn-def bnt-2" data-i18n="about.register"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About Area End -->
 
         <!--what-happen-area start-->
         <div id="happen" class="what-happen-area ptb100 dark-knight fix">
@@ -727,6 +736,8 @@
     <script src="js/ajax-mail.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
+    <script src="js/language/translations.js"></script>
+    <script src="js/language/language.js"></script>
 </body>
 
 </html>

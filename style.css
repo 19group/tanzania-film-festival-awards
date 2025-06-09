@@ -247,6 +247,35 @@ ul li { display: inline-block }
 }
 .main-menu ul li a:hover { color: #E4B34C }
 .main-menu li.current a { color: #E4B34C }
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-dropdown:hover .language-options {
+  display: block;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  background-color: #090909;
+  min-width: 100px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.language-options li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #f6f4f4;
+}
+
+.language-options li a:hover {
+  background-color: #eee;
+}
+
 /* slider */
 .header-slider-area { position: relative }
 .nivo-caption {
