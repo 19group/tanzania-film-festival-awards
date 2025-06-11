@@ -341,6 +341,9 @@ a.btn-def {
 .header-top .col-xs-12 {
   text-align: center;
 }
+a.btn-def {
+  padding: 10px 10px;
+}
 
 .login-register {
   display: inline-block;
@@ -756,7 +759,7 @@ a.btn-def {
   margin: 10px 0;
 }
 a.btn-def {
-  padding: 5px 10px;
+  padding: 5px 10px !important;
 }
 .slider-btn {
   padding-top: 0;
