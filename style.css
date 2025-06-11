@@ -221,6 +221,26 @@ ul li { display: inline-block }
     z-index: 999;
     transition: all 0.3s ease;
 }
+.logo-menu-area .main-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  /* gap: 15px; */
+}
+.logo-menu-area .main-menu ul li {
+  margin-right: 0;
+}
+.logo-menu-area .main-menu a {
+  color: #fff3c9; /* light gold-like color */
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.logo-menu-area .main-menu a:hover {
+  color: #fcd462; /* brighter gold on hover */
+}
 .logo {
     display: flex;
     align-items: center;
@@ -252,6 +272,14 @@ ul li { display: inline-block }
   display: inline-block;
 }
 
+.lang-toggle-btn {
+  background: none;
+  border: none;
+  color: #fff3c9;
+  cursor: pointer;
+  font-size: 15px;
+}
+
 .language-dropdown:hover .language-options {
   display: block;
 }
@@ -259,21 +287,28 @@ ul li { display: inline-block }
 .language-options {
   display: none;
   position: absolute;
-  background-color: #090909;
-  min-width: 100px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  right: 0;
+  top: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 0;
+  margin-top: 5px;
   z-index: 999;
+  list-style: none;
+  min-width: 120px;
 }
 
 .language-options li a {
   display: block;
   padding: 8px 12px;
   text-decoration: none;
-  color: #f6f4f4;
+  color: #fff3c9;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .language-options li a:hover {
-  background-color: #eee;
+  background-color: #333;
 }
 
 /* slider */
