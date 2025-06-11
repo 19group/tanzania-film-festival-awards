@@ -1,8 +1,13 @@
-// js/language.js
+
 
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
+}
+
+function toggleLanguageDropdown() {
+  const dropdown = document.querySelector(".language-options");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
 
 window.setLanguage = function (lang) {
@@ -21,7 +26,17 @@ window.setLanguage = function (lang) {
   }
 
   localStorage.setItem("siteLang", lang);
+
+  document.querySelector(".language-options").style.display = "none";
+  document.documentElement.lang = lang; // Set the HTML lang attribute
 };
+
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".language-dropdown")) {
+    const dropdown = document.querySelector(".language-options");
+    if (dropdown) dropdown.style.display = "none";
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Check query string ?lang=en
