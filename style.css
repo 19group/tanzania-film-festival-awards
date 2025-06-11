@@ -1994,6 +1994,74 @@ blockquote {
     z-index: 999999999;
 }
 .mobile-menu-area { display: none }
+.mobile-nav-wrapper {
+  position: relative;
+}
+.mobile-menu-toggle{
+    background: none;
+  border: none;
+  color: #fff3c9;
+  font-size: 24px;
+}
+.mobile-logo img {
+  max-height: 50px;
+}
+.mobile-lang {
+  position: relative;
+}
+.mobile-menu {
+  display: none;
+  padding: 15px 0;
+  background-color: #111;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-menu a {
+  color: #fff3c9;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.mobile-menu a:hover {
+  color: #fcd462;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  z-index: 999;
+  min-width: 120px;
+  list-style: none;
+}
+
+.language-options li a {
+  display: block;
+  padding: 8px 12px;
+  color: #fff3c9;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.language-options li a:hover {
+  background-color: #333;
+}
+
+/* Utility */
+.d-md-none {
+  display: block;
+}
 .container.mean-container {
     position: relative;
     left: 15px;
