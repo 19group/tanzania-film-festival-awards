@@ -137,9 +137,6 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-  .d-md-none {
-    display: none;
-  }
 .mobile-menu-area{
 	display:none
 }
@@ -305,6 +302,7 @@ a.btn-def {
 @media (max-width: 767px) {
  .mobile-menu-area{
 	display:block
+
 }
 .logo {
   text-align: center;
@@ -314,6 +312,9 @@ a.btn-def {
   background: transparent none repeat scroll 0 0;
   position:relative;
   height: 80px;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 .slide1-text .cap-title h1{
   font-size: 40px;
