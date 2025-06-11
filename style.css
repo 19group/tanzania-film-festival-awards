@@ -876,6 +876,16 @@ a.btn-def.bnt-2.big {
     background: rgba(0, 0, 0, 0) url("img/bg/brand-bg.png") no-repeat scroll 0 0 / cover;
     padding: 40px 0;
 }
+.brand-logo-lg {
+  max-height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo-lg:hover {
+  transform: scale(1.05);
+}
+
 .brand-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -1965,6 +1975,16 @@ blockquote {
     transition: all 0.3s ease 0s;
     z-index: 99;
 }
+.nav-text {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.logo img.main-logo {
+  max-height: 80px;
+  object-fit: contain;
+}
+
 /*----------------------------------------*/
 /* 30. Home varsion
 /*----------------------------------------*/
