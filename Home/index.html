@@ -54,30 +54,45 @@
                 <!--logo menu area start-->
                 <div id="sticker" class="logo-menu-area header-area-2">
                     <div class="container d-none d-md-block">
-                        <div class="row ">
-                            <div class="col-lg-3 col-md-2">
-                                <div class="logo">
-                                    <a href="/Home/"><img src="/img/logo.png" alt=""></a>
-                                </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <!-- Left nav -->
+                          <nav class="main-menu d-flex gap-3">
+                            <ul class="nav-left d-flex gap-3">
+                              <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                              <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
+                              <li><a href="/program/" data-i18n="nav.program">Program</a></li>
+                              <li><a href="/submission/" data-i18n="nav.submission">Submission</a></li>
+                            </ul>
+                          </nav>
+
+                          <!-- Center logo -->
+                          <div class="logo text-center">
+                            <a href="/Home/">
+                              <img src="/img/logo.png" alt="TAFFA Logo" class="nav-logo" />
+                            </a>
+                          </div>
+
+                          <!-- Right nav -->
+                          <nav class="main-menu d-flex gap-3 align-items-center">
+                            <ul class="nav-right d-flex gap-3">
+                              <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
+                              <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                              <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+                              <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+                            </ul>
+                            <!-- Language Dropdown -->
+                            <div class="language-dropdown position-relative">
+                              <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
+                                <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                              </button>
+                              <ul class="language-options">
+                                <li><a href="#" onclick="setLanguage('sw')"
+                                    data-i18n="lang.sw">Kiswahili</a></li>
+                                <li><a href="#" onclick="setLanguage('en')"
+                                    data-i18n="lang.en">English</a></li>
+                              </ul>
                             </div>
-                            <div class="col-lg-9 col-md-10">
-                                <div class="main-menu text-end">
-                                    <nav>
-                                        <ul id="nav">
-                                            <li><a href="#home" data-i18n="nav.home"></a></li>
-                                            <li><a href="#about-event" data-i18n="nav.about"></a></li>
-                                            <li><a href="/program/" data-i18n="nav.program"></a></li>
-                                            <li class="language-dropdown">
-                                                <a href="#" id="languageToggle" data-i18n="nav.language"></a>
-                                                <ul class="language-options">
-                                                <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw"></a></li>
-                                                <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en"></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
+                          </nav>
                         </div>
                     </div>
                     <!-- mobile-menu-area start -->
