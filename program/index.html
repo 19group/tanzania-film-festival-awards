@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon/taffa-favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/icon/taffa-favicon.png">
 
     <!-- all css here -->
     <!-- bootstrap v5.1.0 css -->
@@ -57,45 +57,92 @@
                 <!--logo menu area start-->
                 <div id="sticker" class="logo-menu-area header-area-2">
                     <div class="container d-none d-md-block">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-2">
-                                <div class="logo">
-                                    <a href="/Home/"><img src="img/logo.png" alt=""></a>
-                                </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <!-- Left nav -->
+                          <nav class="main-menu d-flex gap-3">
+                            <ul class="nav-left d-flex gap-3">
+                              <li><a href="/Home/" data-i18n="nav.home"></a></li>
+                              <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
+                              <li><a href="#program" data-i18n="nav.program">Program</a></li>
+                              <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
+                            </ul>
+                          </nav>
+
+                          <!-- Center logo -->
+                          <div class="logo text-center">
+                            <a href="/Home/">
+                              <img src="/img/logo.png" alt="TAFFA Logo" class="nav-logo" />
+                            </a>
+                          </div>
+
+                          <!-- Right nav -->
+                          <nav class="main-menu d-flex gap-3 align-items-center">
+                            <ul class="nav-right d-flex gap-3">
+                              <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
+                              <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                              <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+                              <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+                            </ul>
+                            <!-- Language Dropdown -->
+                            <div class="language-dropdown position-relative">
+                              <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
+                                <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                              </button>
+                              <ul class="language-options">
+                                <li><a href="#" onclick="setLanguage('sw')"
+                                    data-i18n="lang.sw">Kiswahili</a></li>
+                                <li><a href="#" onclick="setLanguage('en')"
+                                    data-i18n="lang.en">English</a></li>
+                              </ul>
                             </div>
-                            <div class="col-lg-9 col-md-10">
-                                <div class="main-menu text-end">
-                                    <nav>
-                                        <ul id="nav">
-                                            <li><a href="/Home/">Home</a></li>
-                                            <li><a href="#about-event">About</a></li>
-                                            <li class="active"><a href="#Program">Program</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
+                          </nav>
                         </div>
                     </div>
-                    <!-- mobile-menu-area start -->
-                    <div class="mobile-menu-area">
-                        <div class="container">
-                            <div class="logo-02">
-                                <a href="/Home/"><img src="img/logo-02.png" alt=""></a>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <nav id="dropdown">
-                                        <ul>
-                                            <li><a href="/Home/">Home</a></li>
-                                            <li><a href="#about-event">About</a></li>
-                                            <li class="active"><a href="#Program">Program</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
+                    <!-- Mobile Menu Area Start -->
+                    <div class="mobile-menu-area d-md-none">
+                      <div class="container">
+                        <div class="mobile-nav-wrapper d-flex justify-content-between align-items-center py-2">
+                          <!-- Hamburger -->
+                          <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                            <i class="zmdi zmdi-menu"></i>
+                          </button>
+
+                          <!-- Center Logo -->
+                          <div class="mobile-logo">
+                            <a href="/Home/"><img src="/img/logo.png" alt="Logo" class="nav-logo" /></a>
+                          </div>
+
+                          <!-- Language toggle -->
+                          <div class="mobile-lang">
+                            <button class="lang-toggle-btn" onclick="toggleLanguageDropdown()">
+                              <span data-i18n="nav.language">Language</span>
+                              <i class="zmdi zmdi-caret-down"></i>
+                            </button>
+                            <ul class="language-options">
+                              <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw">Kiswahili</a></li>
+                              <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en">English</a></li>
+                            </ul>
+                          </div>
                         </div>
+
+                        <!-- Slide-out Menu -->
+                        <div class="mobile-menu" id="mobileMenu">
+                          <ul class="mobile-menu-left">
+                            <li><a href="/Home/" data-i18n="nav.home">Home</a></li>
+                            <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
+                            <li><a href="#Program" data-i18n="nav.program">Program</a></li>
+                            <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
+                          </ul>
+                          <ul class="mobile-menu-right">
+                            <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
+                            <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                            <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+                            <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                    <!--mobile menu area end-->
+                    <!-- Mobile Menu Area End -->
                 </div>
                 <!--logo menu area start-->
             </div>
@@ -217,6 +264,8 @@
     <script src="/js/plugins.js"></script>
     <!-- main js -->
     <script src="/js/main.js"></script>
+    <script src="/js/language/language.js"></script>
+    <script src="/js/language/translations.js"></script>
 </body>
 
 </html>
