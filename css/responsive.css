@@ -357,6 +357,17 @@ a.btn-def {
   top: 10px;
   left:0
 }
+.about-cards-section {
+    display: block !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Force columns to display as block */
+  .about-cards-section [class*="col-"] {
+    display: block !important;
+    width: 100% !important;
+  }
 .ptb100 {
   padding: 60px 0;
 }
@@ -379,6 +390,9 @@ a.btn-def {
 .section-title {
   font-size: 24px;
 }
+.flip-card {
+    height: 380px;
+  }
 .happen-img {
   width: 140px;
 }
