@@ -4,11 +4,19 @@ function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
 }
+function toggleMobileMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
 
+  // Close language dropdown if open
+  const lang = document.querySelector(".language-options");
+  if (lang) lang.style.display = "none";
+}
 function toggleLanguageDropdown() {
   const dropdown = document.querySelector(".language-options");
   dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
+
 
 window.setLanguage = function (lang) {
   const dict = getTranslations(lang);
