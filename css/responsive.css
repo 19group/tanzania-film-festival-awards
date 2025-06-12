@@ -19,6 +19,9 @@
   .row{
     --bs-gutter-x: 30px;
   }
+  .program-img {
+    max-height: 700px;
+  }
 }
 
 /*General desktop :1366px. */
@@ -27,6 +30,7 @@
 .logo-menu-area {
   padding: 25px 0;
 }
+
 .map-content {
   right: 7%;
 }
@@ -43,7 +47,9 @@
   width: 41.66%;
 }
 
-
+.program-img {
+    max-height: 600px;
+  }
 
 }
 
@@ -187,6 +193,7 @@ a.btn-def {
 .special-wrap {
   width: 100%;
 }
+
 .single-pricing-table {
   margin-bottom: 30px;
 }
@@ -304,6 +311,7 @@ a.btn-def {
 	display:block
 
 }
+
 .logo {
   text-align: center;
   padding: 0 0 20px 0;
@@ -396,6 +404,29 @@ a.btn-def {
 .happen-img {
   width: 140px;
 }
+.program-image {
+    padding: 0;
+    margin: 0;
+    width: 100vw; /* Force full screen width */
+  }
+
+  .program-image img {
+           width: 100vw;
+        height: 77vh;
+        object-fit: cover;
+        display: block;
+        border-radius: 0;
+        margin: 10px 20px 10px 0px;
+        padding: 0px 20px 0 0px;
+  }
+  .program-connector-cta {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+
+  body, html {
+    overflow-x: hidden;
+  }
 .happen-text {
   padding: 34px 5px;
 }
@@ -726,6 +757,9 @@ a.btn-def {
 .happen-img {
   width: 150px;
 }
+.program-img {
+    max-height: 420px;
+  }
 .uc-icon {
   padding-top: 1px;
   width: 20%;

@@ -42,7 +42,9 @@ const translations = {
     "about.stats.stakeholders": "3,000+ Stakeholders in Panels & Forums",
     "about.stats.audience": "10,000+ Audience Members at Screenings",
     "about.stats.reach": "Millions Reached Through Media Coverage",
-    "about.register": "Register"
+    "about.register": "Register",
+    "program.title": "Festival & Awards Program",
+    "program.cta.circle": "See Program",
   },
   sw: {
     "nav.home": "Nyumbani",
@@ -94,7 +96,8 @@ const translations = {
     "about.stats.stakeholders": "3,000+ Wadau kwenye Vikao na Mijadala",
     "about.stats.audience": "10,000+ Watazamaji kwenye Maonyesho ya Filamu",
     "about.stats.reach": "Mamilioni Wamefikiwa Kupitia Vyombo vya Habari",
-    "about.register": "Jisajili"
+    "about.register": "Jisajili",
+    "program.cta.circle": "Tazama Ratiba"
   }
 };
 

@@ -598,6 +598,91 @@ a.btn-def.bnt-2.big {
 /*----------------------------------------*/
 /* 7. What happen area
 /*----------------------------------------*/
+.program-bg-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.program-bg-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.program-bg-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.program-illustrations {
+  gap:40px;
+}
+.program-image{
+    text-align: center;
+    padding: 10px;
+}
+
+.program-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+}
+.program-illustration-wrapper {
+  position: relative;
+}
+
+.program-connector-cta {
+  position: absolute;
+  top: 78%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  background: #fcd462;
+  color: #000;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.2;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.program-connector-cta:hover {
+  background-color: #fbb034;
+  color: #000;
+}
+
+
+
+/* Optional: scale down image height on smaller screens */
+/* @media (max-width: 767px) {
+  .program-bg-section {
+    padding: 60px 20px;
+  }
+  .program-image {
+    margin-bottom: 30px;
+  }
+
+  .program-image img {
+    max-height: 400px;
+  }
+} */
+
+
+
 .tab-menu-list ul li {
     display: inline-block;
     margin-right: 25px;
