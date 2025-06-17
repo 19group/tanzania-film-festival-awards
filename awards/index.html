@@ -1,0 +1,771 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Awards || Tanzania Film Festivals and Awards</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/icon/taffa-favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- all css here -->
+    <!-- bootstrap v5.1.0 css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="/css/meanmenu.min.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <!-- icofont css -->
+    <link rel="stylesheet" href="/css/icofont.css">
+    <!-- Nivo css -->
+    <link rel="stylesheet" href="/css/nivo-slider.css">
+    <!-- animaton text css -->
+    <link rel="stylesheet" href="/css/animate-text.css">
+    <!-- datepicker css -->
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.min.css">
+    <!-- Metrial iconic fonts css -->
+    <link rel="stylesheet" href="/css/material-design-iconic-font.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- color css -->
+    <link href="/css/color/skin-default.css" rel="stylesheet">
+
+    <!-- modernizr css -->
+    <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #1a1a1a;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .awards-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .awards-hero {
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(40, 40, 40, 0.95));
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .awards-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="gold" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="gold" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="gold" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="gold" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateX(0px); }
+            100% { transform: translateX(-100px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Content */
+        .awards-main {
+            background: #2a2a2a;
+            margin-top: -50px;
+            position: relative;
+            z-index: 3;
+            border-radius: 30px 30px 0 0;
+            padding: 80px 0 60px;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.3);
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: left;
+            margin-bottom: 3rem;
+            color: #f5f5f5;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            border-radius: 2px;
+        }
+
+        /* Nominations Section */
+        .nominations-card {
+            background: linear-gradient(135deg, #333333, #404040);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nominations-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+        }
+
+        .nominations-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: #1a1a1a;
+            font-size: 2rem;
+        }
+
+        .nominations-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #f5f5f5;
+        }
+
+        .nominations-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nominations-list li {
+            padding: 0.8rem 0;
+            font-size: 1.1rem;
+            color: #c0c0c0;
+            position: relative;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .nominations-list li:last-child {
+            border-bottom: none;
+        }
+
+        .nominations-list li::before {
+            content: '✓';
+            color: #ffd700;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Awards Grid */
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .award-card {
+            background: #333333;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            border: 1px solid #404040;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .award-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .award-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+        }
+
+        .award-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .award-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .award-card:hover .award-icon {
+            transform: scale(1.1);
+        }
+
+        .award-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #f5f5f5;
+            margin-bottom: 0.8rem;
+        }
+
+        .award-description {
+            font-size: 0.95rem;
+            color: #c0c0c0;
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            color: white;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: #ffd700;
+            font-size: 1.5rem;
+        }
+
+        .contact-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            color: rgba(255,255,255,0.8);
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: white;
+        }
+
+        /* Footer */
+        .footer-area {
+            background: #1a1a1a;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .social-area ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-area a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: #333;
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-area a:hover {
+            background: #ffd700;
+            color: #1a1a1a;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .awards-main {
+                padding: 60px 0 40px;
+            }
+            
+            .section {
+                margin-bottom: 3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .nominations-card {
+                padding: 2rem;
+            }
+            
+            .awards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Animation for cards on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <!--body-wraper-are-start-->
+    <div class="wrapper event-schedule">
+
+        <!--slider header area are start-->
+        <div id="home" class="header-slider-area">
+            <!--header start-->
+            <div class="header-area mb-5">
+                <!--logo menu area start-->
+                <div id="sticker" class="logo-menu-area header-area-2">
+                    <div class="container d-none d-md-block">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <!-- Left nav -->
+                          <nav class="main-menu d-flex gap-3">
+                            <ul class="nav-left d-flex gap-3">
+                              <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                              <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
+                              <li><a href="../program/" data-i18n="nav.program">Program</a></li>
+                              <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
+                            </ul>
+                          </nav>
+
+                          <!-- Center logo -->
+                          <div class="logo text-center">
+                            <a href="../index.html">
+                              <img src="/img/logo.png" alt="TAFFA Logo" class="nav-logo" />
+                            </a>
+                          </div>
+
+                          <!-- Right nav -->
+                          <nav class="main-menu d-flex gap-3 align-items-center">
+                            <ul class="nav-right d-flex gap-3">
+                              <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
+                              <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                              <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+                              <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+                            </ul>
+                            <!-- Language Dropdown -->
+                            <div class="language-dropdown position-relative">
+                              <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
+                                <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                              </button>
+                              <ul class="language-options">
+                                <li><a href="#" onclick="setLanguage('sw')"
+                                    data-i18n="lang.sw">Kiswahili</a></li>
+                                <li><a href="#" onclick="setLanguage('en')"
+                                    data-i18n="lang.en">English</a></li>
+                              </ul>
+                            </div>
+                          </nav>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Area Start -->
+                    <div class="mobile-menu-area d-md-none">
+                      <div class="container">
+                        <div class="mobile-nav-wrapper d-flex justify-content-between align-items-center py-2">
+                          <!-- Hamburger -->
+                          <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                            <i class="zmdi zmdi-menu"></i>
+                          </button>
+
+                          <!-- Center Logo -->
+                          <div class="mobile-logo">
+                            <a href="../index.html"><img src="/img/logo.png" alt="Logo" class="nav-logo" /></a>
+                          </div>
+
+                          <!-- Language toggle -->
+                          <div class="mobile-lang">
+                            <button class="lang-toggle-btn" onclick="toggleLanguageDropdown()">
+                              <span data-i18n="nav.language">Language</span>
+                              <i class="zmdi zmdi-caret-down"></i>
+                            </button>
+                            <ul class="language-options">
+                              <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw">Kiswahili</a></li>
+                              <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en">English</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Slide-out Menu -->
+                        <div class="mobile-menu" id="mobileMenu">
+                          <ul class="mobile-menu-left">
+                            <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
+                            <li><a href="../program/" data-i18n="nav.program">Program</a></li>
+                            <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
+                          </ul>
+                          <ul class="mobile-menu-right">
+                            <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
+                            <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                            <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+                            <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Mobile Menu Area End -->
+                </div>
+                <!--logo menu area start-->
+            </div>
+            <!-- header End-->
+        </div>
+        <!--slider header area are end-->
+
+        <!-- Hero Section -->
+        <section class="awards-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">TAFFA Awards</h1>
+                <p class="hero-subtitle">Celebrating Excellence in Tanzanian Cinema</p>
+            </div>
+        </section>
+
+        <!-- Main Awards Content -->
+        <div class="awards-main">
+            <div class="awards-container">
+                
+                <!-- Nominations & Voting Section -->
+                <section class="section">
+                    <h2 class="section-title">How It Works</h2>
+                    <div class="nominations-card animate-on-scroll">
+                        <div class="nominations-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="nominations-title">Nominations & Voting Process</h3>
+                        <ul class="nominations-list">
+                            <li>Only selected films will be eligible for awards</li>
+                            <li>Finalists will be nominated by the TAFFA jury panel</li>
+                            <li>Public voting contributes to People's Choice Awards</li>
+                            <li>Winners announced at the grand ceremony</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Award Categories Section -->
+                <section class="section">
+                    <h2 class="section-title">Award Categories</h2>
+                    <div class="awards-grid">
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h3 class="award-title">Best Feature Film</h3>
+                            <p class="award-description">Recognizing outstanding storytelling and production quality in full-length films</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3 class="award-title">Best Short Film</h3>
+                            <p class="award-description">Celebrating creativity and impact in short-form storytelling</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3 class="award-title">Best Director</h3>
+                            <p class="award-description">Honoring visionary leadership and artistic direction</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-theater-masks"></i>
+                            </div>
+                            <h3 class="award-title">Best Actor/Actress</h3>
+                            <p class="award-description">Recognizing exceptional performances that bring characters to life</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3 class="award-title">Best Cinematography</h3>
+                            <p class="award-description">Celebrating visual artistry and technical excellence</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h3 class="award-title">Best Screenplay</h3>
+                            <p class="award-description">Honoring compelling narratives and dialogue mastery</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="award-title">Best Emerging Talent</h3>
+                            <p class="award-description">Supporting and recognizing promising new voices in cinema</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <h3 class="award-title">Jury's Choice</h3>
+                            <p class="award-description">Special recognition for outstanding artistic achievement</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="award-title">Audience Award</h3>
+                            <p class="award-description">Chosen by festival attendees for films that resonate with viewers</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="awards-container">
+                <h2 class="section-title" style="color: white; margin-bottom: 3rem;">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 class="contact-title">Phone</h4>
+                        <p class="contact-info">+ (255) 684 788 499</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="contact-title">E-Mail</h4>
+                        <p class="contact-info"><a href="mailto:filmfestival@studio19.co.tz">filmfestival@studio19.co.tz</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="contact-title">Location</h4>
+                        <p class="contact-info">Dar es Salaam<br>Tanzania</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <h4 class="contact-title">Event Dates</h4>
+                        <p class="contact-info">Coming Soon<br>2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer area are start-->
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-area">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer area are start-->
+    </div>
+    <!--body-wraper-are-end-->
+
+    <!--==== all js here====-->
+    <!-- jquery latest version -->
+    <script src="/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="/js/owl.carousel.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="/js/jquery.meanmenu.js"></script>
+    <!-- Nivo js -->
+    <script src="/js/nivo-slider/jquery.nivo.slider.pack.js"></script>
+    <script src="/js/nivo-slider/nivo-active.js"></script>
+    <!-- wow js -->
+    <script src="/js/wow.min.js"></script>
+    <!-- Youtube Background JS -->
+    <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- datepicker js -->
+    <script src="/js/bootstrap-datepicker.js"></script>
+    <!-- waypoint js -->
+    <script src="/js/waypoints.min.js"></script>
+    <!-- onepage nav js -->
+    <script src="/js/jquery.nav.js"></script>
+    <!-- animate text JS -->
+    <script src="/js/animate-text.js"></script>
+    <!-- plugins js -->
+    <script src="/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="/js/main.js"></script>
+    <script src="/js/language/language.js"></script>
+    <script src="/js/language/translations.js"></script>
+
+    <script>
+        // Animate elements on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animate');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
