@@ -311,6 +311,17 @@ a.btn-def {
 	display:block
 
 }
+.awards-main {
+                padding: 60px 0 40px;
+            }
+            .nominations-card {
+                padding: 2rem;
+            }
+            
+            .awards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
 
 .logo {
   text-align: center;
@@ -396,7 +407,7 @@ a.btn-def {
   margin: 0;
 }
 .section-title {
-  font-size: 24px;
+  font-size: 24px !important;
 }
 .flip-card {
     height: 380px;

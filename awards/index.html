@@ -4,12 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Program || Tanzania Film Festivals and Awards </title>
+    <title>Awards || Tanzania Film Festivals and Awards</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="/img/icon/taffa-favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- all css here -->
     <!-- bootstrap v5.1.0 css -->
@@ -18,8 +24,6 @@
     <link rel="stylesheet" href="/css/animate.min.css">
     <!-- meanmenu css -->
     <link rel="stylesheet" href="/css/meanmenu.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- owl.carousel css -->
     <link rel="stylesheet" href="/css/owl.carousel.css">
     <!-- icofont css -->
@@ -41,6 +45,20 @@
 
     <!-- modernizr css -->
     <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <style>
+        /* Animation for cards on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
 <body>
@@ -63,9 +81,9 @@
                           <!-- Left nav -->
                           <nav class="main-menu d-flex gap-3">
                             <ul class="nav-left d-flex gap-3">
-                              <li><a href="../index.html" data-i18n="nav.home"></a></li>
+                              <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
                               <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
-                              <li><a href="#program" data-i18n="nav.program">Program</a></li>
+                              <li><a href="../program/" data-i18n="nav.program">Program</a></li>
                               <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
                             </ul>
                           </nav>
@@ -80,7 +98,7 @@
                           <!-- Right nav -->
                           <nav class="main-menu d-flex gap-3 align-items-center">
                             <ul class="nav-right d-flex gap-3">
-                              <li><a href="../awards/" data-i18n="nav.awards">Awards</a></li>
+                              <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
                               <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
                               <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
                               <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
@@ -132,11 +150,11 @@
                           <ul class="mobile-menu-left">
                             <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
                             <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
-                            <li><a href="#Program" data-i18n="nav.program">Program</a></li>
+                            <li><a href="../program/" data-i18n="nav.program">Program</a></li>
                             <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
                           </ul>
                           <ul class="mobile-menu-right">
-                            <li><a href="../awards/" data-i18n="nav.awards">Awards</a></li>
+                            <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
                             <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
                             <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
                             <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
@@ -152,14 +170,14 @@
         </div>
         <!--slider header area are end-->
 
-        <!--  breadcumb-area start-->
+        <!-- Hero Section -->
         <section class="awards-hero">
                 <!--  breadcumb-area start-->
             <div class="breadcumb-area ">
                 <div class="container">
                     <ol class="breadcrumb">
                         <li><a href="../index.html">Home </a></li>
-                        <li>| Program</li>
+                        <li>| Awards</li>
                     </ol>
                 </div>
         
@@ -167,14 +185,111 @@
             </div>
         </section>
 
-        <!-- Elfsight Event Calendar | Tanzania Film Festival & Awards 2025 -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div  class="elfsight-app-ccb0ae22-d5c4-4f6b-97c3-f360a304a403" data-elfsight-app-lazy></div>
+        <!-- Main Awards Content -->
+        <div class="awards-main">
+            <div class="container">
+                <!-- Nominations & Voting Section -->
+                <section class="mb-5 pb-5">
+                    <h1 class="section-title">How It Works</h1>
+                    <div class="nominations-card animate-on-scroll">
+                        <div class="nominations-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="nominations-title">Nominations & Voting Process</h3>
+                        <ul class="nominations-list d-flex flex-column">
+                            <li>Only selected films will be eligible for awards</li>
+                            <li>Finalists will be nominated by the TAFFA jury panel</li>
+                            <li>Public voting contributes to People's Choice Awards</li>
+                            <li>Winners announced at the grand ceremony</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Award Categories Section -->
+                <section class="section">
+                    <h1 class="section-title">Award Categories</h1>
+                    <div class="awards-grid">
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h3 class="award-title">Best Feature Film</h3>
+                            <p class="award-description">Recognizing outstanding storytelling and production quality in full-length films</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3 class="award-title">Best Short Film</h3>
+                            <p class="award-description">Celebrating creativity and impact in short-form storytelling</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3 class="award-title">Best Director</h3>
+                            <p class="award-description">Honoring visionary leadership and artistic direction</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-theater-masks"></i>
+                            </div>
+                            <h3 class="award-title">Best Actor/Actress</h3>
+                            <p class="award-description">Recognizing exceptional performances that bring characters to life</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3 class="award-title">Best Cinematography</h3>
+                            <p class="award-description">Celebrating visual artistry and technical excellence</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h3 class="award-title">Best Screenplay</h3>
+                            <p class="award-description">Honoring compelling narratives and dialogue mastery</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="award-title">Best Emerging Talent</h3>
+                            <p class="award-description">Supporting and recognizing promising new voices in cinema</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <h3 class="award-title">Jury's Choice</h3>
+                            <p class="award-description">Special recognition for outstanding artistic achievement</p>
+                        </div>
+                        
+                        <div class="award-card animate-on-scroll">
+                            <div class="award-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="award-title">Audience Award</h3>
+                            <p class="award-description">Chosen by festival attendees for films that resonate with viewers</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
 
         <!--information area are start-->
         <div class="information-area dark-knight ptb100">
             <div class="container">
-                <h1 class="section-title mb-5">Get Intouch</h1>
+              <h1 class="section-title mb-5">Get Intouch</h1>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="single-information text-center">
@@ -223,7 +338,7 @@
         <div class="footer-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="social-area">
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -234,7 +349,6 @@
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -273,6 +387,39 @@
     <script src="/js/main.js"></script>
     <script src="/js/language/language.js"></script>
     <script src="/js/language/translations.js"></script>
+
+    <script>
+        // Animate elements on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animate');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
