@@ -51,14 +51,6 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #e0e0e0;
-            background: #1a1a1a;
-            margin: 0;
-            overflow-x: hidden;
-        }
 
         .awards-container {
             max-width: 1200px;
@@ -297,93 +289,9 @@
         }
 
         /* Contact Section */
-        .contact-section {
-            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-            color: white;
-            padding: 4rem 0;
-            margin-top: 4rem;
-        }
+        
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            text-align: center;
-            padding: 1.5rem;
-        }
-
-        .contact-icon {
-            width: 60px;
-            height: 60px;
-            background: rgba(255, 215, 0, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            color: #ffd700;
-            font-size: 1.5rem;
-        }
-
-        .contact-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-info {
-            color: rgba(255,255,255,0.8);
-            font-size: 1rem;
-        }
-
-        .contact-info a {
-            color: #ffd700;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: white;
-        }
-
-        /* Footer */
-        .footer-area {
-            background: #1a1a1a;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .social-area ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .social-area a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            background: #333;
-            color: white;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-
-        .social-area a:hover {
-            background: #ffd700;
-            color: #1a1a1a;
-            transform: translateY(-3px);
-        }
+        
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -643,42 +551,53 @@
             </div>
         </div>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="awards-container">
-                <h2 class="section-title" style="color: white; margin-bottom: 3rem;">Get In Touch</h2>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+        <!--information area are start-->
+        <div class="information-area dark-knight ptb100">
+            <div class="container">
+              <h1 class="section-title mb-5">Get Intouch</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="single-information text-center">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Phone</h4>
+                            <p>+ (255) 684 788 499</p>
                         </div>
-                        <h4 class="contact-title">Phone</h4>
-                        <p class="contact-info">+ (255) 684 788 499</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                    <div class="col-md-3">
+                        <div class="single-information text-center">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>E-Mail</h4>
+                            <p><a href="mailto:filmfestival@studio19.co.tz">filmfestival@studio19.co.tz</a></p>
                         </div>
-                        <h4 class="contact-title">E-Mail</h4>
-                        <p class="contact-info"><a href="mailto:filmfestival@studio19.co.tz">filmfestival@studio19.co.tz</a></p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                    <div class="col-md-3">
+                        <div class="single-information text-center">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Location</h4>
+                            <p>Dar es Salaam<br>Tanzania</p>
+                            
                         </div>
-                        <h4 class="contact-title">Location</h4>
-                        <p class="contact-info">Dar es Salaam<br>Tanzania</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-calendar"></i>
+                    <div class="col-md-3">
+                        <div class="single-information text-center">
+                            <div class="info-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <h4>Event Dates</h4>
+                            <p>Coming Soon<br>2025</p>
+                            
                         </div>
-                        <h4 class="contact-title">Event Dates</h4>
-                        <p class="contact-info">Coming Soon<br>2025</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <!--information area are start-->
 
         <!--footer area are start-->
         <div class="footer-area">
