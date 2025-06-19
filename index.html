@@ -40,6 +40,63 @@
 
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <style>
+        .brand-area {
+            padding: 40px 0;
+        }
+        
+        .bg-overlay {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            position: relative;
+        }
+        
+        .ptb40 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        
+        .brand-logo {
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+            filter: brightness(0.9) contrast(1.1);
+            transition: all 0.3s ease;
+        }
+        
+        .brand-logo:hover {
+            filter: brightness(1.1) contrast(1.2);
+            transform: scale(1.05);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .col-6.col-md-3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+        
+        /* Border styling */
+        [style*="border-right"] {
+            border-right: 1px solid #f2b92a !important;
+        }
+        
+        [style*="border-left"] {
+            border-left: 1px solid #f2b92a !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -202,59 +259,7 @@
   <a class="see-demo-btn" href="#about-event"><i class="zmdi zmdi-long-arrow-down"></i></a>
 </div>
 <!-- Slider Area End -->
- <!-- About Area Start -->
-<div class="about-area ptb100 fix" id="about-event">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="about-left">
-          <div class="about-top">
-            <h1 class="section-title" data-i18n="about.title"></h1>
-            <div class="total-step">
-              <div class="descp">
-                <p data-i18n="about.description"></p>
-              </div>
-            </div>
-          </div>
-          <h1 class="section-title" data-i18n="about.highlights"></h1>
-          <div class="total-step">
-            <div class="about-step">
-              <div class="descp">
-                <ul class="detail-event">
-                  <li data-i18n="about.item1"></li>
-                  <li data-i18n="about.item2"></li>
-                  <li data-i18n="about.item3"></li>
-                  <li data-i18n="about.item4"></li>
-                  <li data-i18n="about.item5"></li>
-                  <li data-i18n="about.item6"></li>
-                  <li data-i18n="about.item7"></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="about-right">
-          <ul>
-            <li><i class="zmdi zmdi-calendar-note"></i> <span data-i18n="about.stats.date"></span></li>
-            <li><i class="zmdi zmdi-pin"></i> <span data-i18n="about.stats.location"></span></li>
-            <li><i class="zmdi zmdi-videocam"></i> <span data-i18n="about.stats.filmmakers"></span></li>
-            <li><i class="zmdi zmdi-mic-setting"></i> <span data-i18n="about.stats.stakeholders"></span></li>
-            <li><i class="zmdi zmdi-accounts"></i> <span data-i18n="about.stats.audience"></span></li>
-            <li><i class="zmdi zmdi-globe"></i> <span data-i18n="about.stats.reach"></span></li>
-          </ul>
-          <div class="about-btn">
-            <a href="#" class="btn-def bnt-2" data-i18n="hero.submit"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- About Area End -->
-
-<!-- About Area Start -->
+ <!-- About highlight Start -->
  <section id="about-event" class="about-cards-section ptb90">
     <div class="about-area  fix" id="about-event">
       <div class="container">
@@ -345,10 +350,60 @@
       </div>
     </div>
  </section>
- 
-
-
+<!-- About higlight End -->
+ <!-- About Area Start -->
+<div class="about-area ptb100 fix" id="about-event">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-left">
+          <div class="about-top">
+            <h1 class="section-title" data-i18n="about.title"></h1>
+            <div class="total-step">
+              <div class="descp">
+                <p data-i18n="about.description"></p>
+              </div>
+            </div>
+          </div>
+          <!-- <h1 class="section-title" data-i18n="about.highlights"></h1>
+          <div class="total-step">
+            <div class="about-step">
+              <div class="descp">
+                <ul class="detail-event">
+                  <li data-i18n="about.item1"></li>
+                  <li data-i18n="about.item2"></li>
+                  <li data-i18n="about.item3"></li>
+                  <li data-i18n="about.item4"></li>
+                  <li data-i18n="about.item5"></li>
+                  <li data-i18n="about.item6"></li>
+                  <li data-i18n="about.item7"></li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-right">
+          <ul>
+            <li><i class="zmdi zmdi-calendar-note"></i> <span data-i18n="about.stats.date"></span></li>
+            <li><i class="zmdi zmdi-pin"></i> <span data-i18n="about.stats.location"></span></li>
+            <li><i class="zmdi zmdi-videocam"></i> <span data-i18n="about.stats.filmmakers"></span></li>
+            <li><i class="zmdi zmdi-mic-setting"></i> <span data-i18n="about.stats.stakeholders"></span></li>
+            <li><i class="zmdi zmdi-accounts"></i> <span data-i18n="about.stats.audience"></span></li>
+            <li><i class="zmdi zmdi-globe"></i> <span data-i18n="about.stats.reach"></span></li>
+          </ul>
+          <div class="about-btn">
+            <a href="#" class="btn-def bnt-2" data-i18n="hero.submit"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- About Area End -->
+
+
 
         <!--what-happen-area start-->
     <section class="program-bg-section" style="background-image: url('img/program/program-bg.png');" >
@@ -387,39 +442,48 @@
         <!--what-happen-area end-->
 
 <!-- brand-area start -->
-<div class="brand-area bg-overlay ptb40">
-  <div class="container">
-    <div class="row text-center align-items-center">
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/TAFFA-FESTIVAL-LOGO-PNG-1.png" class="brand-logo" alt="">
+
+
+  <div class="brand-area bg-overlay ptb40">
+      <div class="container">
+          <div class="row text-center align-items-center">
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0s; ">
+                  <img src="img//brand/TAFFA-FESTIVAL-LOGO-PNG-1.png" class="brand-logo" alt="TAFFA Festival Logo" width="150" height="120">
+              </div>
+              <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.4s; ">
+                  <img src="img/brand/STUDIO-19-LOGO-1.png" class="brand-logo" alt="Studio 19 Logo" width="150" height="120">
+              </div>
+              <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.3s; ">
+                <img src="img/brand/19-RENTALS-LOGO-PNG-1.png" class="brand-logo" alt="19 Rentals Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; height:200px;">
+                  <img src="img/brand/Nafasi-Logo-1.png" class="brand-logo" alt="Nafasi Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.1s; height:200px;">
+                  <img src="/img/brand/TANZANIA-FILM-BOARD-1.png" class="brand-logo" alt="Tanzania Film Board Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.5s; ">
+                  <img src="img/brand/NEMBO-YA-TAIFA-LOGO-1.png" class="brand-logo" alt="Nembo Ya Taifa Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.2s; ">
+                  <img src="img/brand/CDEA-master-logo -1.png" class="brand-logo" alt="CDEA Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.6s; height:200px;">
+                  <img src="img/brand/taiplus.png" class="brand-logo" alt="Taiplus Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
+                  <img src="img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="brand-logo" alt="Docubox Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
+                  <img src="img/brand/TAFF-LOGO.png" class="brand-logo" alt="TAFF Logo" width="150" height="120">
+              </div>
+              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
+                  <img src="img/brand/ajabu-logo-white 1.png" class="brand-logo" alt="Ajabu Logo" width="150" height="120">
+              </div>
+          </div>
       </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.4s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/STUDIO-19-LOGO-1.png" class="brand-logo" alt="">
-      </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.1s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/TANZANIA-FILM-BOARD-1.png" class="brand-logo" alt="">
-      </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.2s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/CDEA-master-logo -1.png" class="brand-logo" alt="">
-      </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.3s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/19-RENTALS-LOGO-PNG-1.png" class="brand-logo" alt="">
-      </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.5s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/NEMBO-YA-TAIFA-LOGO-1.png" class="brand-logo" alt="">
-      </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.6s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/taiplus.png" class="brand-logo" alt="">
-      </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.7s; border-right: 1px solid #f2b92a;">
-        <img src="img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="brand-logo" alt="">
-      </div>
-      <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.7s; ">
-        <img src="img/brand/TAFF-LOGO.png" class="brand-logo" alt="">
-      </div>
-    </div>
   </div>
-</div>
+
 <!-- brand-area end -->
 
 
