@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced TAFFA Navigation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" rel="stylesheet">
+    
+    <style>
+        /* Enhanced Navigation Styles */
+        .header-area {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .logo-menu-area {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .header-area.scrolled .logo-menu-area {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+            padding: 0.25rem 0;
+        }
+
+        .header-area.scrolled .nav-logo {
+            height: 50px;
+        }
+
+        /* Navigation Links */
+        .main-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .main-menu a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .main-menu a:hover::before {
+            left: 100%;
+        }
+
+        .main-menu a:hover {
+            color: #007bff;
+            background: rgba(0, 123, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+        }
+
+        /* Logo Styles */
+        .logo {
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-logo {
+            height: 60px;
+            width: auto;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+        }
+
+        /* Language Dropdown */
+        .language-dropdown {
+            position: relative;
+        }
+
+        .lang-toggle-btn {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .lang-toggle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .lang-toggle-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .language-dropdown.active .lang-toggle-btn i {
+            transform: rotate(180deg);
+        }
+
+        .language-options {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            list-style: none;
+            padding: 0.5rem 0;
+            min-width: 150px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 0;
+            z-index: 1001;
+        }
+
+        .language-dropdown.active .language-options {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(5px);
+        }
+
+        .language-options li a {
+            padding: 0.7rem 1.2rem !important;
+            display: block;
+            color: #333 !important;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-radius: 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+            transform: none !important;
+        }
+
+        .language-options li a:hover {
+            background: #f8f9fa !important;
+            color: #007bff !important;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu-area {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-menu-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #333;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: rgba(0, 123, 255, 0.1);
+            color: #007bff;
+            transform: scale(1.1);
+        }
+
+        .mobile-logo .nav-logo {
+            height: 50px;
+        }
+
+        .mobile-lang .lang-toggle-btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 320px;
+            height: 100vh;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            transition: all 0.4s ease;
+            z-index: 1002;
+            overflow-y: auto;
+            box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 2rem 0 1rem;
+            margin: 0;
+        }
+
+        .mobile-menu li {
+            margin: 0;
+        }
+
+        .mobile-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            display: block;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+            position: relative;
+        }
+
+        .mobile-menu a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background: rgba(255, 255, 255, 0.1);
+            transition: width 0.3s ease;
+        }
+
+        .mobile-menu a:hover::before {
+            width: 100%;
+        }
+
+        .mobile-menu a:hover {
+            border-left-color: white;
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+
+        /* Demo Content */
+        .demo-content {
+            margin-top: 120px;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+
+        .demo-content h1 {
+            color: #333;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .demo-content p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .mobile-menu {
+                width: 100%;
+            }
+            
+            .mobile-nav-wrapper {
+                padding: 0.5rem 0;
+            }
+            
+            .mobile-lang .lang-toggle-btn span {
+                display: none;
+            }
+        }
+
+        /* Animation classes */
+        .fade-in {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-area mb-5">
+        <!--logo menu area start-->
+        <div id="sticker" class="logo-menu-area header-area-2">
+            <div class="container d-none d-md-block">
+                <div class="d-flex align-items-center justify-content-between">
+                  <!-- Left nav -->
+                  <nav class="main-menu d-flex gap-3">
+                    <ul class="nav-left d-flex gap-3">
+                      <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                      <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
+                      <li><a href="./program/" data-i18n="nav.program">Program</a></li>
+                      <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
+                    </ul>
+                  </nav>
+
+                  <!-- Center logo -->
+                  <div class="logo text-center">
+                    <a href="index.html">
+                      <img src="https://via.placeholder.com/120x60/007bff/white?text=TAFFA" alt="TAFFA Logo" class="nav-logo" />
+                    </a>
+                  </div>
+
+                  <!-- Right nav -->
+                  <nav class="main-menu d-flex gap-3 align-items-center">
+                    <ul class="nav-right d-flex gap-3">
+                      <li><a href="./awards/" data-i18n="nav.awards">Awards</a></li>
+                      <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                      <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+                      <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+                    </ul>
+                    <!-- Language Dropdown -->
+                    <div class="language-dropdown position-relative">
+                      <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
+                        <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                      </button>
+                      <ul class="language-options">
+                        <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw">Kiswahili</a></li>
+                        <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en">English</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+            </div>
+            <!-- Mobile Menu Area Start -->
+            <div class="mobile-menu-area d-md-none">
+              <div class="container">
+                <div class="mobile-nav-wrapper d-flex justify-content-between align-items-center py-2">
+                  <!-- Hamburger -->
+                  <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="zmdi zmdi-menu"></i>
+                  </button>
+
+                  <!-- Center Logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html"><img src="https://via.placeholder.com/100x50/007bff/white?text=TAFFA" alt="Logo" class="nav-logo" /></a>
+                  </div>
+
+                  <!-- Language toggle -->
+                  <div class="language-dropdown mobile-lang position-relative">
+                    <button class="lang-toggle-btn" onclick="toggleLanguageDropdown()">
+                      <span data-i18n="nav.language">Language</span>
+                      <i class="zmdi zmdi-caret-down"></i>
+                    </button>
+                    <ul class="language-options">
+                      <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw">Kiswahili</a></li>
+                      <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en">English</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Slide-out Menu -->
+                <div class="mobile-menu" id="mobileMenu">
+                  <button class="mobile-close" onclick="closeMobileMenu()">
+                    <i class="zmdi zmdi-close"></i>
+                  </button>
+                  
+                  <ul class="mobile-menu-left">
+                    <li><a href="#home" data-i18n="nav.home" onclick="closeMobileMenu()">Home</a></li>
+                    <li><a href="#about-event" data-i18n="nav.about" onclick="closeMobileMenu()">About Us</a></li>
+                    <li><a href="./program/" data-i18n="nav.program" onclick="closeMobileMenu()">Program</a></li>
+                    <li><a href="#submission" data-i18n="nav.submission" onclick="closeMobileMenu()">Submission</a></li>
+                  </ul>
+                  <ul class="mobile-menu-right">
+                    <li><a href="./awards/" data-i18n="nav.awards" onclick="closeMobileMenu()">Awards</a></li>
+                    <li><a href="#gallery" data-i18n="nav.gallery" onclick="closeMobileMenu()">Gallery</a></li>
+                    <li><a href="#partners" data-i18n="nav.partners" onclick="closeMobileMenu()">Partners</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact" onclick="closeMobileMenu()">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Menu Area End -->
+        </div>
+        <!--logo menu area end-->
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+
+    <!-- Demo Content -->
+    <div class="demo-content">
+        <div class="container">
+            <h1 class="fade-in">Enhanced TAFFA Navigation</h1>
+            <p class="fade-in">Your navigation has been enhanced with modern styling, smooth animations, and improved user experience while maintaining all original functionality and structure.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card fade-in">
+                    <h3>Glassmorphism Design</h3>
+                    <p>Modern transparent background with backdrop blur effects for a premium look.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <h3>Smooth Animations</h3>
+                    <p>Delightful hover effects and transitions that enhance user interaction.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <h3>Mobile Optimized</h3>
+                    <p>Enhanced mobile menu with slide-out functionality and touch-friendly design.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <h3>Scroll Effects</h3>
+                    <p>Dynamic header that adapts as users scroll, improving readability and focus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Language dropdown functionality
+        function toggleLanguageDropdown() {
+            const dropdowns = document.querySelectorAll('.language-dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.toggle('active');
+            });
+        }
+
+        // Set language function
+        function setLanguage(lang) {
+            console.log('Language set to:', lang);
+            // Add your language switching logic here
+            
+            // Close dropdown after selection
+            const dropdowns = document.querySelectorAll('.language-dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+
+        // Mobile menu functionality
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+            
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (mobileMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+            
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            const languageDropdowns = document.querySelectorAll('.language-dropdown');
+            
+            languageDropdowns.forEach(dropdown => {
+                if (!dropdown.contains(event.target)) {
+                    dropdown.classList.remove('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header-area');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                
+                // Close mobile menu if open
+                closeMobileMenu();
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for fade-in animation
+        document.querySelectorAll('.feature-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeMobileMenu();
+                
+                // Close language dropdowns
+                const dropdowns = document.querySelectorAll('.language-dropdown');
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Add demo content for scrolling
+        setTimeout(() => {
+            const demoContent = document.querySelector('.demo-content');
+            demoContent.innerHTML += `
+                <div style="height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
+                    <div style="text-align: center; max-width: 600px;">
+                        <h2 style="color: #007bff; margin-bottom: 2rem;">Scroll to Test Navigation</h2>
+                        <p style="color: #666; line-height: 1.8;">
+                            The navigation header changes its appearance as you scroll. The glassmorphism effect 
+                            creates a modern, professional look while maintaining excellent readability and usability.
+                        </p>
+                    </div>
+                </div>
+            `;
+        }, 100);
+    </script>
+</body>
+</html>
