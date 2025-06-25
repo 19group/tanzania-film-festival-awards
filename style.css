@@ -1052,6 +1052,30 @@ a.btn-def.bnt-2.big {
     background: rgba(0, 0, 0, 0) url("img/bg/brand-bg.png") no-repeat scroll 0 0 / cover;
     padding: 40px 0;
 }
+.brand-logo {
+            width: 350px;
+            height: 150px;
+            object-fit: contain;
+            filter: brightness(0.9) contrast(1.1);
+            transition: all 0.3s ease;
+        }
+.brand-logo:hover {
+            filter: brightness(1.1) contrast(1.2);
+            transform: scale(1.05);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 .brand-logo-lg {
   max-height: 120px;
   object-fit: contain;
