@@ -302,7 +302,7 @@ a.btn-def {
   height: 650px !important;
 }
 
-}
+
 
  
 /* small mobile :320px. */
@@ -311,6 +311,7 @@ a.btn-def {
 	display:block
 
 }
+
 .awards-main {
                 padding: 60px 0 40px;
             }
@@ -755,6 +756,29 @@ a.btn-def {
  .information-area .col-xs-12 {
   width: 50%;
 }
+.film-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px 15px;
+    gap: 15px;
+  }
+  .film-frame {
+    height: 100px;
+    gap: 10px;
+  }
+  .stat-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .stat-icon i {
+    font-size: 16px;
+  }
+  .stat-number {
+    font-size: 12px;
+  }
+
+
+}
 .information-area .col-md-3:nth-last-child(-n+2) .single-information{margin:0}
 .map-content .input-box input.submit {
   float: right;
@@ -849,7 +873,21 @@ a.btn-def {
 .tab-menu-list-event ul li {
   float: left;
 }
-
+.film-strip {
+    margin: 0 10px;
+  }
+  .film-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 12px;
+  }
+  .film-frame {
+    height: 90px;
+  }
+  .stat-number {
+    font-size: 11px;
+    padding: 0 5px;
+  }
 }
  
 @media (max-width: 479px) {
