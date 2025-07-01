@@ -61,9 +61,9 @@ const translations = {
     "nav.partners": "Wadau",
     "nav.contact": "Wasiliana Nasi",
     
-    "hero.title1": "TANZANIA",
-    "hero.title2": "TAMASHA LA FILAMU",
-    "hero.title3": "TUZO 2025",
+    "hero.title1": "<span>TAMASHA</span> NA ",
+    "hero.title2": "<span>TUZO</span> ZA FILAMU",
+    "hero.title3": "TANZANIA 2025",
     "hero.description": "Jiunge nasi kwa maadhimisho ya hadithi za Kiafrika, ubunifu, na mabadiliko ya tasnia. Kuanzia maonyesho ya filamu na warsha hadi mitandao ya uwekezaji na Tuzo za kifahari za TAFFA — hii si tamasha tu <span>ni harakati.</span>",
     "hero.date": "02 Julai, 2025",
     "hero.location": "Dar es Salaam, Tanzania",
