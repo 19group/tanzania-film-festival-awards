@@ -16,8 +16,8 @@ const translations = {
     "nav.contact": "Contact Us",
 
     "hero.title1": "TANZANIA",
-    "hero.title2": "FILM FESTIVAL",
-    "hero.title3": "AWARD 2025",
+    "hero.title2": "FILM <span>FESTIVAL</span>",
+    "hero.title3": "& <span>AWARDS</span> 2025",
     "hero.description": "Join us for a dynamic celebration of African storytelling, innovation, and industry transformation. From film screenings and workshops to investment pitches and the prestigious TAFFA Awards, this is more than a festival <span>it’s a movement.</span>",
     "hero.date": "Jul 02, 2025",
     "hero.location": "Dar es Salaam, Tanzania",
