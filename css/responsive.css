@@ -302,9 +302,117 @@ a.btn-def {
   height: 650px !important;
 }
 
-
-
- 
+.information-area .col-md-3:nth-last-child(-n+2) .single-information{margin:0}
+.map-content .input-box input.submit {
+  float: right;
+  margin-top: 0;
+}
+.happen-text {
+  padding: 40px;
+}
+.happen-img {
+  width: 150px;
+}
+.program-img {
+    max-height: 420px;
+  }
+.uc-icon {
+  padding-top: 1px;
+  width: 20%;
+  text-align: center;
+}
+.uc-event-title {
+  padding: 0;
+}
+.uc-event-title > a {
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.uc-icon {
+  padding-top: 0;
+  text-align: center;
+  width: 100%;
+}
+.tab-menu-list li a {
+  padding: 10px;
+}
+.counter-area .col-xs-12 {
+  width: 50%;
+}
+.counter-area .col-md-2:nth-last-child(-n+2) .single-count{margin:0}
+.news-img img {
+  width: 100%;
+}
+.slide1-text {
+  display: block;
+}
+.slide1-text .cap-title h1 {
+  font-size: 25px;
+  line-height: 20px;
+}
+.event-date {
+  margin-right: 10px;
+}
+.date-address i {
+  margin-right: 10px;
+}
+.date-address {
+  line-height: 35px;
+  margin: 10px 0;
+}
+a.btn-def {
+  padding: 5px 10px !important;
+  margin-bottom: 15px;
+}
+.slider-btn {
+  padding-top: 0;
+}
+.slide1-text p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.speaker-area-2 .col-md-3.col-xs-12 {
+  width: 50%;
+}
+.social-icon li {
+  margin-right: 5px;
+}
+.social-icon-2 li a {
+  width: 32px;
+}
+.slider-02 .slide1-text {
+  padding-top: 110px;
+}
+.tab-menu-list-event ul li + li {
+  margin: 0 0 0 10px;
+}
+.event-shedule-left {
+  width: 100%;
+}
+.es-img {
+  right: 0;
+}
+.tab-menu-list-event ul li {
+  float: left;
+}
+.film-strip {
+    margin: 0 10px;
+  }
+  .film-content {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 12px;
+  }
+  .film-frame {
+    height: 90px;
+  }
+  .stat-number {
+    font-size: 11px;
+    padding: 0 5px;
+  }
+}
 /* small mobile :320px. */
 @media (max-width: 767px) {
  .mobile-menu-area{
@@ -362,6 +470,7 @@ a.btn-def {
 }
 a.btn-def {
   padding: 10px 10px;
+  margin-bottom: 15px;
 }
 
 .login-register {
@@ -749,6 +858,12 @@ a.btn-def {
   height: auto !important;
 }
 
+.film-content {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 12px;
+  }
+
 }
  
 /* Large Mobile :480px. */
@@ -778,116 +893,6 @@ a.btn-def {
   }
 
 
-}
-.information-area .col-md-3:nth-last-child(-n+2) .single-information{margin:0}
-.map-content .input-box input.submit {
-  float: right;
-  margin-top: 0;
-}
-.happen-text {
-  padding: 40px;
-}
-.happen-img {
-  width: 150px;
-}
-.program-img {
-    max-height: 420px;
-  }
-.uc-icon {
-  padding-top: 1px;
-  width: 20%;
-  text-align: center;
-}
-.uc-event-title {
-  padding: 0;
-}
-.uc-event-title > a {
-  padding-top: 10px;
-  width: 100%;
-  text-align: center;
-}
-.uc-icon {
-  padding-top: 0;
-  text-align: center;
-  width: 100%;
-}
-.tab-menu-list li a {
-  padding: 10px;
-}
-.counter-area .col-xs-12 {
-  width: 50%;
-}
-.counter-area .col-md-2:nth-last-child(-n+2) .single-count{margin:0}
-.news-img img {
-  width: 100%;
-}
-.slide1-text {
-  display: block;
-}
-.slide1-text .cap-title h1 {
-  font-size: 25px;
-  line-height: 20px;
-}
-.event-date {
-  margin-right: 10px;
-}
-.date-address i {
-  margin-right: 10px;
-}
-.date-address {
-  line-height: 35px;
-  margin: 10px 0;
-}
-a.btn-def {
-  padding: 5px 10px !important;
-}
-.slider-btn {
-  padding-top: 0;
-}
-.slide1-text p {
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-.speaker-area-2 .col-md-3.col-xs-12 {
-  width: 50%;
-}
-.social-icon li {
-  margin-right: 5px;
-}
-.social-icon-2 li a {
-  width: 32px;
-}
-.slider-02 .slide1-text {
-  padding-top: 110px;
-}
-.tab-menu-list-event ul li + li {
-  margin: 0 0 0 10px;
-}
-.event-shedule-left {
-  width: 100%;
-}
-.es-img {
-  right: 0;
-}
-.tab-menu-list-event ul li {
-  float: left;
-}
-.film-strip {
-    margin: 0 10px;
-  }
-  .film-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 12px;
-  }
-  .film-frame {
-    height: 90px;
-  }
-  .stat-number {
-    font-size: 11px;
-    padding: 0 5px;
-  }
 }
  
 @media (max-width: 479px) {
