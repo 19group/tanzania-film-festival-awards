@@ -409,19 +409,36 @@ box-shadow: 0 4px 15px rgba(247, 233, 82, 0.2);
     max-width: 600px;
 
 }
+.middle-text {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 .event-date {
     float: left;
     margin-right: 30px;
 }
+.event-date i, .event-location i {
+            font-size: 1.3rem;
+            color: #E4B34C;
+        }
 .event-location { float: left }
 .date-address i {
     font-size: 20px;
     margin-right: 15px;
 }
 .date-address {
-    line-height: 48px;
-    margin: 10px 0;
-    overflow: hidden;
+     display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 30px 0;
 }
 .nivoSlider img { 
     height: 100vh !important;
@@ -473,6 +490,132 @@ a.btn-def.bnt-2.big {
     background: transparent none repeat scroll 0 0;
     color: #E4B34C;
 }
+.secondary-btn {
+            align-self: flex-start;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #E4B34C;
+            color: #E4B34C;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-outline:hover {
+            background: #E4B34C;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 238, 53, 0.3);
+        }
+        .submit-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .submit-btn-prominent {
+            background: linear-gradient(135deg,#f4c765 0%, #FFD700 100%);
+            color: white;
+            padding: 25px 45px;
+            text-decoration: none;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.4);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            animation: pulse 2s infinite;
+        }
+        
+        .submit-btn-prominent::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .submit-btn-prominent:hover::before {
+            left: 100%;
+        }
+        
+        .submit-btn-prominent:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(228, 180, 78, 0.749);
+            background: linear-gradient(135deg,#f4c765 0%, #FFD700 100%);
+        }
+        
+        .submit-btn-prominent:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+        /* Pulsing animation */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 15px 35px rgba(255, 205, 53, 0.4);
+            }
+            50% {
+                box-shadow: 0 15px 35px rgba(255, 221, 53, 0.6), 0 0 0 10px rgba(255, 107, 53, 0.1);
+            }
+            100% {
+                box-shadow: 0 15px 35px rgba(255, 208, 53, 0.4);
+            }
+        }
+        
+    
+        .submit-btn-prominent::after {
+            content: '→';
+            margin-left: 10px;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+        
+        .submit-btn-prominent:hover::after {
+            transform: translateX(5px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .middle-text {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+                height: 100vh;
+                padding-top: 15rem;
+            }
+            
+            .cap-title h1 {
+                font-size: 2.5rem;
+            }
+            
+            .submit-btn-prominent {
+                padding: 20px 35px;
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cap-title h1 {
+                font-size: 2rem;
+            }
+            
+            .submit-btn-prominent {
+                padding: 18px 30px;
+                font-size: 1.1rem;
+            }
+        }
 /* end btn style */
 /*----------------------------------------*/
 /* 5. Slider
@@ -2853,40 +2996,4 @@ blockquote {
   margin-top: 40px;
 }
 
-.about-btn .btn-def {
-  background: linear-gradient(135deg, #8b7355 0%, #6b5b47 100%);
-  border: none;
-  padding: 15px 40px;
-  border-radius: 50px;
-  color: #ffffff;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(139, 115, 85, 0.2);
-}
 
-.about-btn .btn-def::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.6s;
-}
-
-.about-btn .btn-def:hover::before {
-  left: 100%;
-}
-
-.about-btn .btn-def:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
-  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
-}
