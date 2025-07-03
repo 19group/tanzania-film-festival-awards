@@ -445,7 +445,7 @@ a.btn-def {
 }
 .slide1-text .cap-title h1{
   font-size: 40px;
-  line-height: 40px;
+  line-height: 60px;
 }
 .slide1-text p {
   font-size: 14px !important;
@@ -865,6 +865,50 @@ a.btn-def {
   }
 
 }
+/* prominent mobile */
+@media (max-width: 768px) {
+            .middle-text {
+                grid-template-columns: 1fr;
+                /*gap: 30px;*/
+                text-align: center;
+                height: 100vh;
+                padding-top: 15rem;
+                padding-bottom:5rem;
+            }
+            
+            .cap-title h1 {
+                font-size: 2.5rem;
+            }
+            
+            .submit-btn-prominent {
+                padding: 20px 35px;
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+          .middle-text {
+                padding-top: 10rem;
+                padding-bottom:0 !important;
+            }
+            
+            .cap-title h1 {
+                font-size: 2.5rem;
+            }
+            
+            .submit-btn-prominent {
+                padding: 20px 35px;
+                font-size: 1.2rem;
+            }
+            .cap-title h1 {
+                font-size: 2rem;
+            }
+            
+            .submit-btn-prominent {
+                padding: 18px 30px;
+                font-size: 0.9rem;
+            }
+        }
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {

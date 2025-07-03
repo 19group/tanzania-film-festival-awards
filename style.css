@@ -233,8 +233,8 @@ ul li { display: inline-block }
   margin-right: 0;
 }
 .logo-menu-area .main-menu a {
-  color: #fff3c9; /* light gold-like color */
-  font-weight: 500;
+  color: #f9ce33; /* light gold-like color */
+  font-weight: 700;
   font-size: 16px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -385,7 +385,7 @@ box-shadow: 0 4px 15px rgba(247, 233, 82, 0.2);
 .slide1-text .cap-title h1 {
     font-size: 46px;
     line-height: 48px;
-    margin: 0;
+    /*margin: 0;*/
     text-transform: uppercase;
     font-weight: 700;
 
@@ -413,7 +413,6 @@ box-shadow: 0 4px 15px rgba(247, 233, 82, 0.2);
             width: 100%;
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 40px;
             align-items: center;
         }
         .content-left {
@@ -494,9 +493,9 @@ a.btn-def.bnt-2.big {
             align-self: flex-start;
         }
         .btn-outline {
-            background: transparent;
+            /* background: #fdd314; */
             border: 2px solid #E4B34C;
-            color: #E4B34C;
+            color: #fff;
             padding: 12px 30px;
             text-decoration: none;
             border-radius: 50px;
@@ -520,12 +519,12 @@ a.btn-def.bnt-2.big {
         
         .submit-btn-prominent {
             background: linear-gradient(135deg,#f4c765 0%, #FFD700 100%);
-            color: white;
+            color: #000;
             padding: 25px 45px;
             text-decoration: none;
             border-radius: 60px;
             font-weight: 700;
-            font-size: 1.4rem;
+            /* font-size: 1.4rem; */
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.4s ease;
@@ -556,6 +555,7 @@ a.btn-def.bnt-2.big {
             transform: translateY(-5px) scale(1.05);
             box-shadow: 0 25px 50px rgba(228, 180, 78, 0.749);
             background: linear-gradient(135deg,#f4c765 0%, #FFD700 100%);
+            color: #fff;
         }
         
         .submit-btn-prominent:active {
@@ -587,35 +587,7 @@ a.btn-def.bnt-2.big {
         }
         
         /* Responsive Design */
-        @media (max-width: 768px) {
-            .middle-text {
-                grid-template-columns: 1fr;
-                gap: 30px;
-                text-align: center;
-                height: 100vh;
-                padding-top: 15rem;
-            }
-            
-            .cap-title h1 {
-                font-size: 2.5rem;
-            }
-            
-            .submit-btn-prominent {
-                padding: 20px 35px;
-                font-size: 1.2rem;
-            }
-        }
         
-        @media (max-width: 480px) {
-            .cap-title h1 {
-                font-size: 2rem;
-            }
-            
-            .submit-btn-prominent {
-                padding: 18px 30px;
-                font-size: 1.1rem;
-            }
-        }
 /* end btn style */
 /*----------------------------------------*/
 /* 5. Slider
@@ -1243,7 +1215,7 @@ a.btn-def.bnt-2.big {
 .special-offer-area { background: rgba(0, 0, 0, 0) url("img/bg/special-bg.jpg") no-repeat scroll 0 0 / cover }
 .white-color { color: #fff }
 .brand-area {
-    background: rgba(0, 0, 0, 0) url("img/bg/brand-bg.png") no-repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("img/bg/brand-bg.webp") no-repeat scroll 0 0 / cover;
     padding: 40px 0;
 }
 .brand-logo {
@@ -1719,7 +1691,7 @@ p.error { color: red }
         /* Hero Section */
         .awards-hero {
             background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(40, 40, 40, 0.95));
-            min-height: 60vh;
+            min-height: 12vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2263,7 +2235,7 @@ select {
 /* 23.breadcrumb
 /*----------------------------------------*/
 .breadcumb-area {
-    padding: 150px 0;
+    /*padding: 150px 0;*/
     text-align: center;
 }
 .breadcrumb {
