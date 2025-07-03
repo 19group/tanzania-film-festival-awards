@@ -22,7 +22,7 @@ const translations = {
     "hero.date": "14 - 16 December, 2025",
     "hero.location": "Mlimani City Dar es Salaam, Tanzania",
     "hero.cta": "Register",
-    "hero.submit": "Submit Your Film",
+    "hero.submit": "Submit Your Film For Award and Screening",
     "hero.program": "See Program",
 
     "about.title": "About the Festival",
@@ -68,8 +68,8 @@ const translations = {
     "hero.date": "14 - 16 August, 2025",
     "hero.location": "Dar es Salaam, Tanzania",
     "hero.cta": "Jisajili",
-    "hero.submit": "Tuma Filamu Yako",
-    "hero.program": "Tazama Ratiba",
+    "hero.submit": "Wasilisha Filamu Yako kwa Ajili ya Tamasha na Tuzo",
+    "hero.program": "Tazama Ratiba Ya Tamasha",
 
     "about.title": "Kuhusu Tamasha",
     "about.description": "TAFFA ni jukwaa lenye nguvu linalotetea tasnia ya filamu kama kichocheo cha mabadiliko ya kijamii na ukuaji wa uchumi. Hufanyika kila mwaka, TAFFA huwaleta pamoja watayarishaji wa filamu, wataalamu wa vyombo vya habari, watunga sera, wawekezaji, wadau wa maendeleo, na umma kwa maadhimisho ya miezi mitatu ya sinema, utamaduni, na ushirikiano.",
