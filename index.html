@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- color css -->
     <link href="css/color/skin-default.css" rel="stylesheet">
+    <link rel="preload" as="image" href="img/bg/bg.webp" />
 
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -218,7 +219,15 @@
 <div class="slider-container pt-5 bg-overlay">
   <!-- Slider Image -->
   <div id="mainSlider" class="nivoSlider slider-image">
-    <img id="heroImage" src="img/bg/bg.webp" alt="main slider" title="#htmlcaption1" />
+    <img 
+      id="heroImage" 
+      src="img/bg/bg.webp" 
+      alt="main slider" 
+      title="#htmlcaption1" 
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+      />
   </div>
 
   <!-- Slider Caption -->
