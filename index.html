@@ -41,6 +41,8 @@
 
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
+
 
     <!-- <style>
 
@@ -144,17 +146,28 @@
                               <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
                             </ul>
                             <!-- Language Dropdown -->
-                            <div class="language-dropdown position-relative">
-                              <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
-                                <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                            <div class="language-dropdown" title="Change Language">
+                              <button id="languageToggle" class="lang-toggle-btn" onclick="toggleLanguageDropdown()" aria-label="Change Language">
+                                <span id="currentLangFlag" class="fi fi-tz"></span>
+                                <span id="currentLangCode">SW</span>
+                                <i class="zmdi zmdi-caret-down"></i>
                               </button>
                               <ul class="language-options">
-                                <li><a href="#" onclick="setLanguage('sw')"
-                                    data-i18n="lang.sw">Kiswahili</a></li>
-                                <li><a href="#" onclick="setLanguage('en')"
-                                    data-i18n="lang.en">English</a></li>
+                                <li>
+                                  <a href="#" onclick="setLanguage('sw')">
+                                    <span class="fi fi-tz"></span> SW
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" onclick="setLanguage('en')">
+                                    <span class="fi fi-us"></span> EN
+                                  </a>
+                                </li>
                               </ul>
-                            </div>
+                          </div>
+
+
+
                           </nav>
                         </div>
                     </div>
@@ -173,16 +186,28 @@
                           </div>
 
                           <!-- Language toggle -->
-                          <div class="language-dropdown mobile-lang  position-relative">
-                            <button class="lang-toggle-btn" onclick="toggleLanguageDropdown()">
-                              <span data-i18n="nav.language">Language</span>
+                          <!-- Language toggle -->
+                          <div class="language-dropdown mobile-lang position-relative">
+                            <button id="languageToggleMobile" class="lang-toggle-btn" onclick="toggleLanguageDropdown()" aria-label="Change Language">
+                              <span id="currentLangFlag" class="fi fi-tz"></span>
+                              <span id="currentLangCodeMobile">SW</span>
                               <i class="zmdi zmdi-caret-down"></i>
                             </button>
-                            <ul class="language-options">
-                              <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw">Kiswahili</a></li>
-                              <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en">English</a></li>
+
+                            <ul class="language-options" style="display: none;">
+                              <li>
+                                <a href="#" onclick="setLanguage('sw'); return false;">
+                                  <span class="fi fi-tz"></span> SW
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" onclick="setLanguage('en'); return false;">
+                                  <span class="fi fi-us"></span> EN
+                                </a>
+                              </li>
                             </ul>
                           </div>
+
                         </div>
 
                         <!-- Slide-out Menu -->
