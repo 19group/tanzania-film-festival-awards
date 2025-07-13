@@ -1749,6 +1749,73 @@ p.error { color: red }
                 transform: translateY(0);
             }
         }
+        .modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 15px;
+}
+
+.modal-box {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255, 206, 72, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-btn {
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-btn.confirm {
+  background: linear-gradient(135deg, #f4c765 0%, #FFD700 100%);
+  color: black;
+}
+
+.modal-btn.cancel {
+  background: #333;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@media (min-width: 480px) {
+  .modal-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .modal-btn {
+    width: 48%;
+  }
+}
+
+/*----------------------------------------*/
+/* 15. Awards Section */
 .awards-main {
     background: #181717;
     margin-top: -50px;

@@ -205,6 +205,7 @@ $(".see-demo-btn").on('click', function (e) {
     }, 'slow');
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('load', function() {
         document.body.classList.add('loaded');

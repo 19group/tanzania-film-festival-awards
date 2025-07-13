@@ -264,7 +264,7 @@
               </div>
           </div>
           <div class="submit-button-container">
-                        <a class="submit-btn-prominent" href="https://taffafestival.or.tz/tuzo" target="_blank" data-i18n="hero.submit">Submit Your Film</a>
+                        <a class="submit-btn-prominent" onclick="openSubmissionModal()" data-i18n="hero.submit">Submit Your Film</a>
             </div>
           
         </div>
@@ -608,6 +608,21 @@
         </div>
         <!--footer area are start-->
     </div>
+
+
+  <!-- Modal for Submission Confirmation -->
+  <div id="submissionModal" class="modal-overlay" style="display: none;">
+    <div class="modal-box">
+      <h3 data-i18n="modal.title">Leaving Our Site</h3>
+      <p data-i18n="modal.body">You're about to visit our official partner submission portal. Continue?</p>
+      <div class="modal-actions">
+        <button class="modal-btn confirm" onclick="redirectToSubmission()" data-i18n="modal.yes">Yes, continue</button>
+        <button class="modal-btn cancel" onclick="closeSubmissionModal()" data-i18n="modal.no">No, stay here</button>
+      </div>
+    </div>
+  </div>
+
+
     <!--body-wraper-are-end-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -619,6 +634,23 @@
          }
         });
     </script>
+
+    <script>
+  function openSubmissionModal() {
+    document.getElementById('submissionModal').style.display = 'flex';
+  }
+
+  function closeSubmissionModal() {
+    document.getElementById('submissionModal').style.display = 'none';
+  }
+
+  function redirectToSubmission() {
+    window.open('https://taffafestival.or.tz/tuzo', '_blank');
+    closeSubmissionModal();
+  }
+</script>
+
+
     <!--==== all js here====-->
     <!-- jquery latest version -->
     <script src="js/vendor/jquery-3.6.0.min.js"></script>

@@ -24,6 +24,11 @@ const translations = {
     "hero.cta": "Register",
     "hero.submit": "Submit Your Film For Award and Screening",
     "hero.program": "See Program",
+    "modal.title": "Leaving Our Site",
+    "modal.body": "You're about to visit our official partner submission portal. Continue?",
+    "modal.yes": "Yes, continue",
+    "modal.no": "No, stay here",
+
 
     "about.title": "About the Festival",
     "about.description": "TAFFA is a powerful platform championing the film industry as a catalyst for social transformation and economic growth. Held annually, TAFFA unites filmmakers, media professionals, policymakers, investors, development partners, and the public for a three-month-long celebration of cinema, culture, and collaboration.",
@@ -70,6 +75,11 @@ const translations = {
     "hero.cta": "Jisajili",
     "hero.submit": "Wasilisha Filamu Yako kwa Ajili ya Tamasha na Tuzo",
     "hero.program": "Tazama Ratiba Ya Tamasha",
+    "modal.title": "Utafunguliwa Ukurasa Mpya",
+    "modal.body": "Ili kuwasilisha filamu yako, utapelekwa kwenye tovuti ya mshirika wetu rasmi wa TAFFA. Usijali – ni salama na ni sehemu ya mchakato wetu wa tuzo na tamasha.",
+    "modal.yes": "Ndio, nipeleke",
+    "modal.no": "Hapana, baki hapa",
+
 
     "about.title": "Kuhusu Tamasha",
     "about.description": "TAFFA ni jukwaa lenye nguvu linalotetea tasnia ya filamu kama kichocheo cha mabadiliko ya kijamii na ukuaji wa uchumi. Hufanyika kila mwaka, TAFFA huwaleta pamoja watayarishaji wa filamu, wataalamu wa vyombo vya habari, watunga sera, wawekezaji, wadau wa maendeleo, na umma kwa maadhimisho ya miezi mitatu ya sinema, utamaduni, na ushirikiano.",
