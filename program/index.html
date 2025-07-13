@@ -85,17 +85,17 @@
                               <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
                             </ul>
                             <!-- Language Dropdown -->
-                            <div class="language-dropdown position-relative">
-                              <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
-                                <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                            <div class="language-dropdown" title="Change Language">
+                              <button id="languageToggle" class="lang-toggle-compact" onclick="toggleLanguageDropdown()" aria-label="Change language">
+                                <span class="flag-label" id="currentLangFlag">🇹🇿 SW</span>
+                                <i class="zmdi zmdi-caret-down"></i>
                               </button>
                               <ul class="language-options">
-                                <li><a href="#" onclick="setLanguage('sw')"
-                                    data-i18n="lang.sw">Kiswahili</a></li>
-                                <li><a href="#" onclick="setLanguage('en')"
-                                    data-i18n="lang.en">English</a></li>
+                                <li><a href="#" onclick="setLanguage('sw')">🇹🇿 SW</a></li>
+                                <li><a href="#" onclick="setLanguage('en')">🇬🇧 EN</a></li>
                               </ul>
                             </div>
+
                           </nav>
                         </div>
                     </div>

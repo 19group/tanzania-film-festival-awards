@@ -41,6 +41,8 @@
 
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
+
 
     <!-- <style>
 
@@ -144,17 +146,28 @@
                               <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
                             </ul>
                             <!-- Language Dropdown -->
-                            <div class="language-dropdown position-relative">
-                              <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
-                                <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                            <div class="language-dropdown" title="Change Language">
+                              <button id="languageToggle" class="lang-toggle-btn" onclick="toggleLanguageDropdown()" aria-label="Change Language">
+                                <span id="currentLangFlag" class="fi fi-tz"></span>
+                                <span id="currentLangCode">SW</span>
+                                <i class="zmdi zmdi-caret-down"></i>
                               </button>
                               <ul class="language-options">
-                                <li><a href="#" onclick="setLanguage('sw')"
-                                    data-i18n="lang.sw">Kiswahili</a></li>
-                                <li><a href="#" onclick="setLanguage('en')"
-                                    data-i18n="lang.en">English</a></li>
+                                <li>
+                                  <a href="#" onclick="setLanguage('sw')">
+                                    <span class="fi fi-tz"></span> SW
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" onclick="setLanguage('en')">
+                                    <span class="fi fi-us"></span> EN
+                                  </a>
+                                </li>
                               </ul>
-                            </div>
+                          </div>
+
+
+
                           </nav>
                         </div>
                     </div>
@@ -173,16 +186,28 @@
                           </div>
 
                           <!-- Language toggle -->
-                          <div class="language-dropdown mobile-lang  position-relative">
-                            <button class="lang-toggle-btn" onclick="toggleLanguageDropdown()">
-                              <span data-i18n="nav.language">Language</span>
+                          <!-- Language toggle -->
+                          <div class="language-dropdown mobile-lang position-relative">
+                            <button id="languageToggleMobile" class="lang-toggle-btn" onclick="toggleLanguageDropdown()" aria-label="Change Language">
+                              <span id="currentLangFlag" class="fi fi-tz"></span>
+                              <span id="currentLangCodeMobile">SW</span>
                               <i class="zmdi zmdi-caret-down"></i>
                             </button>
-                            <ul class="language-options">
-                              <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw">Kiswahili</a></li>
-                              <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en">English</a></li>
+
+                            <ul class="language-options" style="display: none;">
+                              <li>
+                                <a href="#" onclick="setLanguage('sw'); return false;">
+                                  <span class="fi fi-tz"></span> SW
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" onclick="setLanguage('en'); return false;">
+                                  <span class="fi fi-us"></span> EN
+                                </a>
+                              </li>
                             </ul>
                           </div>
+
                         </div>
 
                         <!-- Slide-out Menu -->
@@ -264,7 +289,7 @@
               </div>
           </div>
           <div class="submit-button-container">
-                        <a class="submit-btn-prominent" href="https://taffafestival.or.tz/tuzo" target="_blank" data-i18n="hero.submit">Submit Your Film</a>
+                        <a class="submit-btn-prominent" onclick="openSubmissionModal()" data-i18n="hero.submit">Submit Your Film</a>
             </div>
           
         </div>
@@ -287,10 +312,10 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front" style="background-image: url('img/event/film-screening.png');">
+                <div class="flip-card-front" style="background-image: url('img/event/master-clasess-bg.png');">
                   <div class="card-content">
                     <h4 data-i18n="about.item1"></h4>
-                    <p data-i18n="about.front.item1">Workshops & Masterclasses</p>
+                    <!-- <p data-i18n="about.front.item1">Workshops & Masterclasses</p> -->
                   </div>
                 </div>
                 <div class="flip-card-back">
@@ -307,10 +332,10 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front" style="background-image: url('img/event/film-screening.png');">
+                <div class="flip-card-front" style="background-image: url('img/event/forums-dialogue-bg.png');">
                   <div class="card-content">
                     <h4 data-i18n="about.item2"></h4>
-                    <p data-i18n="about.front.item2">With industry thought leaders</p>
+                    <!-- <p data-i18n="about.front.item2">With industry thought leaders</p> -->
                   </div>
                 </div>
                 <div class="flip-card-back">
@@ -327,10 +352,10 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front" style="background-image: url('img/event/film-screening.png');">
+                <div class="flip-card-front" style="background-image: url('img/event/investment-pitches-bg.png');">
                   <div class="card-content">
                     <h4 data-i18n="about.item3"></h4>
-                    <p data-i18n="about.front.item4">Pitch to potential investors</p>
+                    <!-- <p data-i18n="about.front.item4">Pitch to potential investors</p> -->
                   </div>
                 </div>
                 <div class="flip-card-back">
@@ -347,10 +372,10 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front" style="background-image: url('img/event/film-screening.png');">
+                <div class="flip-card-front" style="background-image: url('img/event/exhibition-bg.png');">
                   <div class="card-content">
                     <h4 data-i18n="about.item4"></h4>
-                    <p data-i18n="about.front.item7">Specialized training</p>
+                    <!-- <p data-i18n="about.front.item7">Specialized training</p> -->
                   </div>
                 </div>
                 <div class="flip-card-back">
@@ -608,6 +633,21 @@
         </div>
         <!--footer area are start-->
     </div>
+
+
+  <!-- Modal for Submission Confirmation -->
+  <div id="submissionModal" class="modal-overlay" style="display: none;">
+    <div class="modal-box">
+      <h3 data-i18n="modal.title">Leaving Our Site</h3>
+      <p data-i18n="modal.body">You're about to visit our official partner submission portal. Continue?</p>
+      <div class="modal-actions">
+        <button class="modal-btn confirm" onclick="redirectToSubmission()" data-i18n="modal.yes">Yes, continue</button>
+        <button class="modal-btn cancel" onclick="closeSubmissionModal()" data-i18n="modal.no">No, stay here</button>
+      </div>
+    </div>
+  </div>
+
+
     <!--body-wraper-are-end-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -619,6 +659,23 @@
          }
         });
     </script>
+
+    <script>
+  function openSubmissionModal() {
+    document.getElementById('submissionModal').style.display = 'flex';
+  }
+
+  function closeSubmissionModal() {
+    document.getElementById('submissionModal').style.display = 'none';
+  }
+
+  function redirectToSubmission() {
+    window.open('https://taffafestival.or.tz/tuzo', '_blank');
+    closeSubmissionModal();
+  }
+</script>
+
+
     <!--==== all js here====-->
     <!-- jquery latest version -->
     <script src="js/vendor/jquery-3.6.0.min.js"></script>
