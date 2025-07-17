@@ -1,0 +1,29 @@
+// main.scss
+
+// 1. Abstracts: variables, mixins, functions
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// 2. Base/global
+@import 'base/typography';
+@import 'base/base';
+
+// 3. Layout
+@import 'layout/layout';
+
+
+// 4. Components 
+@import 'components/components';
+
+// 5. Sections/pages
+@import 'sections/sections';
+
+// 6. Utilities
+@import 'utilities/utilities';
+
+// 7. Responsive
+@import 'responsive/responsive';
+
+// 8. Vendor overrides
+@import 'vendors/bootstrap-custom';

@@ -1,0 +1,59 @@
+// layout/_header.scss
+
+.header-area {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  @include transition();
+}
+
+.header-area.scrolled .logo-menu-area {
+  background: rgba($white, 0.98);
+  box-shadow: 0 0.25rem 1.5625rem rgba($secondary-color, 0.15); // 4px 25px
+  padding: 0.25rem 0;
+}
+
+.header-area.scrolled .nav-logo {
+  height: 3.125rem; // 50px
+}
+
+.header-top {
+  color: #ddd;
+  font-size: 0.8125rem; // 13px
+  height: 3.125rem; // 50px
+  line-height: 3rem; // 48px
+  background: rgba(0,0,0,0.2);
+  a {
+    color: #ddd;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.logo-menu-area {
+  padding: 0.5rem 0;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0.125rem 1.25rem rgba($primary-color, 0.1); // 2px 20px
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  @include transition();
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    max-height: 3.75rem; // 60px
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+  }
+  .nav-logo {
+    height: 6.25rem !important; // 100px
+    width: 6.25rem !important; // 100px
+  }
+}

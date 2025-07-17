@@ -1,0 +1,59 @@
+.film-strip-container {
+  margin: 0 auto $spacing-xl auto;
+  text-align: center;
+}
+.film-strip {
+  background: $white;
+  border-radius: $card-radius;
+  box-shadow: 0 0.125rem 2rem rgba($secondary-color, 0.09);
+  padding: 2rem 0.5rem;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.film-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  margin: 0.5rem 0;
+}
+.film-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $secondary-color;
+  color: $white;
+  padding: 1rem 0.25rem;
+  border-radius: 0.6rem;
+}
+.stat-icon {
+  background: $primary-color;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+.stat-number {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.film-perforations {
+  height: 1.5rem;
+  width: 100%;
+  background: repeating-linear-gradient(
+    to right,
+    #bbb,
+    #bbb 0.2rem,
+    transparent 0.2rem,
+    transparent 1.2rem
+  );
+  &.film-perforations-top { margin-bottom: 0.25rem; }
+  &.film-perforations-bottom { margin-top: 0.25rem; }
+}

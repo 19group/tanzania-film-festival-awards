@@ -1,0 +1,50 @@
+// sections/_speakers.scss
+
+.speaker-section {
+  background: $white;
+  padding: $spacing-xl 0;
+}
+
+.single-speaker {
+  background: #f9f9f9;
+  padding: 1.875rem 0.9375rem; // 30px 15px
+  border-radius: $card-radius;
+  box-shadow: 0 0.0625rem 1.25rem rgba($secondary-color, 0.1); // 1px 20px
+  margin-bottom: $spacing-lg;
+  img {
+    border-radius: 50%;
+    margin-bottom: 1.5625rem; // 25px
+    width: 6.25rem; // 100px
+    height: 6.25rem; // 100px
+    object-fit: cover;
+  }
+  .speaker-name {
+    color: $secondary-color;
+    margin-bottom: $spacing-xs;
+    font-size: 1.125rem; // 18px
+    font-weight: 700;
+  }
+}
+
+.social-icon ul {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xs;
+}
+.social-icon li a {
+  border: 0.0625rem solid $primary-color;
+  border-radius: 0.25rem;
+  color: $secondary-color;
+  font-size: 1.25rem; // 20px
+  width: 2.8125rem; // 45px
+  height: 2.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transition();
+
+  &:hover {
+    background: $primary-color;
+    color: $white;
+  }
+}

@@ -1,0 +1,31 @@
+// sections/_gallery.scss
+
+.gallery-section {
+  padding: $spacing-xl 0;
+  background: $secondary-color;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); // min 224px
+  gap: $spacing-md;
+}
+
+.gallery-item {
+  border-radius: $card-radius;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 1.25rem rgba($primary-color, 0.05); // 2px 20px
+  background: $white;
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 12.5rem; // 200px
+    transition: transform 0.3s;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}

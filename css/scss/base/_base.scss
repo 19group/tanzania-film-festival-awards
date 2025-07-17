@@ -1,0 +1,29 @@
+// base/_base.scss
+
+html {
+  font-size: 16px; // 1rem = 16px
+}
+
+body {
+  height: 100%;
+  font-family: $font-main;
+  font-size: $font-size-base;
+  color: $white;
+  line-height: 1.66;
+  font-weight: 400;
+  background: $secondary-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  @include transition();
+  text-decoration: none;
+  color: $white;
+  &:hover {
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,20 @@
+// components/_card.scss
+
+.card {
+  background: $white;
+  border-radius: $card-radius;
+  box-shadow: 0 0.125rem 1.25rem rgba($primary-color, 0.08);
+  padding: $spacing-lg $spacing-md;
+  margin-bottom: $spacing-lg;
+  color: $secondary-color;
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: $spacing-xs;
+  }
+  .card-content {
+    font-size: 1rem;
+    color: $secondary-color;
+  }
+}

@@ -1,0 +1,45 @@
+// sections/_program.scss
+
+.program-bg-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: $spacing-xl 0;
+  position: relative;
+}
+
+.program-image {
+  text-align: center;
+  padding: $spacing-xs;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $card-radius;
+  }
+}
+
+.tab-menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 $spacing-sm 0;
+  display: flex;
+  gap: $spacing-md;
+}
+
+.tab-menu-list li a {
+  background: $white;
+  border: 0.0625rem solid #f6f2f2;
+  border-radius: 0.25rem;
+  color: #555;
+  font-size: 1.125rem; // 18px
+  font-weight: 700;
+  padding: 1.25rem 1.875rem; // 20px 30px
+  display: block;
+  @include transition();
+
+  &.active, &:hover {
+    background: $primary-color;
+    color: $white;
+    border-color: $primary-color;
+  }
+}

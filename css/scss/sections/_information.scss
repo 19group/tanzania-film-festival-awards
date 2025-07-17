@@ -1,0 +1,31 @@
+// sections/_information.scss
+
+.information-area {
+  background: $secondary-color;
+  padding: $spacing-xl 0;
+  color: $white;
+}
+
+.single-information {
+  background: rgba($white, 0.04);
+  padding: $spacing-lg $spacing-sm; // 40px 10px
+  border-radius: $card-radius;
+  margin-bottom: $spacing-md;
+  text-align: center;
+  .info-icon {
+    font-size: 2.5rem; // 40px
+    margin-bottom: $spacing-sm;
+  }
+  h4 {
+    font-size: 1.125rem; // 18px
+    font-weight: 700;
+    margin-bottom: $spacing-xs;
+    color: $primary-color;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: $white;
+    opacity: 0.92;
+  }
+}

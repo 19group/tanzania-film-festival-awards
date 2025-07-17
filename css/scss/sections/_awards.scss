@@ -1,0 +1,40 @@
+// sections/_awards.scss
+
+.awards-section {
+  background: $white;
+  padding: $spacing-xl 0;
+}
+
+.awards-hero {
+  background: linear-gradient(135deg, $primary-color 60%, $gold-light 100%);
+  padding: $spacing-lg 0;
+  color: $white;
+  text-align: center;
+  border-radius: $card-radius;
+  margin-bottom: $spacing-lg;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); // min 288px
+  gap: $spacing-md;
+}
+
+.awards-card {
+  background: $secondary-color;
+  color: $white;
+  padding: $spacing-md;
+  border-radius: $card-radius;
+  box-shadow: 0 0.125rem 1.25rem rgba($primary-color, 0.1);
+  text-align: center;
+  .award-title {
+    font-size: 1.25rem;
+    margin-bottom: $spacing-sm;
+    color: $primary-color;
+    font-weight: 700;
+  }
+  .award-details {
+    font-size: 1rem;
+    opacity: 0.92;
+  }
+}

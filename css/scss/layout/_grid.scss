@@ -1,0 +1,24 @@
+// layout/_grid.scss
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem; // -15px
+  margin-left: -0.9375rem; // -15px
+}
+
+[class^="col-"] {
+  padding-left: 0.9375rem; // 15px
+  padding-right: 0.9375rem; // 15px
+}
+
+// Responsive grid example
+@media (max-width: 48rem) { // 768px
+  .row {
+    flex-direction: column;
+  }
+  [class^="col-"] {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}

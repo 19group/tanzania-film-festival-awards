@@ -1,0 +1,28 @@
+// base/_typography.scss
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-main;
+  font-weight: 700;
+  margin: 0 0 $spacing-sm;
+}
+
+h1 {
+  font-size: $font-size-h1;     // 46px
+}
+h2 {
+  font-size: $font-size-lg;     // 32px
+}
+.section-title {
+  font-size: $font-size-section-title; // 33px
+  line-height: 1.2;
+  margin-bottom: $spacing-md;   // 20px
+  background: linear-gradient(to right, $gold-light, $primary-color, $gold-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+p {
+  font-size: $font-size-base;
+  margin: 0 0 $spacing-sm;
+}

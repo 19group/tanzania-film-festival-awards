@@ -1,0 +1,46 @@
+// sections/_breadcrumbs.scss
+
+.breadcrumbs-section {
+  background: linear-gradient(90deg, $gold-light 0%, $primary-color 100%);
+  padding: $spacing-md 0;
+}
+
+.breadcrumbs-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    font-size: 1rem;
+    color: $white;
+    &:not(:last-child)::after {
+      content: "/";
+      margin: 0 $spacing-xs;
+      color: rgba($white, 0.6);
+    }
+    &:last-child {
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    @include transition();
+    &:hover {
+      text-decoration: underline;
+      color: $secondary-color;
+    }
+  }
+}

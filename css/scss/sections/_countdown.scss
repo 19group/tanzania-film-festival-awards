@@ -1,0 +1,47 @@
+// sections/_countdown.scss
+
+.countdown-section {
+  background: $primary-color;
+  color: $white;
+  padding: $spacing-xl 0;
+  text-align: center;
+}
+
+.countdown-title {
+  font-size: $font-size-section-title;
+  font-weight: 700;
+  margin-bottom: $spacing-lg;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-lg;
+  margin-top: $spacing-lg;
+  flex-wrap: wrap;
+
+  .countdown-item {
+    background: $white;
+    color: $secondary-color;
+    border-radius: $card-radius;
+    padding: $spacing-md;
+    min-width: 5.625rem; // 90px
+    margin-bottom: $spacing-sm;
+    box-shadow: 0 0.0625rem 1rem rgba($primary-color, 0.12);
+
+    .countdown-number {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: $primary-color;
+      line-height: 1;
+      margin-bottom: 0.3125rem;
+    }
+    .countdown-label {
+      font-size: 1rem;
+      color: $secondary-color;
+      opacity: 0.8;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+  }
+}

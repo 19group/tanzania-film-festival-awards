@@ -1,0 +1,39 @@
+// sections/_slider.scss
+
+.header-slider-area {
+  position: relative;
+  width: 100%;
+}
+
+.nivo-caption {
+  background: transparent;
+  color: $white;
+  opacity: 1;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide1-text {
+  .cap-title h1 {
+    font-size: $font-size-h1;
+    line-height: 3rem; // 48px
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    span {
+      background: linear-gradient(to right, $gold-light, $primary-color, $gold-light);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .cap-description p {
+    font-size: 1.125rem; // 18px
+    line-height: 1.125rem; // 18px
+    margin: 0;
+    font-weight: 400;
+    width: 100%;
+    max-width: 37.5rem; // 600px
+  }
+}

@@ -1,0 +1,36 @@
+// components/_modal.scss
+
+.modal {
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba($secondary-color, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal-content {
+    background: $white;
+    padding: $spacing-lg $spacing-md;
+    border-radius: $card-radius;
+    max-width: 30rem;
+    width: 90%;
+    color: $secondary-color;
+    position: relative;
+    box-shadow: 0 0.5rem 2rem rgba($primary-color, 0.13);
+    .close-btn {
+      position: absolute;
+      top: $spacing-sm;
+      right: $spacing-sm;
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      color: $primary-color;
+      cursor: pointer;
+      &:hover { color: $gold-light; }
+    }
+  }
+}

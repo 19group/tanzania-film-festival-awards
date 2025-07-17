@@ -1,0 +1,26 @@
+// abstracts/_variables.scss
+
+$font-main: 'Montserrat', sans-serif;
+$primary-color: #E4B34C;
+$gold-light: #fcd462;
+$secondary-color: #000;
+$white: #fff;
+
+// Sizing
+$border-radius: 0.5rem;     // 8px
+$btn-radius: 3.125rem;      // 50px
+$card-radius: 0.5rem;       // 8px
+$transition: all 0.3s ease;
+
+// Spacing
+$spacing-xs: 0.3125rem;     // 5px
+$spacing-sm: 0.625rem;      // 10px
+$spacing-md: 1.25rem;       // 20px
+$spacing-lg: 2.5rem;        // 40px
+$spacing-xl: 5rem;          // 80px
+
+// Typography
+$font-size-base: 1rem;           // 16px
+$font-size-lg: 2rem;             // 32px
+$font-size-h1: 2.875rem;         // 46px
+$font-size-section-title: 2.0625rem; // 33px

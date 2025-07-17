@@ -1,0 +1,41 @@
+// sections/_about.scss
+
+.about-section {
+  padding: $spacing-xl 0;
+  background: $secondary-color;
+}
+
+.section-title {
+  background: linear-gradient(to right, $gold-light, $primary-color, $gold-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: $font-size-section-title; // 33px
+  line-height: 1.2;
+  margin-bottom: $spacing-md; // 20px
+  text-transform: uppercase;
+}
+
+.about-right {
+  position: relative;
+  padding: 2.1875rem 2.5rem 3.125rem; // 35px 40px 50px
+  background: $secondary-color;
+  border-radius: $card-radius;
+}
+
+.about-step {
+  margin-bottom: $spacing-md;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.total-step {
+  border-left: 0.125rem solid #f5f4f4; // 2px
+  padding-left: 2.5rem; // 40px
+}
+
+.about-btn {
+  margin-top: $spacing-sm;
+}

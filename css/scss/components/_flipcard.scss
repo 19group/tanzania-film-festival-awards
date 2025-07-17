@@ -1,0 +1,40 @@
+// components/_flipcard.scss
+
+.flip-card {
+  background: transparent;
+  perspective: 62.5rem; // 1000px
+  height: 25rem; // 400px
+  border-radius: $card-radius;
+  overflow: hidden;
+  border: 0.0625rem solid #ddd; // 1px
+
+  .flip-card-inner {
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &:hover .flip-card-inner,
+  &:focus-within .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: $spacing-md;
+  }
+  .flip-card-front {
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  .flip-card-back {
+    background: linear-gradient(135deg, $gold-light, $primary-color);
+    color: $secondary-color;
+    transform: rotateY(180deg);
+    z-index: 3;
+  }
+}

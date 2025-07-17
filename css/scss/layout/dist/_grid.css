@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
+
+[class^=col-] {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+@media (max-width: 48rem) {
+  .row {
+    flex-direction: column;
+  }
+
+  [class^=col-] {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}

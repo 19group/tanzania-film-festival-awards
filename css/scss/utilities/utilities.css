@@ -1,0 +1,70 @@
+.mt5 {
+  margin-top: 0.3125rem !important;
+}
+
+.mt10 {
+  margin-top: 0.625rem !important;
+}
+
+.mb10 {
+  margin-bottom: 0.625rem !important;
+}
+
+.mt15 {
+  margin-top: 0.9375rem !important;
+}
+
+.mb15 {
+  margin-bottom: 0.9375rem !important;
+}
+
+.mt20 {
+  margin-top: 1.25rem !important;
+}
+
+.mb20 {
+  margin-bottom: 1.25rem !important;
+}
+
+.pt10 {
+  padding-top: 0.625rem !important;
+}
+
+.pb10 {
+  padding-bottom: 0.625rem !important;
+}
+
+.pt15 {
+  padding-top: 0.9375rem !important;
+}
+
+.pb15 {
+  padding-bottom: 0.9375rem !important;
+}
+
+.pt20 {
+  padding-top: 1.25rem !important;
+}
+
+.pb20 {
+  padding-bottom: 1.25rem !important;
+}
+
+.bg-overlay {
+  position: relative;
+}
+.bg-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+.bg-overlay > * {
+  position: relative;
+  z-index: 2;
+}

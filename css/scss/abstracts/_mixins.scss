@@ -1,0 +1,44 @@
+@mixin transition($props: all 0.3s ease) {
+  transition: $props;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == md {
+    @media (max-width: 991px) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: 767px) { @content; }
+  } @else if $breakpoint == xs {
+    @media (max-width: 480px) { @content; }
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+@mixin gradient($direction, $color1, $color2) {
+  background: linear-gradient($direction, $color1, $color2);
+}
+
+@mixin rounded($radius: 0.5rem) {
+  border-radius: $radius;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

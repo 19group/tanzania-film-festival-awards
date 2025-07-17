@@ -1,0 +1,15 @@
+// layout/_container.scss
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.9375rem; // 15px
+  padding-right: 0.9375rem; // 15px
+  max-width: 75rem; // 1200px (Bootstrap style)
+
+  // Responsive tweaks:
+  @media (max-width: 74.9375rem) { // 1199px
+    max-width: 100%;
+  }
+}

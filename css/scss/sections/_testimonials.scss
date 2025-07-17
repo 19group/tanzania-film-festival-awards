@@ -1,0 +1,64 @@
+// sections/_testimonials.scss
+
+.testimonials-section {
+  background: $white;
+  padding: $spacing-xl 0;
+}
+
+.testimonials-title {
+  font-size: $font-size-section-title;
+  color: $primary-color;
+  margin-bottom: $spacing-lg;
+  text-align: center;
+  font-weight: 700;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); // min 320px
+  gap: $spacing-lg;
+}
+
+.testimonial-card {
+  background: $secondary-color;
+  color: $white;
+  border-radius: $card-radius;
+  padding: $spacing-lg $spacing-md;
+  box-shadow: 0 0.125rem 1.25rem rgba($primary-color, 0.09);
+  text-align: left;
+
+  .testimonial-quote {
+    font-style: italic;
+    font-size: 1.125rem;
+    margin-bottom: $spacing-md;
+    line-height: 1.4;
+  }
+
+  .testimonial-meta {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    .testimonial-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .testimonial-author {
+      font-weight: 700;
+      font-size: 1rem;
+      color: $primary-color;
+      margin-bottom: 0.125rem;
+    }
+    .testimonial-role {
+      font-size: 0.9375rem;
+      color: #ccc;
+      opacity: 0.8;
+    }
+  }
+}
