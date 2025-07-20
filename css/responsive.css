@@ -930,6 +930,10 @@ a.btn-def {
         padding-top: 10rem;
         padding-bottom:5rem;
     }
+    .content-middle {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
     
     .cap-title h1 {
         font-size: 2.5rem ;
