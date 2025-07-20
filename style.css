@@ -63,20 +63,22 @@ p {
 /* HIGHLIGHTS */
 .taffa-highlight-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: linear-gradient(90deg, #ff4e50, #f9d423); /* Red-Orange-Yellow Gradient */
-  border-radius: 30px;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;
+  background: linear-gradient(90deg, #ff4e50, #f9d423); /* Red to Yellow */
+  border-radius: 60px;
   padding: 60px 20px;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  width: 100%;
+  max-width: 480px; /* Narrow box */
+  margin: 0 auto; /* Center horizontally */
 }
 
 .highlight-item {
-  flex: 1 1 200px;
   text-align: center;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .highlight-number {
@@ -89,6 +91,8 @@ p {
   font-size: 1rem;
   color: #fff;
 }
+
+/* HIGHLIGHT BOX */
 
 /* Button Gradient */
 
