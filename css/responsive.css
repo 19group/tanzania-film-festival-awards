@@ -976,6 +976,34 @@ a.btn-def {
     margin: 0 0 1rem 0;
     padding: 0 0 1rem 0;
   }
+  .total-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .total-timeline::before{
+    display: none;
+  }
+  .single-timeline::before, .single-timeline::after {
+    display: none;
+  }
+  .single-timeline {
+    width: 100%;
+    margin-bottom: 18px;
+    display: block;
+  }
+  .timeline-left, .timeline-right {
+    width: 100%;
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 0;
+  }
+  .timeline-content {
+    padding-left: 0;
+    float: none;
+  }
 }
 
         
@@ -998,6 +1026,13 @@ a.btn-def {
           padding: 18px 30px;
           font-size: 0.9rem;
       }
+      .total-timeline {
+    gap: 12px;
+  }
+  .single-timeline {
+    margin-bottom: 12px;
+    padding: 10px;
+  }
   }
  
 /* Large Mobile :480px. */
@@ -1035,3 +1070,6 @@ a.btn-def {
         flex-direction: column;
     }
 }
+
+
+

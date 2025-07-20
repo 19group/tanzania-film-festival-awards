@@ -2553,7 +2553,8 @@ select {
 .timeline-content > h4 { margin-bottom: 20px; color:#ecb845; }
 .timeline-content > p { margin-bottom: 20px }
 .single-timeline {
-    background: #f7f7f7 none repeat scroll 0 0;
+    background: #181717 none repeat scroll 0 0;
+    border: solid 1px #E4B34C;
     margin-bottom: 50px;
     overflow: hidden;
     padding: 45px 40px;
