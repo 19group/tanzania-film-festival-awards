@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="sw">
 
 <head>
     <meta charset="utf-8">
@@ -44,57 +44,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
 
 
-    <!-- <style>
-
-
-@media (max-width: 768px) {
-  .film-content {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    padding: 20px 15px;
-    gap: 15px;
-  }
-  
-  .film-frame {
-    height: 100px;
-    gap: 10px;
-  }
-  
-  .stat-icon {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .stat-icon i {
-    font-size: 16px;
-  }
-  
-  .stat-number {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .film-strip {
-    margin: 0 10px;
-  }
-  
-  .film-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 12px;
-  }
-  
-  .film-frame {
-    height: 90px;
-  }
-  
-  .stat-number {
-    font-size: 11px;
-    padding: 0 5px;
-  }
-}
-</style> -->
    
 </head>
 
@@ -116,15 +65,15 @@
                           <!-- Left nav -->
                           <nav class="main-menu d-flex gap-3">
                             <ul class="nav-left d-flex gap-3">
-                              <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                              <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
-                              <li><a href="./program/" target="_blank" data-i18n="nav.program">Program</a></li>
+                              <li><a href="#home" data-i18n="nav.home">Nyumbani</a></li>
+                              <li><a href="#about-event" data-i18n="nav.about">Kuhusu</a></li>
+                              <li><a href="./program/" target="_blank" data-i18n="nav.program">Ratiba</a></li>
                               <li>
                                 <a 
                                   href="https://tuzo.taffafestival.or.tz"
                                   target="_blank" 
                                   data-i18n="nav.submission">
-                                  Submission
+                                  Wasilisho
                                 </a>
                               </li>
                             </ul>
@@ -140,10 +89,10 @@
                           <!-- Right nav -->
                           <nav class="main-menu d-flex gap-3 align-items-center">
                             <ul class="nav-right d-flex gap-3">
-                              <!-- <li><a href="./awards/" data-i18n="nav.awards">Awards</a></li>
-                              <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                              <li><a href="./awards/" data-i18n="nav.awards">Awards</a></li>
+                              <!-- <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li> -->
                               <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
-                              <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
+                              <!-- <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
                             </ul>
                             <!-- Language Dropdown -->
                             <div class="language-dropdown" title="Change Language">
@@ -219,10 +168,10 @@
                             <li><a href="https://tuzo.taffafestival.or.tz" target="_blank" data-i18n="nav.submission">Submission</a></li>
                           </ul>
                           <ul class="mobile-menu-right">
-                            <!-- <li><a href="./awards/" data-i18n="nav.awards">Awards</a></li>
-                            <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                            <li><a href="./awards/" data-i18n="nav.awards">Awards</a></li>
+                            <!-- <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li> -->
                             <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
-                            <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
+                            <!-- <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
                           </ul>
                         </div>
                       </div>
@@ -260,7 +209,7 @@
     <div class="container">
       <div class="slide1-text">
         <div class="middle-text slide-def">
-          <div class="content-middle">
+          <div class="content-middle pt-5 mt-2">
             <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
               <h1 data-i18n="hero.title1"></h1>
             </div>
@@ -268,9 +217,9 @@
               <h1 data-i18n="hero.title2">
               </h1>
             </div>
-            <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
+            <!-- <div class="cap-title wow fadeInDown" data-wow-duration=".9s" data-wow-delay="0.8s">
               <h1 data-i18n="hero.title3"></h1>
-            </div>  
+            </div>   -->
             <!-- <div class="cap-description wow fadeInDown pt-5" data-wow-duration=".9s" data-wow-delay="0.8s">
               <p data-i18n="hero.description"></p>
             </div> -->
@@ -279,21 +228,39 @@
                 <i class="zmdi zmdi-calendar-note"></i>
                 <span data-i18n="hero.date"></span>
               </div>
+              <div class="event-date">
+                <i class="zmdi zmdi-calendar-note"></i>
+                 <span data-i18n="hero.awardsdate"></span>
+              </div>
               <div class="event-location">
                 <i class="zmdi zmdi-pin"></i>
                 <span data-i18n="hero.location"></span>
               </div>
             </div>
+            <div id="countdown" class="countdown-timer my-4">
+        <div class="time-box"><span id="days">0</span><small>Days</small></div>
+        <div class="colon">:</div>
+        <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+        <div class="colon">:</div>
+        <div class="time-box"><span id="minutes">00</span><small>Minutes</small></div>
+        <div class="colon">:</div>
+        <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
             <div class="secondary-btn">
-                            <a class="btn-outline" href="./program/" target="_blank" data-i18n="hero.program">See Program</a>
+                            <a class="btn-outline" href="./program/" target="_blank" data-i18n="hero.program">Tazama Ratiba Ya Tamasha</a>
               </div>
           </div>
-          <div class="submit-button-container">
-                        <a class="submit-btn-prominent" href="https://tuzo.taffafestival.or.tz/" target="_blank" data-i18n="hero.submit">Submit Your Film</a>
+          <div class="submit-button-container ">
+                <a class="submit-btn-prominent btn-gradient" href="https://tuzo.taffafestival.or.tz/" target="_blank" data-i18n="hero.submit">Wasilisha Filamu Yako</a>
             </div>
           
         </div>
       </div>
+
+      
+
+
+
     </div>
   </div>
 </div>
@@ -301,12 +268,65 @@
   <a class="see-demo-btn" href="#about-event"><i class="zmdi zmdi-long-arrow-down"></i></a>
 </div> -->
 <!-- Slider Area End -->
- <!-- About highlight Start -->
- <section id="about-event" class="about-cards-section ptb90">
+ 
+<!-- About Start -->
+
+ <section id="about-event" style="background: linear-gradient(135deg, #ffffff, #eee4da);; color: #111; padding: 80px 20px; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+    
+    <!-- Left Column -->
+    <div style="flex: 1 1 400px; min-width: 300px;">
+      <h1 data-i18n="about.taffa.title"></h1>
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;" data-i18n="about.taffa.description-p1">
+        
+      </p>
+      <p style="font-size: 1.1rem; line-height: 1.6;" data-i18n="about.taffa.description-p2">
+        
+      </p>
+
+      <!-- Event Info -->
+      <div style="margin-top: 30px; ">
+        <p style="font-size: 1.1rem; margin-bottom: 10px;">
+          <i class="fas fa-calendar-alt" style="color: #E4B34C; margin-right: 8px;"></i> <strong>When:</strong> August 14 – August 16
+        </p>
+        <p style="font-size: 1.1rem;">
+          <i class="fas fa-map-marker-alt" style="color: #E4B34C; margin-right: 8px;"></i> <strong>Where:</strong> Mlimani City, Dar es Salaam
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Column: Highlight Ticket -->
+<div class="taffa-highlight-box">
+  <div class="highlight-item">
+    <div class="highlight-number">250+</div>
+    <div class="highlight-label">Filmmakers</div>
+  </div>
+  <div class="highlight-item">
+    <div class="highlight-number">3,000+</div>
+    <div class="highlight-label">Stakeholders</div>
+  </div>
+  <div class="highlight-item">
+    <div class="highlight-number">Millions</div>
+    <div class="highlight-label">Media Reach</div>
+  </div>
+  <div class="highlight-item">
+    <div class="highlight-number">+35</div>
+    <div class="highlight-label">Tuzo Kushindaniwa</div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- About End -->
+
+<!--- Sections in the Festival-->
+
+ <section id="about-event" class="about-cards-section">
     <div class="about-area  fix" id="about-event">
       <div class="container">
         <div class="about-top">
-          <h1 class="section-title" data-i18n="about.title"></h1>
+          <h1 class=" pt-5 " data-i18n="about.title"></h1>
         </div>
         <div class="row g-4 align-items-stretch">
           <div class="col-12 col-sm-6 col-lg-3">
@@ -360,7 +380,7 @@
                 </div>
                 <div class="flip-card-back">
                   <div class="card-content">
-                    <p data-i18n="about.back.item4">
+                    <p data-i18n="about.back.item3">
                       Present your ideas to investors and unlock creative industry funding.
                     </p>
                   </div>
@@ -380,9 +400,9 @@
                 </div>
                 <div class="flip-card-back">
                   <div class="card-content">
-                    <p data-i18n="about.back.item7">
+                    <h3 data-i18n="about.back.item4">
                       Learn from top mentors in Film, Music, Fashion, and Book Publishing.
-                    </p>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -391,68 +411,22 @@
         </div>
       </div>
     </div>
- </section>
-<!-- About higlight End -->
- <!-- About Area Start -->
-<!-- About Area Start -->
-<div class="about-area ptb100 fix" id="about-event">
-  <div class="container">
-    <div class="film-strip-container">
-      <div class="film-strip">
-        <div class="film-perforations film-perforations-top"></div>
-        <div class="film-content">
-          <div class="film-frame">
-            <div class="stat-icon">
-              <i class="zmdi zmdi-calendar-note"></i>
-            </div>
-            <span class="stat-number" data-i18n="about.stats.date"></span>
-          </div>
-          <div class="film-frame">
-            <div class="stat-icon">
-              <i class="zmdi zmdi-pin"></i>
-            </div>
-            <span class="stat-number" data-i18n="about.stats.location"></span>
-          </div>
-          <div class="film-frame">
-            <div class="stat-icon">
-              <i class="zmdi zmdi-videocam"></i>
-            </div>
-            <span class="stat-number" data-i18n="about.stats.filmmakers"></span>
-          </div>
-          <div class="film-frame">
-            <div class="stat-icon">
-              <i class="zmdi zmdi-mic-setting"></i>
-            </div>
-            <span class="stat-number" data-i18n="about.stats.stakeholders"></span>
-          </div>
-          <div class="film-frame">
-            <div class="stat-icon">
-              <i class="zmdi zmdi-accounts"></i>
-            </div>
-            <span class="stat-number" data-i18n="about.stats.audience"></span>
-          </div>
-          <div class="film-frame">
-            <div class="stat-icon">
-              <i class="zmdi zmdi-globe"></i>
-            </div>
-            <span class="stat-number" data-i18n="about.stats.reach"></span>
-          </div>
-        </div>
-        <div class="film-perforations film-perforations-bottom"></div>
-      </div>
-      <div class="about-btn">
-        <a href="https://tuzo.taffafestival.or.tz/" target="_blank" class="btn-def bnt-2" data-i18n="hero.submit"></a>
-      </div>
-    </div>
-  </div>
+
+
+
+  <!-- CTA Button -->
+<div style="text-align: center; margin-top: 60px;">
+  <a href="https://tuzo.taffafestival.or.tz/" data-i18n="about.festival.cta" target="_blank" class="btn-gradient">
+    
+  </a>
 </div>
 
-<!-- About Area End -->
+ </section>
 
+ <!--- Sections in the Festival-->
 
-
-        <!--what-happen-area start-->
-    <section class="program-bg-section" style="background-image: url('img/program/program-bg.webp');" >
+  <!--what-happen-area start-->
+    <!-- <section class="program-bg-section" style="background-image: url('img/program/program-bg.webp');" >
       <div class="container">
         <h1 class="section-title" data-i18n="program.title">What Will Happen</h1>
         <div class="clearfix"></div>
@@ -481,7 +455,102 @@
       </a>
     </div>      
   </div>  
-  </section>
+  </section> -->
+  <!--tiemline area start-->
+ 
+    <div id="timeline" class="tiemline-area pt100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-title pb30" data-i18n="program.section.title"></h1>
+                    </div>
+                    <div class="col-12 mb-5">
+                        
+                        <div class="clearfix"></div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane fade show active" id="day-02-one">
+                              <div class="total-timeline">
+                                  <!--single timeline start-->
+                                  <div class="single-timeline shadow-box " style="background-color: #100f0f;">
+                                      <div class="timeline-left">
+                                          <p>Venue</p>
+                                          <h4> <span style="color: #E4B34C;">British Council</span></h4>
+                                      </div>
+                                      <div class="timeline-right">
+                                          
+                                          <div class="timeline-content">
+                                              <div class="timeline-top">
+                                                  <ul>
+                                                      
+                                                      <li>08.July.2025</li>
+                                                      
+                                                  </ul>
+                                              </div>
+                                              <h4 data-i18n="program.timeline.content.launch"> </h4>
+                                              <p data-i18n="program.timeline.content.launch.p"></p>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--single timeline end-->
+
+                                  <!--single timeline start-->
+                                  <div class="single-timeline shadow-box " style="background-color: #100f0f;">
+                                      <div class="timeline-left">
+                                          <p></p>
+                                          <h4></h4>
+                                      </div>
+                                      <div class="timeline-right">
+                                          
+                                          <div class="timeline-content">
+                                              <div class="timeline-top">
+                                                  <ul>
+                                                      
+                                                      <li>14.August.2025</li>
+                                                      <li>16.August.2025</li>
+                                                  </ul>
+                                              </div>
+                                              <h4 data-i18n="program.timeline.content.festival"></h4>
+                                              <p data-i18n="program.timeline.content.festival.p"></p>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--single timeline end-->
+
+                                  <!--single timeline start-->
+                                  <div class="single-timeline shadow-box" style="background-color: #100f0f;">
+                                      <div class="timeline-left">
+                                          <p>Venue</p>
+                                          <h4> <Span style="color:#E4B34C">Mlimani City</Span></h4>
+                                      </div>
+                                      <div class="timeline-right">
+                                          
+                                          <div class="timeline-content">
+                                              <div class="timeline-top">
+                                                  <ul>
+                                                      
+                                                      <li>06.December.2025</li>
+                                                  </ul>
+                                              </div>
+                                              <h4 data-i18n="program.timeline.content.award"></h4>
+                                              <p data-i18n="program.timeline.content.award.p"></p>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--single timeline end-->
+                              </div>
+                          </div>
+                    </div>
+                    <div class="secondary-btn">
+                                <a class="btn-outline" href="./program/" target="_blank" data-i18n="hero.program">Tazama Ratiba Ya Tamasha</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!--timeline-area end-->
 
 
 
@@ -490,78 +559,89 @@
 <!-- brand-area start -->
 
 
-  <div class="brand-area bg-overlay ptb40">
-      <div class="container">
-          <div class="row ">
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.5s; ">
-                  <img src="img/brand/NEMBO-YA-TAIFA-LOGO-1.webp" class="brand-logo" alt="Nembo Ya Taifa Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.1s; height:200px;">
-                <img src="/img/brand/TANZANIA-FILM-BOARD-1.webp" class="brand-logo" alt="Tanzania Film Board Logo" width="150" height="120">
-              </div>
-              <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.4s; ">
-                  <img src="img/brand/STUDIO-19-LOGO-1.webp" class="brand-logo" alt="Studio 19 Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/TAFF-LOGO.png" class="brand-logo" alt="TAFF Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; height:200px;">
-                  <img src="img/brand/alliance-francaise-logo.webp" class="brand-logo" alt="Alliance Francaise Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.2s; ">
-                  <img src="img/brand/CDEA-master-logo -1.png" class="brand-logo" alt="CDEA Logo" width="150" height="120">
-              </div>
-              <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.3s; ">
-                <img src="img/brand/19-RENTALS-LOGO-PNG-1.png" class="brand-logo" alt="19 Rentals Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/azam-media.webp" class="brand-logo" alt="Azam Media Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="brand-logo" alt="Docubox Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.6s; height:200px;">
-                  <img src="img/brand/taiplus.png" class="brand-logo" alt="Taiplus Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; height:200px;">
-                  <img src="img/brand/Nafasi-Logo-1.webp" class="brand-logo" alt="Nafasi Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/tasa-Logo.png" class="brand-logo" alt="Tasa Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/Simulizi-Festival-Logo.png" class="brand-logo" alt="Simulizi Festival Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/afri-roots.webp" class="brand-logo" alt="Afri Roots Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/kijiweni-production-logo.webp" class="brand-logo" alt="Kijiweni Production Logo" width="150" height="120">
-              </div>
-              
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/ajabu-logo-white 1.webp" class="brand-logo" alt="Ajabu Logo" width="150" height="120">
-              </div>
-              
-              
-              
-              
-              
-              <!-- <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; height:200px;">
-                  <img src="img/brand/azam-media.png" class="brand-logo" alt="Azam Media Logo" width="150" height="120">
-              </div>
-    -->
-          </div>
+ <!-- ===== Sponsors / Partners Section ===== -->
+<section id="partners" class="partners-section py-100">
+  <div class="container text-center">
+
+    <!-- Title & Subtitle -->
+    <h2 class="partners-title mb-2">Official Sponsors & Partners</h2>
+    <p class="partners-subtitle mb-4">We are grateful for the incredible organizations that make TAFFA possible through partnership and support.</p>
+<!-- 
+ <h3 class="tier-label">Strategic Partners</h3>
+    <div class="sponsor-logos">
+      <div class="partner-logo-wrapper"><img src="partner1.png" class="partner-logo" alt="Partner 1"/></div>
+      <div class="partner-logo-wrapper"><img src="partner2.png" class="partner-logo" alt="Partner 2"/></div>
+      <div class="partner-logo-wrapper"><img src="partner3.png" class="partner-logo" alt="Partner 3"/></div>
+    </div>
+
+    <h3 class="tier-label">Community Partners</h3>
+    <div class="sponsor-logos">
+      <div class="partner-logo-wrapper"><img src="partner4.png" class="partner-logo" alt="Partner 4"/></div>
+      <div class="partner-logo-wrapper"><img src="partner5.png" class="partner-logo" alt="Partner 5"/></div>
+      <div class="partner-logo-wrapper"><img src="partner6.png" class="partner-logo" alt="Partner 6"/></div>
+    </div>
+-->
+    <!-- Logo Grid -->
+    <div class="row justify-content-center align-items-center 4">
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/NEMBO-YA-TAIFA-LOGO-1.webp" class="partner-logo" alt="Nembo Ya Taifa Logo">
       </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/TANZANIA-FILM-BOARD-1.webp" class="partner-logo" alt="Tanzania Film Board Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/STUDIO-19-LOGO-1.webp" class="partner-logo" alt="Studio 19 Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/azam-media.webp" class="partner-logo" alt="Azam Media Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/CDEA-master-logo -1.png" class="partner-logo" alt="CDEA Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/TAFF-LOGO.png" class="partner-logo" alt="TAFF Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/alliance-francaise-logo.webp" class="partner-logo" alt="Alliance Francaise Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/19-RENTALS-LOGO-PNG-1.png" class="partner-logo" alt="19 Rentals Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="partner-logo" alt="Docubox Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/taiplus.png" class="partner-logo" alt="Taiplus Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/Nafasi-Logo-1.webp" class="partner-logo" alt="Nafasi Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 partner-container">
+        <img src="img/brand/tasa-Logo.png" class="partner-logo" alt="Tasa Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/Simulizi-Festival-Logo.webp" class="partner-logo" alt="Simulizi Festival Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 partner-container">
+        <img src="img/brand/afri-roots.webp" class="partner-logo" alt="Afri Roots Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/kijiweni-production-logo.webp" class="partner-logo" alt="Kijiweni Production Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/ajabu-logo-black.webp" class="partner-logo" alt="Ajabu Logo">
+      </div>
+
+    </div>
+
+    <!-- CTA Button -->
+    <a href="#contact" class="btn-gradient mt-5">Become a Sponsor</a>
+
   </div>
+</section>
 
 <!-- brand-area end -->
-
-
-
-       
-
-        
 
         <!--information area are start-->
         <div class="information-area dark-knight ptb100">
@@ -583,7 +663,7 @@
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <h4>E-Mail</h4>
-                            <p><a href="mailto:filmfestival@studio19.co.tz">filmfestival@studio19.co.tz</a></p>
+                            <p><a href="mailto:taffafestival@studio19.co.tz">taffafestival@studio19.co.tz</a></p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -602,7 +682,8 @@
                                 <i class="fas fa-calendar"></i>
                             </div>
                             <h4>Event Dates</h4>
-                            <p>Coming Soon<br>2025</p>
+                            <p>Festival : 14th - 16th August 2025<br>
+                                Award : 6th December 2025</p>
                             
                         </div>
                     </div>
@@ -633,6 +714,8 @@
         </div>
         <!--footer area are start-->
     </div>
+  
+        
 
 
   <!-- Modal for Submission Confirmation -->
@@ -659,6 +742,32 @@
          }
         });
     </script>
+
+      <!-- COUNTDOWN SCRIPT -->
+  <script>
+    function updateCountdown(targetDate) {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) return;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const targetDate = new Date("August 14, 2025 10:00:00").getTime();
+      updateCountdown(targetDate);
+      setInterval(() => updateCountdown(targetDate), 1000);
+    });
+  </script>
 
     <!-- <script>
   function openSubmissionModal() {
