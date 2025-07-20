@@ -45,6 +45,7 @@
 
     <!-- modernizr css -->
     <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
 
     <style>
         /* Animation for cards on scroll */
@@ -81,10 +82,9 @@
                           <!-- Left nav -->
                           <nav class="main-menu d-flex gap-3">
                             <ul class="nav-left d-flex gap-3">
-                              <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
-                              <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
-                              <li><a href="../program/" data-i18n="nav.program">Program</a></li>
-                              <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
+                              <li><a href="../index.html" data-i18n="nav.home"></a></li>
+                              <li><a href="../program/index.html" data-i18n="nav.program">Program</a></li>
+                              <li><a href="https://tuzo.taffafestival.or.tz" target="_blank" data-i18n="nav.submission">Submission</a></li>
                             </ul>
                           </nav>
 
@@ -98,23 +98,32 @@
                           <!-- Right nav -->
                           <nav class="main-menu d-flex gap-3 align-items-center">
                             <ul class="nav-right d-flex gap-3">
-                              <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
-                              <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
-                              <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
-                              <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+                              <!-- <li><a href="#" data-i18n="nav.awards">Awards</a></li> -->
+                              <!-- <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li> -->
+                              <!-- <li><a href="#partners" data-i18n="nav.partners">Partners</a></li> -->
+                              <!-- <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
                             </ul>
                             <!-- Language Dropdown -->
-                            <div class="language-dropdown position-relative">
-                              <button id="languageToggle" onclick="toggleLanguageDropdown()" class="lang-toggle-btn">
-                                <span data-i18n="nav.language">Language</span> <i class="zmdi zmdi-caret-down"></i>
+                            <div class="language-dropdown" title="Change Language">
+                              <button id="languageToggle" class="lang-toggle-btn" onclick="toggleLanguageDropdown()" aria-label="Change Language">
+                                <span id="currentLangFlag" class="fi fi-tz"></span>
+                                <span id="currentLangCode">SW</span>
+                                <i class="zmdi zmdi-caret-down"></i>
                               </button>
                               <ul class="language-options">
-                                <li><a href="#" onclick="setLanguage('sw')"
-                                    data-i18n="lang.sw">Kiswahili</a></li>
-                                <li><a href="#" onclick="setLanguage('en')"
-                                    data-i18n="lang.en">English</a></li>
+                                <li>
+                                  <a href="#" onclick="setLanguage('sw')">
+                                    <span class="fi fi-tz"></span> SW
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" onclick="setLanguage('en')">
+                                    <span class="fi fi-us"></span> EN
+                                  </a>
+                                </li>
                               </ul>
                             </div>
+
                           </nav>
                         </div>
                     </div>
@@ -133,14 +142,24 @@
                           </div>
 
                           <!-- Language toggle -->
-                          <div class="mobile-lang">
-                            <button class="lang-toggle-btn" onclick="toggleLanguageDropdown()">
-                              <span data-i18n="nav.language">Language</span>
+                          <div class="language-dropdown mobile-lang position-relative">
+                            <button id="languageToggleMobile" class="lang-toggle-btn" onclick="toggleLanguageDropdown()" aria-label="Change Language">
+                              <span id="currentLangFlag" class="fi fi-tz"></span>
+                              <span id="currentLangCodeMobile">SW</span>
                               <i class="zmdi zmdi-caret-down"></i>
                             </button>
-                            <ul class="language-options">
-                              <li><a href="#" onclick="setLanguage('sw')" data-i18n="lang.sw">Kiswahili</a></li>
-                              <li><a href="#" onclick="setLanguage('en')" data-i18n="lang.en">English</a></li>
+
+                            <ul class="language-options" style="display: none;">
+                              <li>
+                                <a href="#" onclick="setLanguage('sw'); return false;">
+                                  <span class="fi fi-tz"></span> SW
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" onclick="setLanguage('en'); return false;">
+                                  <span class="fi fi-us"></span> EN
+                                </a>
+                              </li>
                             </ul>
                           </div>
                         </div>
@@ -149,13 +168,12 @@
                         <div class="mobile-menu" id="mobileMenu">
                           <ul class="mobile-menu-left">
                             <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
-                            <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
-                            <li><a href="../program/" data-i18n="nav.program">Program</a></li>
-                            <li><a href="#submission" data-i18n="nav.submission">Submission</a></li>
+                            <li><a href="../program/index.html" data-i18n="nav.program">Program</a></li>
+                            <li><a href="https://tuzo.taffafestival.or.tz" target="_blank" data-i18n="nav.submission">Submission</a></li>
                           </ul>
                           <ul class="mobile-menu-right">
-                            <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
-                            <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                            <li><a href="#" data-i18n="nav.awards">Awards</a></li>
+                            <!-- <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li> -->
                             <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
                             <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
                           </ul>
@@ -189,18 +207,18 @@
         <div class="awards-main">
             <div class="container">
                 <!-- Nominations & Voting Section -->
-                <section class="mb-5 pb-5">
-                    <h1 class="section-title">How It Works</h1>
+                <section class="mb-5 pb-5 pt-5  ">
+                    <h1 class="section-title" data-i18n="award.section.title"></h1>
                     <div class="nominations-card animate-on-scroll">
                         <div class="nominations-icon">
                             <i class="fas fa-trophy"></i>
                         </div>
-                        <h3 class="nominations-title">Nominations & Voting Process</h3>
+                        <h3 class="nominations-title" data-i18n="award.nomination.title"></h3>
                         <ul class="nominations-list d-flex flex-column">
-                            <li>Only selected films will be eligible for awards</li>
-                            <li>Finalists will be nominated by the TAFFA jury panel</li>
-                            <li>Public voting contributes to People's Choice Awards</li>
-                            <li>Winners announced at the grand ceremony</li>
+                            <li data-i18n="award.nomination.list.1">Only selected films will be eligible for awards</li>
+                            <li data-i18n="award.nomination.list.2">Finalists will be nominated by the TAFFA jury panel</li>
+                            <li data-i18n="award.nomination.list.3">Public voting contributes to People's Choice Awards</li>
+                            <li data-i18n="award.nomination.list.4">Winners announced at the grand ceremony</li>
                         </ul>
                     </div>
                 </section>

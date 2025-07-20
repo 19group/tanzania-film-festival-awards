@@ -78,6 +78,14 @@ const translations = {
     "program.timeline.content.festival.p": "This year’s festival brings together filmmakers, storytellers, artists, industry leaders, and film lovers for three days of screenings, workshops, panel discussions, awards, networking, and vibrant cultural experiences.",
     "program.timeline.content.award": "TAFFA Awards Ceremony",
     "program.timeline.content.award.p": "Join us for a glamorous evening dedicated to honoring outstanding achievements in Tanzanian film and the creative industry. The TAFFA Awards recognize the best filmmakers, actors, storytellers, and visionaries who have inspired audiences and elevated our nation’s cinematic excellence.",
+    
+
+    "award.section.title": "How to Become a TAFFA Award Winner",
+    "award.nomination.title": "Nominations & Voting Process",
+    "award.nomination.list.1": "Only selected films will be eligible for awards",
+    "award.nomination.list.2": "Finalists will be nominated by the TAFFA jury panel",
+    "award.nomination.list.3": "Public voting contributes to People's Choice Awards", 
+    "award.nomination.list.4": "Winners announced at the grand ceremony",
   },
   sw: {
     "nav.home": "Nyumbani",
@@ -163,7 +171,14 @@ const translations = {
     "program.timeline.content.festival.p": "Tamasha la mwaka huu linawaleta pamoja watayarishaji wa filamu, wasimulizi, wasanii, viongozi wa sekta, na wapenzi wa filamu kwa siku tatu za maonyesho, warsha, mijadala ya kitaaluma, tuzo, mitandao ya kijamii, na matukio yenye utamaduni.",
     "program.timeline.content.award": "Hafla ya Tuzo za TAFFA",
     "program.timeline.content.award.p": "Jiunge nasi kwa jioni yenye kung'ara iliyojitolea kuheshimu mafanikio bora katika filamu za Kitanzania na sekta ya ubunifu. Tuzo za TAFFA zinatambua watayarishaji bora wa filamu, wahusika, wasimulizi, na wabunifu ambao wamehamasisha watazamaji na kuinua ubora wa sinema ya taifa letu.",
-    "program.cta.circle": "Tazama Ratiba"
+    "program.cta.circle": "Tazama Ratiba",
+
+    "award.section.title": "Jinsi ya Kuwa Mshindi wa Tuzo za TAFFA",
+    "award.nomination.title": "Mchakato wa Uteuzi na Upigaji Kura",
+    "award.nomination.list.1": "Filamu zilizochaguliwa pekee ndizo zitakazokuwa na haki ya kushiriki tuzo",
+    "award.nomination.list.2": "Washindi wa mwisho watachaguliwa na jopo la majaji wa TAFFA",
+    "award.nomination.list.3": "Upigaji kura wa umma unachangia katika Tuzo za Chaguo la Watu",
+    "award.nomination.list.4": "Washindi watatangazwa katika hafla kuu ya tuzo",
   }
 };
 
