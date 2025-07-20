@@ -95,33 +95,6 @@
   }
 }
 </style> -->
-
-<script>
-  function updateCountdown(targetDate) {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    if (distance < 0) return;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("days").textContent = days;
-    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
-    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
-    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Set your target date here (e.g., August 14, 2025 at 10:00 AM)
-    const targetDate = new Date("August 14, 2025 10:00:00").getTime();
-    updateCountdown(targetDate);
-    setInterval(() => updateCountdown(targetDate), 1000);
-  });
-</script>
-
    
 </head>
 
@@ -532,78 +505,89 @@
 <!-- brand-area start -->
 
 
-  <div class="brand-area bg-overlay ptb40">
-      <div class="container">
-          <div class="row ">
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.5s; ">
-                  <img src="img/brand/NEMBO-YA-TAIFA-LOGO-1.webp" class="brand-logo" alt="Nembo Ya Taifa Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.1s; height:200px;">
-                <img src="/img/brand/TANZANIA-FILM-BOARD-1.webp" class="brand-logo" alt="Tanzania Film Board Logo" width="150" height="120">
-              </div>
-              <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.4s; ">
-                  <img src="img/brand/STUDIO-19-LOGO-1.webp" class="brand-logo" alt="Studio 19 Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/TAFF-LOGO.png" class="brand-logo" alt="TAFF Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; height:200px;">
-                  <img src="img/brand/alliance-francaise-logo.webp" class="brand-logo" alt="Alliance Francaise Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.2s; ">
-                  <img src="img/brand/CDEA-master-logo -1.png" class="brand-logo" alt="CDEA Logo" width="150" height="120">
-              </div>
-              <div class="col-6 col-md-3 mb-4 fade-in" style="animation-delay: 0.3s; ">
-                <img src="img/brand/19-RENTALS-LOGO-PNG-1.png" class="brand-logo" alt="19 Rentals Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/azam-media.webp" class="brand-logo" alt="Azam Media Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="brand-logo" alt="Docubox Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.6s; height:200px;">
-                  <img src="img/brand/taiplus.png" class="brand-logo" alt="Taiplus Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; height:200px;">
-                  <img src="img/brand/Nafasi-Logo-1.webp" class="brand-logo" alt="Nafasi Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/tasa-Logo.png" class="brand-logo" alt="Tasa Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/Simulizi-Festival-Logo.png" class="brand-logo" alt="Simulizi Festival Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/afri-roots.webp" class="brand-logo" alt="Afri Roots Logo" width="150" height="120">
-              </div>
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/kijiweni-production-logo.webp" class="brand-logo" alt="Kijiweni Production Logo" width="150" height="120">
-              </div>
-              
-              <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; ">
-                  <img src="img/brand/ajabu-logo-white 1.webp" class="brand-logo" alt="Ajabu Logo" width="150" height="120">
-              </div>
-              
-              
-              
-              
-              
-              <!-- <div class="col-4 col-md-2 mb-4 fade-in" style="animation-delay: 0.7s; height:200px;">
-                  <img src="img/brand/azam-media.png" class="brand-logo" alt="Azam Media Logo" width="150" height="120">
-              </div>
-    -->
-          </div>
+ <!-- ===== Sponsors / Partners Section ===== -->
+<section id="partners" class="partners-section py-100">
+  <div class="container text-center">
+
+    <!-- Title & Subtitle -->
+    <h2 class="partners-title mb-2">Official Sponsors & Partners</h2>
+    <p class="partners-subtitle mb-4">We are grateful for the incredible organizations that make TAFFA possible through partnership and support.</p>
+<!-- 
+ <h3 class="tier-label">Strategic Partners</h3>
+    <div class="sponsor-logos">
+      <div class="partner-logo-wrapper"><img src="partner1.png" class="partner-logo" alt="Partner 1"/></div>
+      <div class="partner-logo-wrapper"><img src="partner2.png" class="partner-logo" alt="Partner 2"/></div>
+      <div class="partner-logo-wrapper"><img src="partner3.png" class="partner-logo" alt="Partner 3"/></div>
+    </div>
+
+    <h3 class="tier-label">Community Partners</h3>
+    <div class="sponsor-logos">
+      <div class="partner-logo-wrapper"><img src="partner4.png" class="partner-logo" alt="Partner 4"/></div>
+      <div class="partner-logo-wrapper"><img src="partner5.png" class="partner-logo" alt="Partner 5"/></div>
+      <div class="partner-logo-wrapper"><img src="partner6.png" class="partner-logo" alt="Partner 6"/></div>
+    </div>
+-->
+    <!-- Logo Grid -->
+    <div class="row justify-content-center align-items-center 4">
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/NEMBO-YA-TAIFA-LOGO-1.webp" class="partner-logo" alt="Nembo Ya Taifa Logo">
       </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/TANZANIA-FILM-BOARD-1.webp" class="partner-logo" alt="Tanzania Film Board Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/STUDIO-19-LOGO-1.webp" class="partner-logo" alt="Studio 19 Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/azam-media.webp" class="partner-logo" alt="Azam Media Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/CDEA-master-logo -1.png" class="partner-logo" alt="CDEA Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/TAFF-LOGO.png" class="partner-logo" alt="TAFF Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/alliance-francaise-logo.webp" class="partner-logo" alt="Alliance Francaise Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/19-RENTALS-LOGO-PNG-1.png" class="partner-logo" alt="19 Rentals Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="partner-logo" alt="Docubox Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/taiplus.png" class="partner-logo" alt="Taiplus Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/Nafasi-Logo-1.webp" class="partner-logo" alt="Nafasi Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 partner-container">
+        <img src="img/brand/tasa-Logo.png" class="partner-logo" alt="Tasa Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/Simulizi-Festival-Logo.png" class="partner-logo" alt="Simulizi Festival Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 partner-container">
+        <img src="img/brand/afri-roots.webp" class="partner-logo" alt="Afri Roots Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/kijiweni-production-logo.webp" class="partner-logo" alt="Kijiweni Production Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="img/brand/ajabu-logo-white 1.webp" class="partner-logo" alt="Ajabu Logo">
+      </div>
+
+    </div>
+
+    <!-- CTA Button -->
+    <a href="#contact" class="btn-partner mt-5">Become a Sponsor</a>
+
   </div>
+</section>
 
 <!-- brand-area end -->
-
-
-
-       
-
-        
 
         <!--information area are start-->
         <div class="information-area dark-knight ptb100">
@@ -701,6 +685,32 @@
          }
         });
     </script>
+
+      <!-- COUNTDOWN SCRIPT -->
+  <script>
+    function updateCountdown(targetDate) {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) return;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const targetDate = new Date("August 14, 2025 10:00:00").getTime();
+      updateCountdown(targetDate);
+      setInterval(() => updateCountdown(targetDate), 1000);
+    });
+  </script>
 
     <!-- <script>
   function openSubmissionModal() {

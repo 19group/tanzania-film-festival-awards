@@ -119,6 +119,129 @@ p {
 
 /* Countdown Timer */
 
+/*========================================
+  PARTNERS BLOCK STYLES
+========================================*/
+
+/* === GENERAL RESET === */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+
+/* === BUTTONS === */
+.btn,
+.btn-yellow,
+.btn-partner {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #FFD700;
+  color: #fff;
+  padding: 12px 28px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.btn-yellow {
+  background-color: #FFD700;
+  color: #000;
+  font-weight: 700;
+  padding: 16px 32px;
+  margin-left: 30px;
+  border-radius: 45px;
+  box-shadow: 0 0 20px #FFD70050;
+}
+
+.btn-yellow:hover {
+  background-color: #e5c100;
+}
+
+.btn-partner {
+  background: #FFD700;
+  color: #000;
+  padding: 14px 38px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.btn-partner:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* === PARTNERS SECTION === */
+.partners-section {
+  background-color: #fff;
+  color: #111;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.partners-subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.partner-container{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.partner-logo {
+  width: auto;
+  filter: grayscale(100%) opacity(0.9);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+img.partner-logo{
+    max-height: 120px;
+}
+
+.partner-logo-wrapper:hover .partner-logo {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* === UTILITIES === */
+.text-center {
+  text-align: center;
+}
+
+/*----------------------------------------*/
+/* .  END PARTNERS BLOCK
+/*----------------------------------------*/
+
 .floatleft { float: left }
 .floatright { float: right }
 .alignleft {
