@@ -2550,7 +2550,7 @@ select {
     margin-bottom: 15px;
     padding-bottom: 5px;
 }
-.timeline-content > h4 { margin-bottom: 20px }
+.timeline-content > h4 { margin-bottom: 20px; color:#ecb845; }
 .timeline-content > p { margin-bottom: 20px }
 .single-timeline {
     background: #f7f7f7 none repeat scroll 0 0;
@@ -2567,7 +2567,7 @@ select {
 .timeline-right { overflow: hidden }
 .total-timeline { position: relative }
 .total-timeline:before {
-    background-color: #999999;
+    background: linear-gradient(135deg, #ffd700, #E4B34C);
     content: "";
     height: 100%;
     left: 198px;
@@ -2578,7 +2578,7 @@ select {
 }
 .single-timeline:before {
     background: #fff none repeat scroll 0 0;
-    border: 2px solid #999999;
+    border: 2px solid #E4B34C;
     border-radius: 50px;
     content: "";
     height: 30px;
@@ -2589,7 +2589,7 @@ select {
     z-index: 999;
 }
 .single-timeline:after {
-    background: #999999 none repeat scroll 0 0;
+    background: #E4B34C none repeat scroll 0 0;
     border-radius: 50px;
     content: "";
     height: 16px;

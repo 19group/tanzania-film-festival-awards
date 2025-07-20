@@ -70,6 +70,14 @@ const translations = {
     "about.festival.cta": "Join the Festival",
     "program.title": "Festival & Awards Program",
     "program.cta.circle": "See Program",
+
+    "program.section.title": "Festival & Awards Program",
+    "program.timeline.content.launch": "TAFFA Festival & Awards Launch",
+    "program.timeline.content.launch.p": "Held in the heart of Dar es Salaam, the TAFFA launch event brought together filmmakers, industry leaders, cultural ambassadors, and film enthusiasts for a vibrant celebration of Tanzanian cinema and creativity.",
+    "program.timeline.content.festival": "TAFFA Festival 2025",
+    "program.timeline.content.festival.p": "This year’s festival brings together filmmakers, storytellers, artists, industry leaders, and film lovers for three days of screenings, workshops, panel discussions, awards, networking, and vibrant cultural experiences.",
+    "program.timeline.content.award": "TAFFA Awards Ceremony",
+    "program.timeline.content.award.p": "Join us for a glamorous evening dedicated to honoring outstanding achievements in Tanzanian film and the creative industry. The TAFFA Awards recognize the best filmmakers, actors, storytellers, and visionaries who have inspired audiences and elevated our nation’s cinematic excellence.",
   },
   sw: {
     "nav.home": "Nyumbani",
@@ -147,6 +155,14 @@ const translations = {
 
     "about.register": "Jisajili",
     "about.festival.cta": "Jiunge na Tamasha",
+
+    "program.section.title": "Ratiba ya Tamasha na Tuzo",
+    "program.timeline.content.launch": "Uzinduzi wa Tamasha na Tuzo za TAFFA",
+    "program.timeline.content.launch.p": "Uzinduzi wa Tamasha na Tuzo za TAFFA ulifanyika katikati ya jiji la Dar es Salaam, ukileta pamoja watayarishaji wa filamu, viongozi wa sekta, mabalozi wa kitamaduni, na wapenzi wa filamu kwa sherehe yenye nguvu ya sinema na ubunifu wa Kitanzania.",
+    "program.timeline.content.festival": "Tamasha la TAFFA 2025",
+    "program.timeline.content.festival.p": "Tamasha la mwaka huu linawaleta pamoja watayarishaji wa filamu, wasimulizi, wasanii, viongozi wa sekta, na wapenzi wa filamu kwa siku tatu za maonyesho, warsha, mijadala ya kitaaluma, tuzo, mitandao ya kijamii, na matukio yenye utamaduni.",
+    "program.timeline.content.award": "Hafla ya Tuzo za TAFFA",
+    "program.timeline.content.award.p": "Jiunge nasi kwa jioni yenye kung'ara iliyojitolea kuheshimu mafanikio bora katika filamu za Kitanzania na sekta ya ubunifu. Tuzo za TAFFA zinatambua watayarishaji bora wa filamu, wahusika, wasimulizi, na wabunifu ambao wamehamasisha watazamaji na kuinua ubora wa sinema ya taifa letu.",
     "program.cta.circle": "Tazama Ratiba"
   }
 };
