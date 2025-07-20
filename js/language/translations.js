@@ -84,7 +84,7 @@ const translations = {
     "modal.no": "Hapana, baki hapa",
 
 
-    "about.title": "Kuhusu Tamasha",
+    "about.title": "Tamasha litajumuisha",
     "about.description": "TAFFA ni jukwaa lenye nguvu linalotetea tasnia ya filamu kama kichocheo cha mabadiliko ya kijamii na ukuaji wa uchumi. Hufanyika kila mwaka, TAFFA huwaleta pamoja watayarishaji wa filamu, wataalamu wa vyombo vya habari, watunga sera, wawekezaji, wadau wa maendeleo, na umma kwa maadhimisho ya miezi mitatu ya sinema, utamaduni, na ushirikiano.",
     "about.highlights": "Mambo Muhimu ya Tamasha",
     "about.item1": "Warsha za Vitendo na Madarasa ya Mabingwa",
