@@ -15,8 +15,8 @@ const translations = {
     "nav.partners": "Partners",
     "nav.contact": "Contact Us",
 
-    "hero.title1": "TANZANIA",
-    "hero.title2": "FILM <span>FESTIVAL</span>",
+    "hero.title1": "TANZANIA FILM <span>FESTIVAL</span> ",
+    "hero.title2": "& <span>AWARDS</span> 2025",
     "hero.title3": "& <span>AWARDS</span> 2025",
     "hero.description": "Join us for a dynamic celebration of African storytelling, innovation, and industry transformation. From film screenings and workshops to investment pitches and the prestigious TAFFA Awards, this is more than a festival <span>it’s a movement.</span>",
     "hero.date": "Festival: 14 - 16 August, 2025",
@@ -67,8 +67,8 @@ const translations = {
     "nav.partners": "Wadau",
     "nav.contact": "Wasiliana Nasi",
     
-    "hero.title1": "<span>TAMASHA</span> NA ",
-    "hero.title2": "<span>TUZO</span> ZA FILAMU",
+    "hero.title1": "<span>TAMASHA</span> NA <span>TUZO</span>",
+    "hero.title2": " ZA FILAMU TANZANIA 2025",
     "hero.title3": "TANZANIA 2025",
     "hero.title4": "Msimu wa Nne",
     "hero.description": "Jiunge nasi katika maadhimisho ya ubunifu na simulizi zenye nguvu katika Tamasha na Tuzo za Filamu Tanzania!",

@@ -99,7 +99,7 @@ p {
     /*justify-content: center;*/
     align-items: center;
     gap: 20px;
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
@@ -108,7 +108,7 @@ p {
     border-radius: 12px;
     width: 100%;
     /*max-width: 900px;*/
-    margin: 40px auto 0;
+    /* margin: 40px auto 0; */
     flex-wrap: wrap;
   }
 
@@ -121,7 +121,10 @@ p {
     font-size: 4.5rem;
     display: block;
     line-height: 1.2;
-    color: #FFD700; /* Bright yellow */
+     background: linear-gradient(to right, #f4c765, #FFD700, #E4B34C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .countdown-timer small {
