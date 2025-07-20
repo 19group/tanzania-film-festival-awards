@@ -15,8 +15,8 @@ const translations = {
     "nav.partners": "Partners",
     "nav.contact": "Contact Us",
 
-    "hero.title1": "TANZANIA",
-    "hero.title2": "FILM <span>FESTIVAL</span>",
+    "hero.title1": "TANZANIA FILM <span>FESTIVAL</span> ",
+    "hero.title2": "& <span>AWARDS</span> 2025",
     "hero.title3": "& <span>AWARDS</span> 2025",
     "hero.description": "Join us for a dynamic celebration of African storytelling, innovation, and industry transformation. From film screenings and workshops to investment pitches and the prestigious TAFFA Awards, this is more than a festival <span>it’s a movement.</span>",
     "hero.date": "Festival: 14 - 16 August, 2025",
@@ -30,17 +30,8 @@ const translations = {
     "modal.yes": "Yes, continue",
     "modal.no": "No, stay here",
 
-    "taffa.2025":"Tanzania Film Festival & Awards 2025",
-    "taffa.about1":"A national celebration of storytelling, creativity, and cultural pride—TAFFA 2025 will bring together filmmakers, creatives, and change-makers from Tanzania and beyond to spark dialogue, amplify voices, and unlock new opportunities for our local film industry.",
-    "taffa.about2":"From August 14–16, join us at Mlimani City for three days of film screenings, workshops, exhibitions, and forums, followed by the prestigious Awards Gala in December to honor excellence in Tanzanian cinema.",
-    "taffa.festival.date":" 📅 <strong>Festival:</strong> August 14 – August 16 2025",
-    "taffa.festival.venue":" 📍 <strong>Where:</strong> Mlimani City, Dar es Salaam",
 
-    "taffa.award.date":" 📅 <strong>Award:</strong> December 6th 2025",
-    "taffa.award.venue":" 📍 <strong>Where:</strong> Super Dome Masaki, Dar es Salaam",
-
-
-    "about.title": "The festival will include",
+    "about.title": "About the Festival",
     "about.description": "TAFFA is a powerful platform championing the film industry as a catalyst for social transformation and economic growth. Held annually, TAFFA unites filmmakers, media professionals, policymakers, investors, development partners, and the public for a three-month-long celebration of cinema, culture, and collaboration.",
     "about.highlights": "Festival Highlight",
 
@@ -65,6 +56,7 @@ const translations = {
     "about.stats.audience": "10,000+ Audience Members at Screenings",
     "about.stats.reach": "Millions Reached Through Media Coverage",
     "about.register": "Register",
+    "about.festival.cta": "Join the Festival",
     "program.title": "Festival & Awards Program",
     "program.cta.circle": "See Program",
   },
@@ -83,8 +75,8 @@ const translations = {
     "nav.partners": "Wadau",
     "nav.contact": "Wasiliana Nasi",
     
-    "hero.title1": "<span>TAMASHA</span> NA ",
-    "hero.title2": "<span>TUZO</span> ZA FILAMU",
+    "hero.title1": "<span>TAMASHA</span> NA <span>TUZO</span>",
+    "hero.title2": " ZA FILAMU TANZANIA 2025",
     "hero.title3": "TANZANIA 2025",
     "hero.title4": "Msimu wa Nne",
     "hero.description": "Jiunge nasi katika maadhimisho ya ubunifu na simulizi zenye nguvu katika Tamasha na Tuzo za Filamu Tanzania!",
@@ -104,6 +96,9 @@ const translations = {
     "taffa.about2":"Kuanzia tarehe <strong>14 hadi 16 Agosti</strong>, jiunge nasi <strong>Mlimani City</strong> kwa siku tatu za maonyesho ya filamu, warsha, maonesho ya kazi za sanaa, na midahalo ya kitaaluma, kisha tukutane tena <strong>Desemba 6, 2025 </strong> kwenye hafla ya Tuzo ya Heshima kwa ajili ya kuadhimisha ubora wa filamu za Kitanzania.",
 
     "about.title": "Tamasha litajumuisha",
+    "about.taffa.title": "Tamasha na Tuzo za Filamu Tanzania 2025",
+    "about.taffa.description-p1": "Tamasha la kitaifa la simulizi, ubunifu, na fahari ya kitamaduni—TAFFA 2025 litawaleta pamoja watayarishaji wa filamu, wabunifu, na wahamasishaji wa mabadiliko kutoka Tanzania na nje ili kuanzisha majadiliano, kuimarisha sauti, na kufungua fursa mpya kwa tasnia yetu ya filamu.",
+    "about.taffa.description-p2": "Kuanzia Agosti 14–16, jiunge nasi katika Mlimani City kwa siku tatu za maonyesho ya filamu, warsha, maonyesho, na mikutano, ikifuatiwa na Tuzo za Gala za heshima mnamo Desemba kuadhimisha ubora katika sinema ya Tanzania.",
     "about.description": "TAFFA ni jukwaa lenye nguvu linalotetea tasnia ya filamu kama kichocheo cha mabadiliko ya kijamii na ukuaji wa uchumi. Hufanyika kila mwaka, TAFFA huwaleta pamoja watayarishaji wa filamu, wataalamu wa vyombo vya habari, watunga sera, wawekezaji, wadau wa maendeleo, na umma kwa maadhimisho ya miezi mitatu ya sinema, utamaduni, na ushirikiano.",
     "about.highlights": "Mambo Muhimu ya Tamasha",
     "about.item1": "Maonyesho ya Filamu (Film Screening)",
@@ -138,7 +133,9 @@ const translations = {
     "about.stats.stakeholders": "3,000+ Wadau kwenye Vikao na Mijadala",
     "about.stats.audience": "10,000+ Watazamaji kwenye Maonyesho ya Filamu",
     "about.stats.reach": "Mamilioni Wamefikiwa Kupitia Vyombo vya Habari",
+
     "about.register": "Jisajili",
+    "about.festival.cta": "Jiunge na Tamasha",
     "program.cta.circle": "Tazama Ratiba"
   }
 };
