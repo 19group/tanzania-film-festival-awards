@@ -30,8 +30,19 @@ const translations = {
     "modal.yes": "Yes, continue",
     "modal.no": "No, stay here",
 
+    "taffa.2025":"Tanzania Film Festival & Awards 2025",
+    "taffa.about1":"A national celebration of storytelling, creativity, and cultural pride—TAFFA 2025 will bring together filmmakers, creatives, and change-makers from Tanzania and beyond to spark dialogue, amplify voices, and unlock new opportunities for our local film industry.",
+    "taffa.about2":"From August 14–16, join us at Mlimani City for three days of film screenings, workshops, exhibitions, and forums, followed by the prestigious Awards Gala in December to honor excellence in Tanzanian cinema.",
+    "taffa.festival.date":" 📅 <strong>Festival:</strong> August 14 – August 16 2025",
+    "taffa.festival.venue":" 📍 <strong>Where:</strong> Mlimani City, Dar es Salaam",
+
+    "taffa.award.date":" 📅 <strong>Award:</strong> December 6th 2025",
+    "taffa.award.venue":" 📍 <strong>Where:</strong> Super Dome Masaki, Dar es Salaam",
 
     "about.title": "About the Festival",
+    "about.taffa.title": "Tanzania Film Festival & Awards 2025",
+    "about.taffa.description-p1": "A national celebration of storytelling, creativity, and cultural pride—TAFFA 2025 will bring together filmmakers, creatives, and change-makers from Tanzania and beyond to spark dialogue, amplify voices, and unlock new opportunities for our local film industry.",
+    "about.taffa.description-p2": "From August 14–16, join us at Mlimani City for three days of film screenings, workshops, exhibitions, and forums, followed by the prestigious Awards Gala in December to honor excellence in Tanzanian cinema.",
     "about.description": "TAFFA is a powerful platform championing the film industry as a catalyst for social transformation and economic growth. Held annually, TAFFA unites filmmakers, media professionals, policymakers, investors, development partners, and the public for a three-month-long celebration of cinema, culture, and collaboration.",
     "about.highlights": "Festival Highlight",
 
