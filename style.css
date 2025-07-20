@@ -54,6 +54,43 @@ p {
     font-weight: 400;
     margin: 0 0 15px;
 }
+.about-cards-section{
+    background-color: #fff;
+    color: black;
+    padding-bottom: 90px;
+}
+
+/* HIGHLIGHTS */
+.taffa-highlight-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(90deg, #ff4e50, #f9d423); /* Red-Orange-Yellow Gradient */
+  border-radius: 30px;
+  padding: 60px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.highlight-item {
+  flex: 1 1 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.highlight-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.highlight-label {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* HIGHLIGHTS */
 
 /* countdown timer*/
 
