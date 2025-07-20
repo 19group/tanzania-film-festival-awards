@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="sw">
 
 <head>
     <meta charset="utf-8">
@@ -95,8 +95,37 @@
   }
 }
 </style> -->
+
+<script>
+  function updateCountdown(targetDate) {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance < 0) return;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Set your target date here (e.g., August 14, 2025 at 10:00 AM)
+    const targetDate = new Date("August 14, 2025 10:00:00").getTime();
+    updateCountdown(targetDate);
+    setInterval(() => updateCountdown(targetDate), 1000);
+  });
+</script>
+
    
 </head>
+
+
 
 <body>
     <!-- Loading Screen -->
@@ -116,15 +145,15 @@
                           <!-- Left nav -->
                           <nav class="main-menu d-flex gap-3">
                             <ul class="nav-left d-flex gap-3">
-                              <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                              <li><a href="#about-event" data-i18n="nav.about">About Us</a></li>
-                              <li><a href="./program/" target="_blank" data-i18n="nav.program">Program</a></li>
+                              <li><a href="#home" data-i18n="nav.home">Nyumbani</a></li>
+                              <li><a href="#about-event" data-i18n="nav.about">Kuhusu</a></li>
+                              <li><a href="./program/" target="_blank" data-i18n="nav.program">Ratiba</a></li>
                               <li>
                                 <a 
                                   href="https://tuzo.taffafestival.or.tz"
                                   target="_blank" 
                                   data-i18n="nav.submission">
-                                  Submission
+                                  Wasilisho
                                 </a>
                               </li>
                             </ul>
@@ -285,15 +314,28 @@
               </div>
             </div>
             <div class="secondary-btn">
-                            <a class="btn-outline" href="./program/" target="_blank" data-i18n="hero.program">See Program</a>
+                            <a class="btn-outline" href="./program/" target="_blank" data-i18n="hero.program">Tazama Ratiba Ya Tamasha</a>
               </div>
           </div>
           <div class="submit-button-container">
-                        <a class="submit-btn-prominent" href="https://tuzo.taffafestival.or.tz/" target="_blank" data-i18n="hero.submit">Submit Your Film</a>
+                        <a class="submit-btn-prominent" href="https://tuzo.taffafestival.or.tz/" target="_blank" data-i18n="hero.submit">Wasilisha Filamu Yako</a>
             </div>
           
         </div>
       </div>
+
+      <div id="countdown" class="countdown-timer my-4">
+        <div class="time-box"><span id="days">0</span><small>Days</small></div>
+        <div class="colon">:</div>
+        <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+        <div class="colon">:</div>
+        <div class="time-box"><span id="minutes">00</span><small>Minutes</small></div>
+        <div class="colon">:</div>
+        <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
+
+
+
     </div>
   </div>
 </div>
