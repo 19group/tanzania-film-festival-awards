@@ -30,17 +30,33 @@ const translations = {
     "modal.yes": "Yes, continue",
     "modal.no": "No, stay here",
 
+    "taffa.2025":"Tanzania Film Festival & Awards 2025",
+    "taffa.about1":"A national celebration of storytelling, creativity, and cultural pride—TAFFA 2025 will bring together filmmakers, creatives, and change-makers from Tanzania and beyond to spark dialogue, amplify voices, and unlock new opportunities for our local film industry.",
+    "taffa.about2":"From August 14–16, join us at Mlimani City for three days of film screenings, workshops, exhibitions, and forums, followed by the prestigious Awards Gala in December to honor excellence in Tanzanian cinema.",
+    "taffa.festival.date":" 📅 <strong>Festival:</strong> August 14 – August 16 2025",
+    "taffa.festival.venue":" 📍 <strong>Where:</strong> Mlimani City, Dar es Salaam",
 
-    "about.title": "About the Festival",
+    "taffa.award.date":" 📅 <strong>Award:</strong> December 6th 2025",
+    "taffa.award.venue":" 📍 <strong>Where:</strong> Super Dome Masaki, Dar es Salaam",
+
+
+    "about.title": "The festival will include",
     "about.description": "TAFFA is a powerful platform championing the film industry as a catalyst for social transformation and economic growth. Held annually, TAFFA unites filmmakers, media professionals, policymakers, investors, development partners, and the public for a three-month-long celebration of cinema, culture, and collaboration.",
     "about.highlights": "Festival Highlight",
-    "about.item1": "Practical Workshops and Champion Classes",
-    "about.item2": "Discussions & Sessions with Thought Leaders",
-    "about.item3": "Investment Pitches",
+
+    
+    "about.item1": "Film Screening",
+    "about.back.item1": "Screening of various Tanzanian Films",
+
+    "about.item2": "Masterclasses",
+    "about.back.item2": "Shiriki warsha za kivitendo na madarasa kutoka mabingwa katika Tasnia ya Filamu, Tanzania na Nje ya Nchi",
+    
+    "about.item3": "Forums and Talks",
+    "about.back.item3": "Mijadala mbalimbali yenye lengo la kukuza tasnia ya Filamu nchini.",
+    
     "about.item4": "Exhibitions",
-    "about.item5": "Exhibitions & Tech Showcases",
-    "about.item6": "Creative Studio & Heritage Tours",
-    "about.item7": "Awards Gala",
+    "about.back.item4": "Book an exhibition slot NOW",
+
 
     "about.stats.date": "Jul 02, 2025",
     "about.stats.location": "Mlimani City Dar es Salaam, Tanzania",
@@ -82,26 +98,37 @@ const translations = {
     "modal.body": "Ili kuwasilisha filamu yako, utapelekwa kwenye tovuti ya mshirika wetu rasmi wa TAFFA. Usijali – ni salama na ni sehemu ya mchakato wetu wa tuzo na tamasha.",
     "modal.yes": "Ndio, nipeleke",
     "modal.no": "Hapana, baki hapa",
-
+    
+    "taffa.2025":"Tamasha na Tuzo za Filamu Tanzania 2025",
+    "taffa.about1":"Sherehe ya kitaifa ya usimulizi wa hadithi, ubunifu, na fahari ya kitamaduni, TAFFA 2025 itawaleta pamoja watengenezaji wa filamu, wabunifu, na wabadilishaji jamii kutoka Tanzania na mataifa mengine ili kuchochea mijadala, kuinua sauti, na kufungua fursa mpya kwa tasnia ya filamu nchini.",
+    "taffa.about2":"Kuanzia tarehe <strong>14 hadi 16 Agosti</strong>, jiunge nasi <strong>Mlimani City</strong> kwa siku tatu za maonyesho ya filamu, warsha, maonesho ya kazi za sanaa, na midahalo ya kitaaluma, kisha tukutane tena <strong>Desemba 6, 2025 </strong> kwenye hafla ya Tuzo ya Heshima kwa ajili ya kuadhimisha ubora wa filamu za Kitanzania.",
 
     "about.title": "Tamasha litajumuisha",
     "about.description": "TAFFA ni jukwaa lenye nguvu linalotetea tasnia ya filamu kama kichocheo cha mabadiliko ya kijamii na ukuaji wa uchumi. Hufanyika kila mwaka, TAFFA huwaleta pamoja watayarishaji wa filamu, wataalamu wa vyombo vya habari, watunga sera, wawekezaji, wadau wa maendeleo, na umma kwa maadhimisho ya miezi mitatu ya sinema, utamaduni, na ushirikiano.",
     "about.highlights": "Mambo Muhimu ya Tamasha",
-    "about.item1": "Warsha za Vitendo na Madarasa ya Mabingwa",
-    "about.item2": "Mijadala na Viongozi kwenye Tasnia",
-    "about.item3": "Warsha jinsi ya kupata fedha za kuandaa filamu",
-    "about.item4": "Maonyesho na Teknolojia za Kisasa",
-    "about.item5": "Maonyesho na Teknolojia za Kisasa",
+    "about.item1": "Maonyesho ya Filamu (Film Screening)",
+    "about.back.item1": "Filamu mbalimbali za kitanzania zitaonyeshwa",
+
+    "about.item2": "Warsha za Vitendo na Madarasa ya Mabingwa (Masterclasses)",
+    "about.back.item2": "Shiriki warsha za kivitendo na madarasa kutoka mabingwa katika Tasnia ya Filamu, Tanzania na Nje ya Nchi",
+    
+    "about.item3": "Mijadala na Viongozi kwenye Tasnia (Forums)",
+    "about.back.item3": "Mijadala mbalimbali yenye lengo la kukuza tasnia ya Filamu nchini.",
+    
+    "about.item4": "Maonyesho na Teknolojia katika Filamu (Exhibitions)",
+    "about.back.item4": "Maonyesho mbalimbali kutoka katika sekta ya Filamu Tanzania",
+    
+    "about.item5": "Maonyesho na Teknolojia za Kisasa ",
     "about.item6": "Ziara za Studio na Maeneo ya Urithi",
     "about.item7": "Tuzo ya Gala",
-    "about.front.item1": "Warsha za Vitendo na Madarasa ya Mabingwa",
-    "about.back.item1": "Jiunge na madarasa maalum kutoka kwa wataalamu wa filamu, muziki, mitindo, na uchapishaji.",
-    "about.front.item2": "Mijadala na Vikao na Viongozi wa Mawazo",
-    "about.back.item2": "Shiriki mijadala ya sera na uzoefu wa tasnia ya ubunifu.",
-    "about.front.item3": "Warsha jinsi ya kupata fedha za kuandaa filamu",
-    "about.back.item3": "Wasilisha mawazo yako kwa wawekezaji na pata ufadhili.",
+    "about.front.item1": "Maonyesho ya Filamu (Film Screening)",
+    
+    "about.front.item2": "Warsha za Vitendo na Madarasa ya Mabingwa",
+    
+    "about.front.item3": "Mijadala na Vikao na Viongozi wa Mawazo",
+    
     "about.front.item4": "Wasilisha kwa wawekezaji",
-    "about.back.item4": "Wasilisha mawazo yako kwa wawekezaji na pata ufadhili.",
+    
     "about.front.item7": "Mafunzo maalum",
     "about.back.item7": "Jifunze kutoka kwa wataalam wakuu wa filamu, muziki, mitindo, na uchapishaji.",
 
