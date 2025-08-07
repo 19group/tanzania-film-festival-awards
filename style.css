@@ -2283,18 +2283,205 @@ p.error { color: red }
 /* 16. footer area
 /*----------------------------------------*/
 .footer-area {
-    background: #1b1b1b none repeat scroll 0 0;
-    height: 80px;
-    line-height: 78px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
 }
-.social-area li a {
-    color: #fff;
-    font-size: 20px;
-    padding-right: 20px;
+.footer-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #E4B34C 0%, #D4A643 50%, #E4B34C 100%);
 }
-.social-area li a:hover { color: #E4B34C }
-.payment-area { text-align: right }
-.payment-area li { padding-right: 15px }
+.footer-logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.footer-top {
+    padding: 60px 0 40px;
+}
+
+.footer-widget h4 {
+    color: #ffd700;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-widget h4::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #ffd700;
+}
+
+.footer-widget p,
+.footer-widget li {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.footer-widget ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.footer-widget ul li {
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-widget ul li:hover {
+    transform: translateX(5px);
+}
+
+.footer-widget ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-widget ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-widget ul li i {
+    color: #E4B34C;
+    margin-right: 10px;
+    width: 16px;
+}
+
+/* Social Media Styles */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(228, 179, 76, 0.1);
+    color: #E4B34C;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: #ffd700;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* Newsletter Styles */
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.newsletter-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-input input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.newsletter-input input:focus {
+    outline: none;
+    border-color: #E4B34C;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-input input::placeholder {
+    color: #888;
+}
+
+.newsletter-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #E4B34C, #D4A643);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(228, 179, 76, 0.3);
+}
+
+/* Event Info Styles */
+.event-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.event-info-item i {
+    color: #ffd700;
+    margin-right: 15px;
+    width: 20px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.copyright {
+    color: #888;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #E4B34C;
+}
 /*----------------------------------------*/
 /* 17. Home-02
 /*----------------------------------------*/

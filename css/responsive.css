@@ -1004,6 +1004,23 @@ a.btn-def {
     padding-left: 0;
     float: none;
   }
+   .footer-top {
+      padding: 40px 0 30px;
+  }
+
+  .footer-bottom-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .newsletter-input {
+      flex-direction: column;
+  }
 }
 
         

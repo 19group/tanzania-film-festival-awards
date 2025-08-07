@@ -88,6 +88,21 @@ const translations = {
     "award.nomination.list.2": "Finalists will be nominated by the TAFFA jury panel",
     "award.nomination.list.3": "Public voting contributes to People's Choice Awards", 
     "award.nomination.list.4": "Winners announced at the grand ceremony",
+
+    "footer.logo.description": "Tanzania Film Festivals and Awards (TAFFA) celebrates and promotes the rich diversity of Tanzanian and East African cinema, connecting filmmakers, industry professionals, and audiences.",
+    "footer.logo.alt": "TAFFA Logo",
+    "footer.quicklinks": "Quick Links",
+    "footer.privacy": "Privacy Policy",
+    "footer.quicklinks.home": "Home",
+    "footer.quicklinks.festivalprogram": "Festival Program",
+    "footer.quicklinks.partners": "Partners",
+    "footer.forfilmmakers": "For Filmmakers",
+    "footer.forfilmmakers.submityourfilm": "Submit Your Film",  
+    "footer.forfilmmakers.awardcategories": "Award Categories",
+    "footer.eventinformation": "Event Information",
+    "footer.eventinformation.festival": "<strong>Festival:</strong> August 14-16, 2025 <br>",
+    "footer.eventinformation.awards": "<strong>Awards:</strong> December 6, 2025",
+    "footer.terms": "Terms of Service",
   },
   sw: {
     "nav.home": "Nyumbani",
@@ -183,6 +198,23 @@ const translations = {
     "award.nomination.list.2": "Washindi wa mwisho watachaguliwa na jopo la majaji wa TAFFA",
     "award.nomination.list.3": "Upigaji kura wa umma unachangia katika Tuzo za Chaguo la Watu",
     "award.nomination.list.4": "Washindi watatangazwa katika hafla kuu ya tuzo",
+
+
+    "footer.logo.description": "Tamasha na Tuzo za Filamu Tanzania (TAFFA) linaadhimisha na kukuza utofauti wa sinema za Kitanzania na Afrika Mashariki, likiwaleta pamoja watayarishaji wa filamu, wataalamu wa sekta, na watazamaji.",
+    "footer.logo.alt": "Nembo ya TAFFA",
+    "footer.quicklinks": "Link Muhimu",
+    "footer.privacy": "Sera ya Faragha",
+    "footer.quicklinks.home": "Nyumbani",
+    "footer.quicklinks.festivalprogram": "Ratiba ya Tamasha",
+    "footer.quicklinks.partners": "Wadau",
+    "footer.forfilmmakers": "Kwa Watayarishaji wa Filamu",
+    "footer.forfilmmakers.submityourfilm": "Wasilisha Filamu Yako",
+    "footer.forfilmmakers.awardcategories": "Kategoria za Tuzo",
+    "footer.eventinformation": "Taarifa za Tamasha",
+    "footer.eventinformation.festival": "<strong>Tamasha:</strong> 14 - 16 Agosti, 2025 <br>",
+    "footer.eventinformation.awards": "<strong>Tuzo:</strong> 6 Desemba, 2025",
+    "footer.terms": "Sheria na Masharti",
+
   }
 };
 
