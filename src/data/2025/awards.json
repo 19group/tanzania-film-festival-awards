@@ -1,0 +1,34 @@
+{
+"categories": [
+{
+"id": "best-feature-film",
+"title": { "en": "Best Feature Film", "sw": "Filamu Bora Ndefu" },
+"description": {
+"en": "Awarded to the most outstanding full-length film of the year.",
+"sw": "Inatolewa kwa filamu bora yenye urefu kamili ya mwaka."
+},
+"winner": {
+"name": "Example Winner Film",
+"poster": "/images/films/winner-feature.jpg",
+"description": {
+"en": "A powerful drama exploring Tanzanian culture.",
+"sw": "Tamthilia yenye kugusa maisha inayochunguza tamaduni za Kitanzania."
+}
+},
+"nominees": [
+{
+"name": "Nominee Film 1",
+"poster": "/images/films/nominee1.jpg"
+},
+{
+"name": "Nominee Film 2",
+"poster": "/images/films/nominee2.jpg"
+}
+],
+"jury_comment": {
+"en": "A beautifully executed film with emotional depth.",
+"sw": "Filamu iliyotekelezwa kwa ustadi na ina hisia za kina."
+}
+}
+]
+}

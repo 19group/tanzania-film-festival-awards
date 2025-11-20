@@ -1,18 +1,42 @@
-import fs from 'fs';
-import path from 'path';
+// Path: src/lib/data.ts
+// Fully static-safe data loader for NEXT output: export
+// Uses fs + path (allowed at build time), no require(), no top-level JSON imports.
+// Safe for ESLint and static exports.
 
+import fs from "fs";
+import path from "path";
 
+// Resolve base data directory
+function yearDir(year: string) {
+  return path.join(process.cwd(), "src", "data", year);
+}
+
+// Read a JSON file synchronously (static-safe)
+function readJSON(filePath: string) {
+  if (!fs.existsSync(filePath)) return null;
+  const raw = fs.readFileSync(filePath, "utf8");
+  try {
+    return JSON.parse(raw);
+  } catch (err) {
+    console.error("JSON parse error:", filePath, err);
+    return null;
+  }
+}
+
+// Load all data for a specific year
 export function getYearData(year: string) {
-const base = path.join(process.cwd(), 'src', 'data', year);
-const read = (name: string) => {
-const p = path.join(base, `${name}.json`);
-if (!fs.existsSync(p)) return null;
-return JSON.parse(fs.readFileSync(p, 'utf-8'));
-};
-return {
-festival: read('festival'),
-awards: read('awards'),
-program: read('program'),
-report: read('report')
-};
+  const dir = yearDir(year);
+
+  if (!fs.existsSync(dir)) {
+    console.warn("Year directory missing:", dir);
+    return null;
+  }
+
+  return {
+    awards: readJSON(path.join(dir, "awards.json")),
+    about: readJSON(path.join(dir, "about.json")),
+    festival: readJSON(path.join(dir, "festival.json")),
+    program: readJSON(path.join(dir, "program.json")),
+    report: readJSON(path.join(dir, "report.json")),
+  };
 }
