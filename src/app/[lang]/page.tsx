@@ -3,7 +3,10 @@ import { homeContent } from "@/lib/content/home";
 // import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import HeroSection from "@/components/ui/HeroSection";
+import AboutSection from "@/components/ui/AboutSection";
+import TimelineSection from "@/components/ui/TimelineSection";
+import PartnersSection from "@/components/ui/PartnersSection";
 // server component: receives params from Next at request time (no generateStaticParams)
 export default function LangHome({ params }: { params: { lang: string } }) {
   const { lang } = params;
@@ -17,27 +20,9 @@ export default function LangHome({ params }: { params: { lang: string } }) {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative">
-        <div className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              {t(hero.title)}
-            </h1>
-            <p className="text-lg text-gray-700 mb-6">{t(hero.subtitle)}</p>
-
-            <Link
-              href={`/${lang}/${year}`}
-              className="inline-block px-6 py-3 rounded-md font-semibold"
-              style={{ background: "var(--color-primary)" }}
-            >
-              {t(hero.cta)}
-            </Link>
-          </div>
-          <div className="rounded-xl overflow-hidden shadow-lg">
-            <Image src={hero.image} alt="TAFFA Hero" className="w-full h-80 object-cover" width={500} height={320} />
-          </div>
-        </div>
-      </section>
+    <HeroSection
+      currentLang={lang}
+      />  
 
       {/* Highlights */}
       <section className="max-w-6xl mx-auto px-6 py-16">
@@ -59,12 +44,9 @@ export default function LangHome({ params }: { params: { lang: string } }) {
 
       {/* Short About */}
 
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        <div className="bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-semibold mb-4">{lang === "sw" ? "Kuhusu TAFFA" : "About TAFFA"}</h2>
-          <p className="text-gray-700">{homeContent.hero.subtitle.en}</p>
-        </div>
-      </section>
+      <AboutSection currentLang={lang} />
+      <TimelineSection currentLang={lang} />
+      <PartnersSection currentLang={lang} />
     </div>
   );
 }

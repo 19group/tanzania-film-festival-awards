@@ -1,92 +1,77 @@
-// src/lib/content/about.ts
+// src/content/about.ts
+
 export const aboutContent = {
-heroImage: "/images/hero/about-hero.jpg",
+  sw: {
+    sectionTitle: 'Kuhusu TAFFA',
+    mainTitle: 'TANZANIA FILM FESTIVALS & AWARDS',
+    description1:
+      'Tanzania Film Festivals and Awards (TAFFA) ni jukwaa la ushindani na sifa kwa wanamuziki, wasanii, na watengenezaji wa filamu nchini Tanzania.',
+    description2:
+      'Tunakusanya wataalam, wataalamu, na wapenda sanaa kutoka kote ulimwenguni ili kuimarisha tasnia ya ubunifu nchini Tanzania.',
+    stats: [
+      { number: '250+', label: 'Wanamuziki' },
+      { number: '1,500+', label: 'Wadau' },
+      { number: 'Millions', label: 'Kufikia Vyombo' },
+      { number: '+35', label: 'Tuzo Kushindaniwa' },
+    ],
+    features: [
+      {
+        title: 'Madarasa na Warsha',
+        description:
+          'Jiunge na madarasa maalum kutoka kwa wataalamu maarufu katika Filamu, Muziki, Mitindo, na Vitabu vya Biashara.',
+      },
+      {
+        title: 'Majadiliano na Mazungumzo',
+        description:
+          'Shiriki katika majadiliano ya sera na kanuni, na kushirikiana uzoefu katika tasnia ya ubunifu.',
+      },
+      {
+        title: 'Maonyesho ya Uwekezaji',
+        description:
+          'Wasilisha mawazo yako kwa wawekezaji na fungua fursa za ufadhili wa tasnia ya ubunifu.',
+      },
+      {
+        title: 'Mafunzo Maalum',
+        description:
+          'Jifunze kutoka kwa mwalimu bora katika Filamu, Muziki, Mitindo, na Uchapishaji wa Vitabu.',
+      },
+    ],
+  },
 
-
-mission: {
-en: "To celebrate, elevate, and support Tanzanian cinema by providing a national platform for filmmakers, storytellers, and creative industry professionals.",
-sw: "Kuadhimisha, kuinua na kuendeleza filamu za Kitanzania kwa kutoa jukwaa la kitaifa kwa watengenezaji filamu, waandishi wa hadithi na wataalamu wa sekta ya ubunifu.",
-},
-
-
-vision: {
-en: "A thriving film ecosystem in Tanzania that competes globally and inspires future generations.",
-sw: "Ekosistemi ya filamu inayoimarika Tanzania inayoshindana kimataifa na kuhamasisha vizazi vijavyo.",
-},
-
-
-identity: {
-festival: {
-en: "TAFFA Festival showcases film screenings, workshops, panel sessions, exhibitions, and activities that promote development in the creative sector.",
-sw: "Tamasha la TAFFA linaonesha filamu, warsha, majadiliano, maonesho na shughuli mbalimbali zinazochochea maendeleo ya sekta ya ubunifu.",
-},
-awards: {
-en: "TAFFA Awards honor excellence in filmmaking by recognizing impactful stories, outstanding talent, and technical mastery.",
-sw: "Tuzo za TAFFA zinatambua ubora katika utengenezaji wa filamu kwa kutambua hadithi zenye mguso, vipaji bora na ubora wa kiufundi.",
-},
-},
-
-
-impact: [
-{
-label: { en: "Attendees", sw: "Washiriki" },
-value: "15,000+",
-},
-{
-label: { en: "Screenings", sw: "Maonyesho" },
-value: "40+",
-},
-{
-label: { en: "Workshops & Panels", sw: "Warsha & Majadiliano" },
-value: "20+",
-},
-{
-label: { en: "Countries Represented", sw: "Nchi Zilizo Shiriki" },
-value: "12",
-},
-],
-
-
-team: [
-{
-name: "Placeholder Name 1",
-role: {
-en: "Festival Director",
-sw: "Mkurugenzi wa Tamasha",
-},
-image: "/images/team/placeholder1.jpg",
-},
-{
-name: "Placeholder Name 2",
-role: {
-en: "Head of Programming",
-sw: "Mkuu wa Ratiba",
-},
-image: "/images/team/placeholder2.jpg",
-},
-{
-name: "Placeholder Name 3",
-role: {
-en: "Awards Coordinator",
-sw: "Mratibu wa Tuzo",
-},
-image: "/images/team/placeholder3.jpg",
-},
-],
-
-
-partners: [
-{
-name: "Partner 1",
-logo: "/images/partners/logo1.png",
-},
-{
-name: "Partner 2",
-logo: "/images/partners/logo2.png",
-},
-{
-name: "Partner 3",
-logo: "/images/partners/logo3.png",
-},
-],
+  en: {
+    sectionTitle: 'About TAFFA',
+    mainTitle: 'TANZANIA FILM FESTIVALS & AWARDS',
+    description1:
+      'Tanzania Film Festivals and Awards (TAFFA) is a competitive platform celebrating filmmakers, artists, and creative professionals in Tanzania.',
+    description2:
+      'We bring together experts, professionals, and art enthusiasts from around the world to strengthen the creative industry in Tanzania.',
+    stats: [
+      { number: '250+', label: 'Filmmakers' },
+      { number: '1,500+', label: 'Stakeholders' },
+      { number: 'Millions', label: 'Media Reach' },
+      { number: '+35', label: 'Award Categories' },
+    ],
+    features: [
+      {
+        title: 'Workshops & Masterclasses',
+        description:
+          'Join specialized masterclasses from renowned experts in Film, Music, Fashion, and Trade Books.',
+      },
+      {
+        title: 'Forums & Dialogues',
+        description:
+          'Engage in policy and regulation dialogues, and share experience in the creative industry.',
+      },
+      {
+        title: 'Investment Pitches',
+        description:
+          'Present your ideas to investors and unlock creative industry funding opportunities.',
+      },
+      {
+        title: 'Specialized Training',
+        description:
+          'Learn from top mentors in Film, Music, Fashion, and Book Publishing.',
+      },
+    ],
+  },
 };
