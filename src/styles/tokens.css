@@ -1,2 +1,7 @@
-primary #E4B34C
-gradient #f9d423
+:root{
+--color-primary: #E4B34C;
+--color-gold: #f9d423;
+--color-black: #000000;
+--color-white: #FFFFFF;
+--gradient-primary: linear-gradient(90deg, #f9d423 0%, #E4B34C 100%);
+}
