@@ -7,10 +7,10 @@ import HeroSection from "@/components/ui/HeroSection";
 import AboutSection from "@/components/ui/AboutSection";
 import TimelineSection from "@/components/ui/TimelineSection";
 import PartnersSection from "@/components/ui/PartnersSection";
-// server component: receives params from Next at request time (no generateStaticParams)
+
 export default function LangHome({ params }: { params: { lang: string } }) {
   const { lang } = params;
-  const year = "2025"; // can be dynamic later
+  const year = "2025"; 
 
   const t = (obj: any) => (typeof obj === "string" ? obj : obj?.[lang] || obj?.en);
 

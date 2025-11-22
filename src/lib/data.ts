@@ -23,7 +23,6 @@ function readJSON(filePath: string) {
   }
 }
 
-// Load all data for a specific year
 export function getYearData(year: string) {
   const dir = yearDir(year);
 
