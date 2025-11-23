@@ -3,8 +3,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import { Menu, X, ChevronDown, Globe, Flag } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation";
 
 interface HeaderProps {
   lang?: string;
@@ -21,39 +22,77 @@ const Header: React.FC<HeaderProps> = ({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
 
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const segments = pathname.split("/").filter(Boolean);
+  const urlLang =
+    segments[0] && segments[0].length === 2 ? segments[0] : lang;
+
+  const [currentLang, setCurrentLang] = useState(urlLang);
+
+  useEffect(() => {
+    setCurrentLang(urlLang);
+  }, [urlLang]);
+
+  const changeLanguage = (newLang: string) => {
+    if (newLang === currentLang) return;
+
+    setCurrentLang(newLang);
+    onLanguageChange?.(newLang);
+    setIsLangDropdownOpen(false);
+    setIsMobileMenuOpen(false);
+
+    try {
+      const segs = pathname.split("/").filter(Boolean);
+
+      if (segs[0] && segs[0].length === 2) {
+        segs[0] = newLang;
+      } else {
+        segs.unshift(newLang);
+      }
+
+      const newPath = "/" + segs.join("/");
+      router.push(newPath);
+    } catch {
+      router.push(`/${newLang}`);
+    }
+  };
+
+  /** Scroll behavior */
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /** INTERNAL NEXT.JS ROUTES */
+  /** NAV LINKS */
   const navLinks = [
     {
-      href: `/${lang}`,
-      label: lang === "sw" ? "Nyumbani" : "Home",
+      href: `/${currentLang}`,
+      label: currentLang === "sw" ? "Nyumbani" : "Home",
       external: false,
     },
     {
-      href: `/${lang}/${year}/program`,
-      label: lang === "sw" ? "Ratiba" : "Program",
+      href: `/${currentLang}/${year}/program`,
+      label: currentLang === "sw" ? "Ratiba" : "Program",
       external: false,
     },
     {
-      href: `/${lang}/${year}/awards`,
+      href: `/${currentLang}/${year}/awards`,
       label: "Awards",
       external: false,
     },
     {
       href: "https://tuzo.taffafestival.or.tz",
-      label: lang === "sw" ? "Wasilisha" : "Submit",
+      label: currentLang === "sw" ? "Wasilisha" : "Submit",
       external: true,
     },
   ];
 
   const languages = [
-    { code: "sw", label: "SW", flag: "🇹🇿" },
-    { code: "en", label: "EN", flag: "🇺🇸" },
+    { code: "sw", label: "SW" },
+    { code: "en", label: "EN" },
   ];
 
   return (
@@ -61,10 +100,8 @@ const Header: React.FC<HeaderProps> = ({
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-black/95 backdrop-blur-md shadow-lg py-4"
-          : "bg-transparent py-6"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black/95 backdrop-blur-md py-4 ${
+        isScrolled ? "shadow-lg" : ""
       }`}
     >
       <div className="w-full max-w-screen-2xl mx-auto px-3 sm:px-6">
@@ -94,9 +131,9 @@ const Header: React.FC<HeaderProps> = ({
             )}
           </nav>
 
-          {/* LOGO (center) */}
+          {/* LOGO */}
           <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
-            <Link href={`/${lang}`}>
+            <Link href={`/${currentLang}`}>
               <Image
                 src="/images/logo.png"
                 alt="TAFFA Logo"
@@ -131,14 +168,16 @@ const Header: React.FC<HeaderProps> = ({
               )
             )}
 
-            {/* LANGUAGE DROPDOWN (DESKTOP) */}
+            {/* LANGUAGE DROPDOWN */}
             <div className="relative">
               <button
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                 className="flex items-center gap-2 text-white hover:text-[#E4B34C] transition-colors"
               >
                 <Globe size={18} />
-                <span className="text-sm font-medium">{lang.toUpperCase()}</span>
+                <span className="text-sm font-medium">
+                  {currentLang.toUpperCase()}
+                </span>
                 <ChevronDown
                   size={16}
                   className={`transition-transform ${
@@ -158,17 +197,14 @@ const Header: React.FC<HeaderProps> = ({
                     {languages.map((l) => (
                       <button
                         key={l.code}
-                        onClick={() => {
-                          onLanguageChange?.(l.code);
-                          setIsLangDropdownOpen(false);
-                        }}
+                        onClick={() => changeLanguage(l.code)}
                         className={`w-full px-4 py-4 flex items-center gap-3 text-left ${
-                          lang === l.code
+                          currentLang === l.code
                             ? "bg-[#E4B34C]/10 text-[#E4B34C]"
                             : "text-white hover:bg-[#E4B34C]/20"
                         }`}
                       >
-                        <span>{l.flag}</span>
+                        <Flag size={14} />
                         <span className="text-sm font-medium">{l.label}</span>
                       </button>
                     ))}
@@ -181,9 +217,7 @@ const Header: React.FC<HeaderProps> = ({
           {/* MOBILE BUTTONS */}
           <div className="flex lg:hidden items-center gap-4">
             <button
-              onClick={() =>
-                onLanguageChange?.(lang === "sw" ? "en" : "sw")
-              }
+              onClick={() => changeLanguage(currentLang === "sw" ? "en" : "sw")}
               className="text-white hover:text-[#E4B34C]"
             >
               <Globe size={20} />
