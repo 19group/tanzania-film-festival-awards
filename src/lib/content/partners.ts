@@ -1,4 +1,4 @@
-// src/content/partners.ts
+// Path: src/lib/content/partners.ts
 
 export const partnersContent = {
   sw: {
@@ -22,9 +22,14 @@ export const partnersContent = {
     joinSubtitle:
       "Be part of the movement transforming Tanzania's creative industry.",
   },
-} as const;
+};
 
-export const partnersList = [
+export interface Partner {
+  name: string;
+  logo: string;
+}
+
+export const partnersList: Partner[] = [
   { name: "Nembo Ya Taifa", logo: "/images/brand/NEMBO-YA-TAIFA-LOGO-1.webp" },
   { name: "Tanzania Film Board", logo: "/images/brand/TANZANIA-FILM-BOARD-1.webp" },
   { name: "Studio 19", logo: "/images/brand/STUDIO-19-LOGO-1.webp" },
@@ -41,4 +46,4 @@ export const partnersList = [
   { name: "Afri Roots", logo: "/images/brand/afri-roots.webp" },
   { name: "Kijiweni Production", logo: "/images/brand/kijiweni-production-logo.webp" },
   { name: "Ajabu", logo: "/images/brand/ajabu-logo-black.webp" },
-] as const;
+];

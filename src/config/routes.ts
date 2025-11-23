@@ -3,6 +3,8 @@ import fs from "fs";
 import path from "path";
 import { LANGS, YEARS, type Lang, type Year } from "@/lib/types/routes";
 
+export { LANGS, YEARS };
+
 export function generateLangParams() {
   return LANGS.map((lang) => ({ lang }));
 }

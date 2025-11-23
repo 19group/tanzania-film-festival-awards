@@ -30,7 +30,7 @@ const HeroSection: React.FC<HeroProps> = ({
     seconds: 0,
   });
 
-  /** COUNTDOWN — unchanged */
+  /** COUNTDOWN  */
   useEffect(() => {
     const targetDate = new Date("December 06, 2025 10:00:00").getTime();
     const updateCountdown = () => {
@@ -60,7 +60,7 @@ const HeroSection: React.FC<HeroProps> = ({
   const t =
     heroContent[currentLang as keyof typeof heroContent] || heroContent.sw;
 
-  /** FRAMER — unchanged */
+  /** FRAMER */
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -71,7 +71,7 @@ const HeroSection: React.FC<HeroProps> = ({
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   return (
@@ -104,11 +104,11 @@ const HeroSection: React.FC<HeroProps> = ({
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="container mx-auto px-4 sm:px-6 z-20 relative"
+        className="container mx-auto pt-10 mt-10 px-4 sm:px-6 z-20 relative"
       >
         <div className="max-w-5xl mx-auto text-center">
           {/* TITLES */}
-          <motion.div variants={itemVariants} className="space-y-4 mb-6 sm:mb-8">
+          <motion.div variants={itemVariants} initial="hidden" animate="visible" className="space-y-4 mb-6 sm:mb-8">
             <motion.h1
               className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-tight"
               style={{ textShadow: "0 0 40px rgba(228, 179, 76, 0.5)" }}
@@ -129,6 +129,8 @@ const HeroSection: React.FC<HeroProps> = ({
           {/* EVENT DETAILS */}
           <motion.div
             variants={itemVariants}
+            initial="hidden"
+            animate="visible"
             className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 mb-10 sm:mb-12"
           >
             {/* unchanged — only spacing improved */}
@@ -159,7 +161,7 @@ const HeroSection: React.FC<HeroProps> = ({
           </motion.div>
 
           {/* COUNTDOWN */}
-          <motion.div variants={itemVariants} className="mb-10 sm:mb-12">
+          <motion.div variants={itemVariants} initial="hidden" animate="visible" className="mb-10 sm:mb-12">
             <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-8">
               {Object.entries(timeLeft).map(([key, value], index) => (
                 <React.Fragment key={key}>
@@ -198,6 +200,8 @@ const HeroSection: React.FC<HeroProps> = ({
           {/* CTA BUTTONS */}
           <motion.div
             variants={itemVariants}
+            initial="hidden"
+            animate="visible"
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link href={`/${currentLang}/${year}/program`} legacyBehavior>
@@ -229,20 +233,7 @@ const HeroSection: React.FC<HeroProps> = ({
         </div>
       </motion.div>
 
-      {/* SCROLL INDICATOR */}
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden sm:block"
-      >
-        <div className="w-6 h-10 border-2 border-[#E4B34C]/50 rounded-full flex items-start justify-center p-2">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-1.5 h-1.5 bg-[#E4B34C] rounded-full"
-          />
-        </div>
-      </motion.div>
+      
     </section>
   );
 };
