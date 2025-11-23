@@ -1,32 +1,37 @@
+// Path: src/config/routes.ts
 import fs from "fs";
 import path from "path";
-
-export const LANGS = ["en", "sw"] as const;
-export const YEARS = ["2025"] as const;
+import { LANGS, YEARS, type Lang, type Year } from "@/lib/types/routes";
 
 export function generateLangParams() {
   return LANGS.map((lang) => ({ lang }));
 }
 
 export function generateLangYearParams() {
-  const params: { lang: string; year: string }[] = [];
-
+  const params: { lang: Lang; year: Year }[] = [];
   for (const lang of LANGS) {
     for (const year of YEARS) {
       params.push({ lang, year });
     }
   }
-
   return params;
 }
 
 export function generateCategoryParams() {
-  // Read JSON during build — fully static, no ESLint issues
-  const filePath = path.join(process.cwd(), "src", "data", "2025", "awards.json");
-  const fileData = fs.readFileSync(filePath, "utf8");
-  const awards = JSON.parse(fileData);
+  const filePath = path.join(
+    process.cwd(),
+    "src/data/2025/awards.json"
+  );
 
-  const params: { lang: string; year: string; category: string }[] = [];
+  let awards: { categories: { id: string }[] } = { categories: [] };
+
+  try {
+    awards = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  } catch (err) {
+    console.warn("Could not read awards.json — using empty dataset.");
+  }
+
+  const params: { lang: Lang; year: Year; category: string }[] = [];
 
   for (const lang of LANGS) {
     for (const year of YEARS) {

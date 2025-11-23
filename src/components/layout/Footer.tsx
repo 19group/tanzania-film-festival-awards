@@ -18,6 +18,7 @@ import {
 interface FooterProps {
   currentLang?: string;
   year?: string;
+  lang?: string;
 }
 
 const Footer: React.FC<FooterProps> = ({ currentLang = "sw" }) => {

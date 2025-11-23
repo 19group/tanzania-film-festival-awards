@@ -9,16 +9,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // default lang passed to header; pages can override if needed
-  const lang = "en";
-  const year = "2025";
-
   return (
-    <html lang={lang}>
+    <html>
       <body className="bg-white text-black">
-        <Header lang={lang} year={year} />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

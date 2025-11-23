@@ -1,17 +1,23 @@
-// Path: src/app/[lang]/layout.tsx
-// FIXED: Layouts must NOT access params in static export mode.
-// No params. No async. Pure static layout.
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
-export default function LangLayout({
+export default async function LangLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }) {
-  return <>{children}</>;
-}
+  const { lang } = await params;
+  const year = "2025"; 
 
-// Static params still allowed
-import { generateLangParams } from "@/config/routes";
-export function generateStaticParams() {
-  return generateLangParams();
+  return (
+    <html lang={lang}>
+      <body className="bg-white text-black">
+        <Header lang={lang} year={year} />
+        <main>{children}</main>
+        <Footer lang={lang} />
+      </body>
+    </html>
+  );
 }

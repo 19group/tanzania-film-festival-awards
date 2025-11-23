@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Menu, X, ChevronDown, Globe, Flag } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
+import { navigation } from "@/lib/content/navigation";
+import { Lang } from "@/lib/types/language";
 
 interface HeaderProps {
   lang?: string;
@@ -67,28 +69,8 @@ const Header: React.FC<HeaderProps> = ({
   }, []);
 
   /** NAV LINKS */
-  const navLinks = [
-    {
-      href: `/${currentLang}`,
-      label: currentLang === "sw" ? "Nyumbani" : "Home",
-      external: false,
-    },
-    {
-      href: `/${currentLang}/${year}/program`,
-      label: currentLang === "sw" ? "Ratiba" : "Program",
-      external: false,
-    },
-    {
-      href: `/${currentLang}/${year}/awards`,
-      label: "Awards",
-      external: false,
-    },
-    {
-      href: "https://tuzo.taffafestival.or.tz",
-      label: currentLang === "sw" ? "Wasilisha" : "Submit",
-      external: true,
-    },
-  ];
+  const langKey = currentLang as Lang;
+  const navLinks = navigation[langKey];
 
   const languages = [
     { code: "sw", label: "SW" },

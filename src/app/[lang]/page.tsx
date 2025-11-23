@@ -8,8 +8,8 @@ import AboutSection from "@/components/ui/AboutSection";
 import TimelineSection from "@/components/ui/TimelineSection";
 import PartnersSection from "@/components/ui/PartnersSection";
 
-export default function LangHome({ params }: { params: { lang: string } }) {
-  const { lang } = params;
+export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   const year = "2025"; 
 
   const t = (obj: any) => (typeof obj === "string" ? obj : obj?.[lang] || obj?.en);
@@ -41,8 +41,6 @@ export default function LangHome({ params }: { params: { lang: string } }) {
           ))}
         </div>
       </section>
-
-      {/* Short About */}
 
       <AboutSection currentLang={lang} />
       <TimelineSection currentLang={lang} />
