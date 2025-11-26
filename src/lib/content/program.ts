@@ -26,14 +26,14 @@ export const programContent: ProgramContent = {
         day: "Siku ya Pili",
         description: "Mafunzo ya vitendo na mazungumzo na wataalamu",
         icon: "users",
-        color: "from-purple-500 to-pink-500",
+        color: "from-[#E4B34C] to-yellow-500",
       },
       {
         date: "16 Agosti",
         day: "Siku ya Tatu",
         description: "Maonyesho ya mwisho na sherehe ya kufunga",
         icon: "award",
-        color: "from-blue-500 to-cyan-500",
+        color: "from-[#E4B34C] to-yellow-500",
       },
     ],
 
@@ -104,14 +104,14 @@ export const programContent: ProgramContent = {
         day: "Day Two",
         description: "Hands-on training and panel discussions",
         icon: "users",
-        color: "from-purple-500 to-pink-500",
+        color: "from-[#E4B34C] to-yellow-500",
       },
       {
         date: "16 August",
         day: "Day Three",
         description: "Final screenings and closing celebration",
         icon: "award",
-        color: "from-blue-500 to-cyan-500",
+        color: "from-[#E4B34C] to-yellow-500",
       },
     ],
 
