@@ -218,7 +218,7 @@ const translations = {
     "footer.forfilmmakers.awardcategories": "Kategoria za Tuzo",
     "footer.eventinformation": "Taarifa za Tamasha",
     "footer.eventinformation.festival": "<strong>Tamasha:</strong> 14 - 16 Agosti, 2025 <br>",
-    "footer.eventinformation.awards": "<strong>Tuzo:</strong> 6 Desemba, 2025",
+    "footer.eventinformation.awards": "<strong>Tuzo:</strong> 14 Februari 2026",
     "footer.terms": "Sheria na Masharti",
 
   }
