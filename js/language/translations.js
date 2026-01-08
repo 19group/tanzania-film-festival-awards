@@ -116,7 +116,7 @@ const translations = {
     "lang.sw": "Kiswahili",
     "nav.film": "Filamu",
     "nav.awards": "Tuzo",
-    "nav.submission": "Wasilisha Filamu",
+    "nav.submission": "Piga Kura",
     "nav.awards": "Kategoria za Tuzo",
     "nav.gallery": "Picha",
     "nav.partners": "Wadau",
