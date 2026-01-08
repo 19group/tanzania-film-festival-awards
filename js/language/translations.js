@@ -9,7 +9,7 @@ const translations = {
     "lang.sw": "Kiswahili",
     "nav.film": "Film",
     "nav.awards": "Awards",
-    "nav.submission": "Submit Film  ",
+    "nav.submission": "Vote  ",
     "nav.awards": "Awards Categories",
     "nav.gallery": "Gallery",
     "nav.partners": "Partners",
