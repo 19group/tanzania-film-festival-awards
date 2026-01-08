@@ -28,7 +28,7 @@ const translations = {
     "hero.tamasha": "Join the Festival ",
     "hero.program": "Vote for Nominees",
     "hero.join": "Register for Festival",
-    "hero.see.program": "See Festival Activities",
+    "hero.see.program": "Vote for Nominees",
     "hero.register.tamasha": "Register for Festival",
     "modal.title": "Leaving Our Site",
     "modal.body": "You're about to visit our official partner submission portal. Continue?",
