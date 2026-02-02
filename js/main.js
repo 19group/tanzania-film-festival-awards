@@ -205,6 +205,22 @@ $(".see-demo-btn").on('click', function (e) {
     }, 'slow');
 });
 
+/*--------------------------
+Toggle Catgeroy     
+---------------------------- */
+
+function toggleCategory(button) {
+  const category = button.closest('.award-category');
+  const content = category.querySelector('.category-content');
+
+  category.classList.toggle('active');
+
+  if (content.style.display === 'block') {
+    content.style.display = 'none';
+  } else {
+    content.style.display = 'block';
+  }
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('load', function() {
