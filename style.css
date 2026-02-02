@@ -2115,13 +2115,14 @@ p.error { color: red }
 
 .awards-meta {
   color: #ccc;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   line-height: 1.8;
 }
 
 .awards-meta i {
   color: var(--taffa-gold);
-  margin-right: 6px;
+    margin-right: 8px;
+
 }
 
 /* ============================
@@ -2212,7 +2213,7 @@ p.error { color: red }
 }
 
 .btn-outline {
-  background: transparent;
+  background: transparent;  
   color: #fff;
   border: 2px solid var(--taffa-gold);
 }
