@@ -5,21 +5,21 @@
       "title": "Filamu Bora Ndefu",
       "subtitle": "Best Feature Film",
       "nominees": [
-        { 
-            "name": "SUSANA",
-            "image": "img/nominees/susana.jpg"
+        {
+          "name": "SUSANA",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "Business in Dar", 
-            "image": "img/nominees/business-in-dar.jpg" 
+        {
+          "name": "Business in Dar",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "BARAKATATU", 
-            "image": "img/nominees/barakatatuu.jpg" 
+        {
+          "name": "BARAKATATU",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "My Son", 
-            "image": "img/nominees/my-son.jpg" 
+        {
+          "name": "My Son",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         }
       ]
     },
@@ -28,25 +28,25 @@
       "title": "Tamthilia Bora",
       "subtitle": "Best Series",
       "nominees": [
-        { 
-            "name": "KOMBOLELA",
-            "image": "img/nominees/kombolela.jpg"
+        {
+          "name": "KOMBOLELA",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "DOSARI",
-            "image": "img/nominees/dosari.jpg"
+        {
+          "name": "DOSARI",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "Baraluko",
-            "image": "img/nominees/baraluko.jpg"
+        {
+          "name": "Baraluko",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "Kiwembe",
-            "image": "img/nominees/kiwembe.jpg"
+        {
+          "name": "Kiwembe",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "FAHARI",
-            "image": "img/nominees/fahari.jpg"
+        {
+          "name": "FAHARI",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         }
       ]
     },
@@ -55,21 +55,21 @@
       "title": "Muongozaji Bora wa Kike",
       "subtitle": "Best Female Director",
       "nominees": [
-        { 
-            "name": "Doreen Kilimbe (One Card Special)",
-            "image": "img/nominees/doreen-kilimbe.jpg"
+        {
+          "name": "Doreen Kilimbe (One Card Special)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "Gwantwa Lucas (My Friend)",
-            "image": "img/nominees/gwantwa-lucas.jpg"
+        {
+          "name": "Gwantwa Lucas (My Friend)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "Cece Mlay (The Empty Grave)",
-            "image": "img/nominees/cece-mlay.jpg"
+        {
+          "name": "Cece Mlay (The Empty Grave)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         },
-        { 
-            "name": "Pascalia Silanda (Special Kid)",
-            "image": "img/nominees/pascalia-silanda.jpg"
+        {
+          "name": "Pascalia Silanda (Special Kid)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
         }
       ]
     },
@@ -78,10 +78,22 @@
       "title": "Muongozaji Bora wa Kiume",
       "subtitle": "Best Male Director",
       "nominees": [
-        { "name": "Solomon Rais (SUSANA)" },
-        { "name": "Mbulu Mohamedi (Business in Dar)" },
-        { "name": "Malcom Hamisi Shabani (BARAKATATU)" },
-        { "name": "Ramar King (My Son)" }
+        {
+          "name": "Solomon Rais (SUSANA)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Mbulu Mohamedi (Business in Dar)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Malcom Hamisi Shabani (BARAKATATU)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Ramar King (My Son)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -89,9 +101,18 @@
       "title": "Muigizaji Bora wa Kiume",
       "subtitle": "Best Film Actor",
       "nominees": [
-        { "name": "Isarito Mwakalindile (My Son)" },
-        { "name": "Fuad Konge (OH SH*T! IT'S MY BIRTHDAY)" },
-        { "name": "SALIM AHMEDY ISSA (Mwamwindi)" }
+        {
+          "name": "Isarito Mwakalindile (My Son)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Fuad Konge (OH SH*T! IT'S MY BIRTHDAY)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "SALIM AHMEDY ISSA (Mwamwindi)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -99,10 +120,22 @@
       "title": "Muigizaji Bora wa Kike",
       "subtitle": "Best Film Actress",
       "nominees": [
-        { "name": "Rachael Richard (SUSANA)" },
-        { "name": "Mariam Ismail (Business in Dar)" },
-        { "name": "Bahati Mgunda (BARAKATATU)" },
-        { "name": "Mulky Salum (My Son)" }
+        {
+          "name": "Rachael Richard (SUSANA)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Mariam Ismail (Business in Dar)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Bahati Mgunda (BARAKATATU)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Mulky Salum (My Son)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -110,9 +143,18 @@
       "title": "Muigizaji Bora wa Kiume - Tamthilia",
       "subtitle": "Best Series Actor",
       "nominees": [
-        { "name": "Ernest Napoleon (Kiwembe)" },
-        { "name": "LUMOLE MATOVORWA (KOMBOLELA)" },
-        { "name": "SALIM AHMEDY ISSA (Baraluko)" }
+        {
+          "name": "Ernest Napoleon (Kiwembe)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "LUMOLE MATOVORWA (KOMBOLELA)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "SALIM AHMEDY ISSA (Baraluko)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -120,10 +162,22 @@
       "title": "Muigizaji Bora wa Kike - Tamthilia",
       "subtitle": "Best Series Actress",
       "nominees": [
-        { "name": "Shamira Ndwangila (KOMBOLELA)" },
-        { "name": "Marry Mtemi (DOSARI)" },
-        { "name": "MARRY MTEMI (Baraluko)" },
-        { "name": "Stella Mbuge (Kiwembe)" }
+        {
+          "name": "Shamira Ndwangila (KOMBOLELA)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Marry Mtemi (DOSARI)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "MARRY MTEMI (Baraluko)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Stella Mbuge (Kiwembe)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -131,10 +185,22 @@
       "title": "Muswada Bora",
       "subtitle": "Best Screenplay",
       "nominees": [
-        { "name": "Business in Dar" },
-        { "name": "BARAKATATU" },
-        { "name": "My Friend" },
-        { "name": "My Son" }
+        {
+          "name": "Business in Dar",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "BARAKATATU",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "My Friend",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "My Son",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -142,9 +208,18 @@
       "title": "Filamu Bora - Makala",
       "subtitle": "Best Documentary Film",
       "nominees": [
-        { "name": "The Empty Grave" },
-        { "name": "Between the Great Plains" },
-        { "name": "Guardians of the Peak" }
+        {
+          "name": "The Empty Grave",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Between the Great Plains",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Guardians of the Peak",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -152,12 +227,30 @@
       "title": "Filamu Bora Fupi",
       "subtitle": "Best Short Film",
       "nominees": [
-        { "name": "Nafasi (The chance)" },
-        { "name": "One Card Special" },
-        { "name": "INZALA" },
-        { "name": "OH SH*T! IT'S MY BIRTHDAY" },
-        { "name": "Unasemaje?" },
-        { "name": "My Friend" }
+        {
+          "name": "Nafasi (The chance)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "One Card Special",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "INZALA",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "OH SH*T! IT'S MY BIRTHDAY",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Unasemaje?",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "My Friend",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -165,9 +258,18 @@
       "title": "Filamu Bora - Sauti",
       "subtitle": "Best Sound Design",
       "nominees": [
-        { "name": "Baraluko" },
-        { "name": "The Empty Grave" },
-        { "name": "MY SON" }
+        {
+          "name": "Baraluko",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "The Empty Grave",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "MY SON",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -175,10 +277,22 @@
       "title": "Filamu Bora - Muziki",
       "subtitle": "Best Music Score",
       "nominees": [
-        { "name": "BARAKATATU" },
-        { "name": "Ngariba" },
-        { "name": "KOMBOLELA" },
-        { "name": "Baraluko" }
+        {
+          "name": "BARAKATATU",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Ngariba",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "KOMBOLELA",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Baraluko",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -186,10 +300,22 @@
       "title": "Filamu Bora - Mavazi",
       "subtitle": "Best Costume Design",
       "nominees": [
-        { "name": "Baraluko" },
-        { "name": "BARAKATATU" },
-        { "name": "Tenyorata" },
-        { "name": "My Son" }
+        {
+          "name": "Baraluko",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "BARAKATATU",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Tenyorata",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "My Son",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -197,10 +323,22 @@
       "title": "Filamu Bora - Haiba",
       "subtitle": "Best Production Design",
       "nominees": [
-        { "name": "My Son" },
-        { "name": "KOMBOLELA" },
-        { "name": "One Card Special" },
-        { "name": "Bunji" }
+        {
+          "name": "My Son",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "KOMBOLELA",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "One Card Special",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Bunji",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -208,10 +346,22 @@
       "title": "Filamu Bora - Picha",
       "subtitle": "Best Cinematography",
       "nominees": [
-        { "name": "Subira" },
-        { "name": "Tenyorata" },
-        { "name": "BARAKATATU" },
-        { "name": "My Son" }
+        {
+          "name": "Subira",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Tenyorata",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "BARAKATATU",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "My Son",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -219,10 +369,22 @@
       "title": "Filamu Bora - Uhariri",
       "subtitle": "Best Editing",
       "nominees": [
-        { "name": "Tenyorata" },
-        { "name": "SUSANA (Japhet Okelo)" },
-        { "name": "BARAKATATU" },
-        { "name": "My Friend" }
+        {
+          "name": "Tenyorata",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "SUSANA (Japhet Okelo)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "BARAKATATU",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "My Friend",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -230,10 +392,22 @@
       "title": "Filamu Bora - Mandhari",
       "subtitle": "Best Set Design",
       "nominees": [
-        { "name": "Unasemaje?" },
-        { "name": "BARAKATATU" },
-        { "name": "KOMBOLELA" },
-        { "name": "Baraluko" }
+        {
+          "name": "Unasemaje?",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "BARAKATATU",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "KOMBOLELA",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Baraluko",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -241,9 +415,18 @@
       "title": "Muigizaji Bora Chipukizi wa Kiume",
       "subtitle": "Best Upcoming Actor",
       "nominees": [
-        { "name": "Erick John (Susana)" },
-        { "name": "Mohamed Issa (Subira)" },
-        { "name": "Mwinyihamisi Bakari (The One at Home)" }
+        {
+          "name": "Erick John (Susana)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Mohamed Issa (Subira)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Mwinyihamisi Bakari (The One at Home)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -251,11 +434,26 @@
       "title": "Muigizaji Bora Chipukizi wa Kike",
       "subtitle": "Best Upcoming Actress",
       "nominees": [
-        { "name": "Tekla Adolf (The One at Home)" },
-        { "name": "Rachel Richard (SUSANA)" },
-        { "name": "ZULFA SHOO (Baraluko)" },
-        { "name": "Elizabeth Wang (Kiwembe)" },
-        { "name": "Jasmine Nathani Sanga (Subira)" }
+        {
+          "name": "Tekla Adolf (The One at Home)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Rachel Richard (SUSANA)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "ZULFA SHOO (Baraluko)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Elizabeth Wang (Kiwembe)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Jasmine Nathani Sanga (Subira)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -263,9 +461,18 @@
       "title": "Muigizaji Bora Mpambe wa Kike",
       "subtitle": "Best Supporting Actress",
       "nominees": [
-        { "name": "Theresia Patrick (SUSANA)" },
-        { "name": "Elice Mwakajila (One Card Special)" },
-        { "name": "Careen Justine (Oh S**t It's My Birthday)" }
+        {
+          "name": "Theresia Patrick (SUSANA)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Elice Mwakajila (One Card Special)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Careen Justine (Oh S**t It's My Birthday)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -273,9 +480,18 @@
       "title": "Muigizaji Bora Mpambe wa Kiume",
       "subtitle": "Best Supporting Actor",
       "nominees": [
-        { "name": "Faisal Fernandez (SUSANA)" },
-        { "name": "Ally Migomba (Usiku wa Mchana)" },
-        { "name": "Daniel Faber (The One at Home)" }
+        {
+          "name": "Faisal Fernandez (SUSANA)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Ally Migomba (Usiku wa Mchana)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Daniel Faber (The One at Home)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -283,10 +499,22 @@
       "title": "Tamthilia Bora Afrika Mashariki",
       "subtitle": "Best East Africa Series",
       "nominees": [
-        { "name": "Ties that Bind Us (Uganda)" },
-        { "name": "Speak (Uganda)" },
-        { "name": "Murder Scam (Uganda)" },
-        { "name": "Sanyu (Uganda)" }
+        {
+          "name": "Ties that Bind Us (Uganda)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Speak (Uganda)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Murder Scam (Uganda)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Sanyu (Uganda)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
@@ -294,39 +522,96 @@
       "title": "Filamu Ndefu Bora Afrika Mashariki",
       "subtitle": "Best Feature Film East Africa",
       "nominees": [
-        { "name": "Sayari (Kenya)" },
-        { "name": "NKINZI (Uganda)" },
-        { "name": "Midlife Crisis (Kenya)" },
-        { "name": "Bobo (Kenya)" },
-        { "name": "Tagged (Kenya)" }
+        {
+          "name": "Sayari (Kenya)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "NKINZI (Uganda)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Midlife Crisis (Kenya)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Bobo (Kenya)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Tagged (Kenya)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
       "id": "audience-choice-actor",
       "title": "Muigizaji Bora wa Kiume Chaguo la Watazamaji",
-      "subtitle": "Best Actor – Audience Choice",
+      "subtitle": "Best Actor \u2013 Audience Choice",
       "nominees": [
-        { "name": "Ernest Napoleon (Kiwembe)" },
-        { "name": "Lumole Matovolwa (Kombolela)" },
-        { "name": "SALIM AHMEDY ISSA (Baraluko)" },
-        { "name": "Isarito Mwakalindile (My Son)" },
-        { "name": "Fuad Konge (OH SH*T! IT'S MY BIRTHDAY)" },
-        { "name": "Rashid Ramadhani (Barakatatu)" }
+        {
+          "name": "Ernest Napoleon (Kiwembe)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Lumole Matovolwa (Kombolela)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "SALIM AHMEDY ISSA (Baraluko)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Isarito Mwakalindile (My Son)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Fuad Konge (OH SH*T! IT'S MY BIRTHDAY)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Rashid Ramadhani (Barakatatu)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     },
     {
       "id": "audience-choice-actress",
       "title": "Muigizaji Bora wa Kike Chaguo la Watazamaji",
-      "subtitle": "Best Actress – Audience Choice",
+      "subtitle": "Best Actress \u2013 Audience Choice",
       "nominees": [
-        { "name": "Shamira Ndwangila (Kombolela)" },
-        { "name": "Marry Mtemi (Dosari)" },
-        { "name": "Tekla Adolf (The One at Home)" },
-        { "name": "Stella Mbuge (Kiwembe)" },
-        { "name": "Rachael Richard (Susana)" },
-        { "name": "Mariam Ismail (Business in Dar)" },
-        { "name": "Bahati Mgunda (BARAKATATU)" },
-        { "name": "Mulky Salum (My Son)" }
+        {
+          "name": "Shamira Ndwangila (Kombolela)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Marry Mtemi (Dosari)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Tekla Adolf (The One at Home)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Stella Mbuge (Kiwembe)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Rachael Richard (Susana)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Mariam Ismail (Business in Dar)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Bahati Mgunda (BARAKATATU)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        },
+        {
+          "name": "Mulky Salum (My Son)",
+          "image": "../img/nominee/award-nominee-thumb.webp"
+        }
       ]
     }
   ]

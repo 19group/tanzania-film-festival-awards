@@ -490,7 +490,7 @@ ul li { display: inline-block }
 }
 .logo-menu-area .main-menu ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 12px;
   margin: 0;
   display: flex;
   /* gap: 15px; */
@@ -545,6 +545,67 @@ box-shadow: 0 4px 15px rgba(247, 233, 82, 0.2);
 }
 .main-menu ul li { margin-right: 40px }
 .main-menu ul li:last-child { margin: 0 }
+.main-menu .nav-dropdown {
+  position: relative;
+}
+.main-menu .nav-dropdown > a::after {
+  content: "▾";
+  margin-left: 6px;
+  font-size: 12px;
+}
+.main-menu .nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #111;
+  border: none;
+  border-radius: 0;
+  padding: 15px;
+  min-width: 150px;
+  display: none !important;
+  z-index: 1000;
+  box-shadow: none;
+}
+.main-menu .nav-dropdown-menu li {
+  display: block;
+  margin: 0 0 10px 0;
+}
+.main-menu .nav-dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+.main-menu .nav-dropdown-menu a {
+  display: block;
+  padding: 0;
+  white-space: nowrap;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  background: transparent;
+  color: #fff3c9;
+}
+.main-menu .nav-dropdown-menu a:hover {
+  background: transparent;
+  color: #fcd462;
+}
+.main-menu .nav-dropdown.open .nav-dropdown-menu {
+  display: block !important;
+}
+.mobile-menu .nav-dropdown-menu {
+  position: static;
+  display: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 6px 0 0 12px;
+  min-width: 0;
+}
+.mobile-menu .nav-dropdown.open .nav-dropdown-menu {
+  display: block;
+}
+.mobile-menu .nav-dropdown > a::after {
+  content: "";
+}
 .header-area {
     left: 0;
     position: absolute;
@@ -2131,6 +2192,8 @@ p.error { color: red }
 
 .awards-hero-countdown {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -2140,6 +2203,13 @@ p.error { color: red }
   gap: clamp(8px, 2vw, 16px);
   padding: clamp(16px, 3vw, 28px) clamp(20px, 4vw, 40px);
   border-radius: 18px;
+}
+.awards-countdown-note {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff3c9;
+  font-size: 14px;
+  letter-spacing: 0.3px;
 }
 
 .time-box {
@@ -2238,12 +2308,21 @@ p.error { color: red }
 
   .awards-hero-cta {
     margin-bottom: 0;
+    align-items: center;
   }
 }
 
 @media (max-width: 576px) {
   .countdown-timer {
     flex-wrap: nowrap;
+  }
+  .awards-hero-cta {
+    align-items: center;
+    text-align: center;
+  }
+  .awards-hero-cta .btn {
+    width: 100%;
+    max-width: 320px;
   }
 }
 /* ===============================
@@ -3830,5 +3909,3 @@ blockquote {
 .about-btn {
   margin-top: 40px;
 }
-
-

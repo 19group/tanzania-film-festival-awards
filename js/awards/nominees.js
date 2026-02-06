@@ -2,12 +2,23 @@ const VOTE_URL = "https://taffafestival.or.tz/kura";
 
 fetch("../js/data/nominees.json")
             .then(res => res.json())
-            .then(data => renderCategories(data.categories))
+            .then(data => {
+                renderCategories(data.categories);
+                refreshTranslations();
+            })
             .catch(() => {
                 // Fallback to sample data if fetch fails
                 console.log("Using sample data");
                 renderCategories(sampleData.categories);
+                refreshTranslations();
             });
+
+        function refreshTranslations() {
+            if (typeof window.setLanguage !== "function") return;
+            const savedLang = localStorage.getItem("siteLang");
+            const lang = savedLang === "en" ? "en" : "sw";
+            window.setLanguage(lang);
+        }
 
         function renderCategories(categories) {
             const container = document.getElementById("nomineesContainer");
@@ -54,14 +65,13 @@ fetch("../js/data/nominees.json")
                                                 class="nominee-image"
                                                 loading="lazy"
                                             />
-                                            ${index === 0 ? '<span class="nominee-badge">Featured</span>' : ''}
                                         </div>
                                         <div class="nominee-info">
                                             <h5 class="nominee-name">${nominee.name}</h5>
                                             <p class="nominee-work">${nominee.work || 'Nominee'}</p>
                                             <a href="${VOTE_URL}" target="_blank" class="vote-btn">
                                                 <i class="fas fa-vote-yea"></i>
-                                                Vote Now
+                                                <span data-i18n="awards.cta.vote"></span>
                                             </a>
                                         </div>
                                     </div>
