@@ -39,9 +39,23 @@ document.addEventListener("click", function (event) {
   if (!event.target.closest(".language-dropdown")) {
     document.querySelectorAll(".language-options").forEach(dropdown => dropdown.style.display = "none");
   }
+  if (!event.target.closest(".nav-dropdown")) {
+    document.querySelectorAll(".nav-dropdown.open").forEach(dropdown => dropdown.classList.remove("open"));
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".nav-dropdown-toggle").forEach(toggle => {
+    toggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      const parent = toggle.closest(".nav-dropdown");
+      if (!parent) return;
+      const isOpen = parent.classList.contains("open");
+      document.querySelectorAll(".nav-dropdown.open").forEach(dropdown => dropdown.classList.remove("open"));
+      if (!isOpen) parent.classList.add("open");
+    });
+  });
+
   const queryLang = getQueryParam("lang");
   const validLangs = ["en", "sw"];
   let lang = "sw";

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js notranslate" lang="en" translate="no">
 
 <head>
     <meta charset="utf-8">
@@ -7,6 +7,7 @@
     <title>Awards || Tanzania Film Festivals and Awards</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="../img/icon/taffa-favicon.png">
@@ -73,7 +74,7 @@
 </head>
 
 
-<body>
+<body class="awards-page">
     <!-- Loading Screen -->
     <div id="loader-wrapper">
         <div class="spinner"></div>
@@ -111,7 +112,12 @@
                           <!-- Right nav -->
                           <nav class="main-menu d-flex gap-3 align-items-center">
                             <ul class="nav-right d-flex gap-3">
-                              <li><a href="../tuzo/" data-i18n="nav.awards">Awards</a></li>
+                              <li class="nav-dropdown">
+                                <a href="../tuzo/" class="nav-dropdown-toggle" data-i18n="nav.awards">Awards</a>
+                                <ul class="nav-dropdown-menu">
+                                  <li><a href="../tuzo/" data-i18n="nav.award_nominees">Award Nominees</a></li>
+                                </ul>
+                              </li>
                               <!-- <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li> -->
                               <li>
                                 <a 
@@ -196,7 +202,12 @@
                             <li><a href="https://masharikinataffa.tukiio.com/registration/expotamasha" target="_blank" data-i18n="nav.register"></a></li>
                           </ul>
                           <ul class="mobile-menu-right">
-                            <li><a href="#" data-i18n="nav.awards">Awards</a></li>
+                            <li class="nav-dropdown">
+                              <a href="../tuzo/" class="nav-dropdown-toggle" data-i18n="nav.awards">Awards</a>
+                              <ul class="nav-dropdown-menu">
+                                <li><a href="../tuzo/" data-i18n="nav.award_nominees">Award Nominees</a></li>
+                              </ul>
+                            </li>
                             <li><a href="https://taffafestival.or.tz/kura" target="_blank" data-i18n="nav.submission">Submission</a></li>
                             <!-- <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li> -->
                             <!-- <li><a href="https://masharikinataffa.tukiio.com/registration/expotamasha" target="_blank" data-i18n="nav.register"></a></li> -->
@@ -216,24 +227,68 @@
 
         <!-- Hero Section -->
         <section class="awards-hero">
-                <!--  breadcumb-area start-->
-            <div class="breadcumb-area ">
-                <div class="container">
-                    <ol class="breadcrumb">
-                        <li><a href="../index.html">Home </a></li>
-                        <li>| Awards</li>
-                    </ol>
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT: Award Info -->
+                <div class="col-lg-4 col-md-12 awards-hero-info">
+                    <!-- Title Image -->
+                    <img 
+                        src="/img/bg/taffaawards-heading.png" 
+                        alt="TAFFA Awards 2025" 
+                        class="awards-title-image"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                    />
+                    <!-- Fallback text if image fails to load -->
+                    <h1 class="awards-title" style="display: none;" data-i18n="awards.hero.title">TAFFA Awards 2025</h1>
+                    
+                    <p class="awards-meta">
+                        <i class="fas fa-calendar-alt" style="color: #E4B34C;"></i> <strong data-i18n="awards.hero.when">When:</strong> <span data-i18n="awards.hero.date">February 14, 2026</span> <br>
+                        <i class="fas fa-map-marker-alt" style="color: #E4B34C; "></i> <strong data-i18n="awards.hero.where">Where:</strong> <span data-i18n="awards.hero.venue">Super Dome Masaki, Dar es Salaam</span>
+                    </p>
                 </div>
-        
-                <!--  breadcumb-area end-->
+
+                <!-- CENTER: Countdown -->
+                <div class="col-lg-4 col-md-12 awards-hero-countdown">
+                    <div class="awards-hero-countdown-timer">
+                        <div class="time-box">
+                            <span id="days">0</span>
+                            <small data-i18n="awards.countdown.days">Days</small>
+                        </div>
+                        <div class="colon">:</div>
+                        <div class="time-box">
+                            <span id="hours">00</span>
+                            <small data-i18n="awards.countdown.hours">Hours</small>
+                        </div>
+                        <div class="colon">:</div>
+                        <div class="time-box">
+                            <span id="minutes">00</span>
+                            <small data-i18n="awards.countdown.minutes">Minutes</small>
+                        </div>
+                    </div>
+                    <div class="awards-countdown-note" data-i18n="awards.countdown.note">Voting closes in</div>
+                </div>
+
+                <!-- RIGHT: CTA -->
+                <div class="col-lg-4 col-md-12 awards-hero-cta">
+                    <a href="https://taffafestival.or.tz/kura" class="btn btn-yellow " target="_blank">
+                        <i class="zmdi zmdi-thumb-up mx-md-2"></i> <span data-i18n="awards.cta.vote">Vote Now</span>
+                    </a>
+                    <a href="/tickets/" class="btn btn-outline ">
+                        <i class="zmdi zmdi-ticket-star mx-md-2"></i> <span data-i18n="awards.cta.tickets">Get Tickets</span>
+                    </a>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
+
 
         <!-- Main Awards Content -->
-        <div class="awards-main">
+        <div class="awards-main" style="background: linear-gradient(to bottom, #fafafa, #ffffff);">
             <div class="container">
                 <!-- Nominations & Voting Section -->
-                <section class="mb-5 pb-5 pt-5  ">
+                <!-- <section class="mb-5 pb-5 pt-5  ">
                     <h1 class="section-title" data-i18n="award.section.title"></h1>
                     <div class="nominations-card animate-on-scroll">
                         <div class="nominations-icon">
@@ -247,334 +302,23 @@
                             <li data-i18n="award.nomination.list.4">Winners announced at the grand ceremony</li>
                         </ul>
                     </div>
-                </section>
+                </section> -->
 
                 <!-- Award Categories Section -->
-                 <section class="section">
-    <div class="container">
-        <h1 class="section-title text-center mb-5">Award Categories & Nominees</h1>
-        <div class="awards-grid">
-            
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-film"></i></div>
-                <h3 class="award-title">Filamu Bora Ndefu</h3>
-                <p class="award-description">Best Feature Film</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">SUSANA</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Business in Dar</span></div>
-                    <div class="nominee-item"><span class="nominee-name">BARAKATATU</span></div>
-                    <div class="nominee-item"><span class="nominee-name">My Son</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-tv"></i></div>
-                <h3 class="award-title">Tamthilia Bora</h3>
-                <p class="award-description">Best Series</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">KOMBOLELA</span></div>
-                    <div class="nominee-item"><span class="nominee-name">DOSARI</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Baraluko</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Kiwembe</span></div>
-                    <div class="nominee-item"><span class="nominee-name">FAHARI</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-clapperboard"></i></div>
-                <h3 class="award-title">Muongozaji Bora wa Kike</h3>
-                <p class="award-description">Best Female Director</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Doreen Kilimbe (One Card Special)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Gwantwa Lucas (My Friend)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Cece Mlay (The Empty Grave)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Pascalia Silanda (Special Kid)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-video"></i></div>
-                <h3 class="award-title">Muongozaji Bora wa Kiume</h3>
-                <p class="award-description">Best Male Director</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Solomon Rais (SUSANA)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Mbulu Mohamedi (Business in Dar)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Malcom Hamisi Shabani (BARAKATATU)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Ramar King (My Son)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-user"></i></div>
-                <h3 class="award-title">Muigizaji Bora wa Kiume</h3>
-                <p class="award-description">Best Film Actor</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Isarito Mwakalindile (My Son)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Fuad Konge (OH SH*T! IT'S MY BIRTHDAY)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">SALIM AHMEDY ISSA (Mwamwindi)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-user-friends"></i></div>
-                <h3 class="award-title">Muigizaji Bora wa Kike</h3>
-                <p class="award-description">Best Film Actress</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Rachael Richard (SUSANA)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Mariam Ismail (Business in Dar)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Bahati Mgunda (BARAKATATU)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Mulky Salum (My Son)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-tv"></i></div>
-                <h3 class="award-title">Muigizaji Bora wa Kiume - Tamthilia</h3>
-                <p class="award-description">Best Series Actor</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Ernest Napoleon (Kiwembe)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">LUMOLE MATOVORWA (KOMBOLELA)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">SALIM AHMEDY ISSA (Baraluko)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-user-tie"></i></div>
-                <h3 class="award-title">Muigizaji Bora wa Kike - Tamthilia</h3>
-                <p class="award-description">Best Series Actress</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Shamira Ndwangila (KOMBOLELA)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Marry Mtemi (DOSARI)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">MARRY MTEMI (Baraluko)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Stella Mbuge (Kiwembe)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-pen-fancy"></i></div>
-                <h3 class="award-title">Muswada Bora</h3>
-                <p class="award-description">Best Screenplay</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Business in Dar</span></div>
-                    <div class="nominee-item"><span class="nominee-name">BARAKATATU</span></div>
-                    <div class="nominee-item"><span class="nominee-name">My Friend</span></div>
-                    <div class="nominee-item"><span class="nominee-name">My Son</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-bullhorn"></i></div>
-                <h3 class="award-title">Filamu Bora - Makala</h3>
-                <p class="award-description">Best Documentary Film</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">The Empty Grave</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Between the Great Plains</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Guardians of the Peak</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-video-camera"></i></div>
-                <h3 class="award-title">Filamu Bora Fupi</h3>
-                <p class="award-description">Best Short Film</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Nafasi (The chance)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">One Card Special</span></div>
-                    <div class="nominee-item"><span class="nominee-name">INZALA</span></div>
-                    <div class="nominee-item"><span class="nominee-name">OH SH*T! IT'S MY BIRTHDAY</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Unasemaje?</span></div>
-                    <div class="nominee-item"><span class="nominee-name">My Friend</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-volume-up"></i></div>
-                <h3 class="award-title">Filamu Bora - Sauti</h3>
-                <p class="award-description">Best Sound Design</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Baraluko</span></div>
-                    <div class="nominee-item"><span class="nominee-name">The Empty Grave</span></div>
-                    <div class="nominee-item"><span class="nominee-name">MY SON</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-music"></i></div>
-                <h3 class="award-title">Filamu Bora - Muziki</h3>
-                <p class="award-description">Best Music Score</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">BARAKATATU</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Ngariba</span></div>
-                    <div class="nominee-item"><span class="nominee-name">KOMBOLELA</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Baraluko</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-shirt"></i></div>
-                <h3 class="award-title">Filamu Bora - Mavazi</h3>
-                <p class="award-description">Best Costume Design</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Baraluko</span></div>
-                    <div class="nominee-item"><span class="nominee-name">BARAKATATU</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Tenyorata</span></div>
-                    <div class="nominee-item"><span class="nominee-name">My Son</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-couch"></i></div>
-                <h3 class="award-title">Filamu Bora - Haiba</h3>
-                <p class="award-description">Best Production Design</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">My Son</span></div>
-                    <div class="nominee-item"><span class="nominee-name">KOMBOLELA</span></div>
-                    <div class="nominee-item"><span class="nominee-name">One Card Special</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Bunji</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-camera"></i></div>
-                <h3 class="award-title">Filamu bora - Picha</h3>
-                <p class="award-description">Best Cinematography</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Subira</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Tenyorata</span></div>
-                    <div class="nominee-item"><span class="nominee-name">BARAKATATU</span></div>
-                    <div class="nominee-item"><span class="nominee-name">My Son</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-scissors"></i></div>
-                <h3 class="award-title">Filamu Bora - Uhariri</h3>
-                <p class="award-description">Best Editing</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Tenyorata</span></div>
-                    <div class="nominee-item"><span class="nominee-name">SUSANA (Japhet Okelo)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">BARAKATATU</span></div>
-                    <div class="nominee-item"><span class="nominee-name">My Friend</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-landmark"></i></div>
-                <h3 class="award-title">Filamu Bora - Mandhari</h3>
-                <p class="award-description">Best Set Design</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Unasemaje?</span></div>
-                    <div class="nominee-item"><span class="nominee-name">BARAKATATU</span></div>
-                    <div class="nominee-item"><span class="nominee-name">KOMBOLELA</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Baraluko</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-star"></i></div>
-                <h3 class="award-title">Muigizaji Bora Chipukizi wa Kiume</h3>
-                <p class="award-description">Best Upcoming Actor</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Erick John (Susana)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Mohamed Issa (Subira)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Mwinyihamisi Bakari (The One at Home)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-star-half-alt"></i></div>
-                <h3 class="award-title">Muigizaji Bora Chipukizi wa Kike</h3>
-                <p class="award-description">Best Upcoming Actress</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Tekla Adolf (The One at Home)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Rachel Richard (SUSANA)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">ZULFA SHOO (Baraluko)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Elizabeth wang (Kiwembe)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Jasmine Nathani Sanga (Subira)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-person-dress"></i></div>
-                <h3 class="award-title">Muigizaji Bora Mpambe wa Kike</h3>
-                <p class="award-description">Best Supporting Actress</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Theresia Patrick (SUSANA)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Elice Mwakajila (One Card Special)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Careen Justine (Oh S**t It's My Birthday)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-person"></i></div>
-                <h3 class="award-title">Muigizaji Bora Mpambe wa kiume</h3>
-                <p class="award-description">Best Supporting Actor</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Faisal Fernandez (SUSANA)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Ally Migomba (Usiku wa Mchana)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Daniel Faber (The One at Home)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-earth-africa"></i></div>
-                <h3 class="award-title">Tamthilia Bora Afrika Mashariki</h3>
-                <p class="award-description">Best East Africa Series</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Ties that Bind Us (Uganda)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Speak (Uganda)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Murder Scam (Uganda)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Sanyu (Uganda)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-globe"></i></div>
-                <h3 class="award-title">Filamu Ndefu Bora Afrika Mashariki</h3>
-                <p class="award-description">Best Feature Film East Africa</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Sayari (Kenya)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">NKINZI (Uganda)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Midlife Crisis (Kenya)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Bobo (Kenya)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Tagged (Kenya)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-users"></i></div>
-                <h3 class="award-title">Muigizaji Bora wa Kiume Chaguo la Watazamaji</h3>
-                <p class="award-description">Best Actor Audience Choice</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Ernest Napoleon (Kiwembe)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Lumole Matovolwa (Kombolela)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">SALIM AHMEDY ISSA (Baraluko)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Isarito Mwakalindile (My Son)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Fuad Konge (OH SH*T! IT'S MY BIRTHDAY)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Rashid Ramadhani (Barakatatu)</span></div>
-                </div>
-            </div>
-
-            <div class="award-card animate-on-scroll">
-                <div class="award-icon"><i class="fas fa-users-viewfinder"></i></div>
-                <h3 class="award-title">Muigizaji Bora wa Kike Chaguo la Watazamaji</h3>
-                <p class="award-description">Best Actress Audience Choice</p>
-                <div class="nominee-list">
-                    <div class="nominee-item"><span class="nominee-name">Shamira Ndwangila (Kombolela)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Marry Mtemi (Dosari)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Tekla Adolf (The One at Home)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Stella Mbuge (Kiwembe)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Rachael Richard (Susana)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Mariam Ismail (Business in Dar)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Bahati Mgunda (BARAKATATU)</span></div>
-                    <div class="nominee-item"><span class="nominee-name">Mulky Salum (My Son)</span></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
+                <section class="awards-nominees" id="award-nominees">
+                    <div class="container">
+                        <h1 class="section-title text-center" data-i18n="awards.section.title">Award Categories & Nominees</h1>
+                        <p class="section-subtitle text-center" data-i18n="awards.section.subtitle">
+                            Celebrating excellence in Tanzanian cinema. 
+                        </p>
+                        <div id="nomineesContainer">
+                            <!-- Loading skeletons -->
+                            <div class="loading-skeleton mb-3"></div>
+                            <div class="loading-skeleton mb-3"></div>
+                            <div class="loading-skeleton"></div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
@@ -626,6 +370,86 @@
             </div>
         </div> -->
         <!--information area are start-->
+        <section id="partners" class="partners-section py-100">
+  <div class="container text-center">
+
+    <!-- Title & Subtitle -->
+    <h2 class="partners-title mb-2" data-i18n="partners.title">Official Sponsors & Partners</h2>
+    <p class="partners-subtitle mb-4" data-i18n="partners.subtitle">We are grateful for the incredible organizations that make TAFFA possible through partnership and support.</p>
+<!-- 
+ <h3 class="tier-label">Strategic Partners</h3>
+    <div class="sponsor-logos">
+      <div class="partner-logo-wrapper"><img src="partner1.png" class="partner-logo" alt="Partner 1"/></div>
+      <div class="partner-logo-wrapper"><img src="partner2.png" class="partner-logo" alt="Partner 2"/></div>
+      <div class="partner-logo-wrapper"><img src="partner3.png" class="partner-logo" alt="Partner 3"/></div>
+    </div>
+
+    <h3 class="tier-label">Community Partners</h3>
+    <div class="sponsor-logos">
+      <div class="partner-logo-wrapper"><img src="partner4.png" class="partner-logo" alt="Partner 4"/></div>
+      <div class="partner-logo-wrapper"><img src="partner5.png" class="partner-logo" alt="Partner 5"/></div>
+      <div class="partner-logo-wrapper"><img src="partner6.png" class="partner-logo" alt="Partner 6"/></div>
+    </div>
+-->
+    <!-- Logo Grid -->
+    <div class="row justify-content-center align-items-center 4">
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/NEMBO-YA-TAIFA-LOGO-1.webp" class="partner-logo" alt="Nembo Ya Taifa Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/TANZANIA-FILM-BOARD-1.webp" class="partner-logo" alt="Tanzania Film Board Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/STUDIO-19-LOGO-1.webp" class="partner-logo" alt="Studio 19 Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/azam-media.webp" class="partner-logo" alt="Azam Media Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/CDEA-master-logo -1.png" class="partner-logo" alt="CDEA Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/TAFF-LOGO.png" class="partner-logo" alt="TAFF Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/alliance-francaise-logo.webp" class="partner-logo" alt="Alliance Francaise Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/19-RENTALS-LOGO-PNG-1.png" class="partner-logo" alt="19 Rentals Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="partner-logo" alt="Docubox Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/taiplus.png" class="partner-logo" alt="Taiplus Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/Nafasi-Logo-1.webp" class="partner-logo" alt="Nafasi Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 partner-container">
+        <img src="/img/brand/tasa-Logo.png" class="partner-logo" alt="Tasa Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/Simulizi-Festival-Logo.webp" class="partner-logo" alt="Simulizi Festival Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 partner-container">
+        <img src="/img/brand/afri-roots.webp" class="partner-logo" alt="Afri Roots Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/kijiweni-production-logo.webp" class="partner-logo" alt="Kijiweni Production Logo">
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <img src="/img/brand/ajabu-logo-black.webp" class="partner-logo" alt="Ajabu Logo">
+      </div>
+
+    </div>
+
+    <!-- CTA Button -->
+    <a href="mailto:taffapartners@studio19.co.tz" class="btn-gradient mt-5" data-i18n="partners.cta">Become a Partner & Sponsor </a>
+
+  </div>
+</section>
 
         <!--footer area are start-->
         <footer class="footer-area">
@@ -698,7 +522,7 @@
                               </div>
                               <div class="event-info-item">
                                   <i class="fas fa-map-marker-alt"></i>
-                                  <span>Mlimani City, Dar es Salaam, Tanzania</span>
+                                  <span data-i18n="footer.eventinformation.venue">Mlimani City, Dar es Salaam, Tanzania</span>
                               </div>
                               <div class="event-info-item">
                                   <i class="fas fa-envelope"></i>
@@ -736,7 +560,7 @@
                           <!-- <a href="#sitemap">Sitemap</a> -->
                       </div>
                       <div class="copyright">
-                          <p>&copy; 2025 Tanzania Film Festivals and Awards (TAFFA). All rights reserved.</p>
+                          <p data-i18n="footer.copyright">&copy; 2025 Tanzania Film Festivals and Awards (TAFFA). All rights reserved.</p>
                       </div>
                   </div>
               </div>
@@ -745,6 +569,28 @@
         <!--footer area are start-->
     </div>
     <!--body-wraper-are-end-->
+    <script>
+    function updateCountdown(targetTimeMs) {
+      const now = Date.now();
+      let distance = targetTimeMs - now;
+
+      if (distance < 0) distance = 0;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const targetTimeMs = Date.UTC(2026, 1, 7, 0, 0, 0); // 2026-02-07 00:00:00 GMT
+      updateCountdown(targetTimeMs);
+      setInterval(() => updateCountdown(targetTimeMs), 1000);
+    });
+  </script>
 
     <!--==== all js here====-->
     <!-- jquery latest version -->
@@ -775,6 +621,7 @@
     <script src="../js/plugins.js"></script>
     <!-- main js -->
     <script src="../js/main.js"></script>
+    <script src="../js/awards/nominees.js"></script>
     <script src="../js/language/language.js"></script>
     <script src="../js/language/translations.js"></script>
 
