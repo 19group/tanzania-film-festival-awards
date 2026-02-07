@@ -105,7 +105,7 @@
                               <li>
                                 <a 
                                   href="https://taffafestival.or.tz/kura"
-                                  target="_blank" 
+                                  data-vote-closed="true"
                                   data-i18n="nav.submission">
                                 </a>
                               </li>
@@ -191,7 +191,7 @@
                                 <li><a href="./tuzo/" data-i18n="nav.award_nominees">Award Nominees</a></li>
                               </ul>
                             </li>
-                            <li><a href="https://taffafestival.or.tz/kura" target="_blank" data-i18n="nav.submission">Submission</a></li>
+                            <li><a href="https://taffafestival.or.tz/kura" data-vote-closed="true" data-i18n="nav.submission">Submission</a></li>
                             <!-- <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li> -->
                             <!-- <li><a href="https://masharikinataffa.tukiio.com/registration/expotamasha" target="_blank" data-i18n="nav.register"></a></li> -->
                             <!-- <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li> -->
@@ -270,7 +270,7 @@
         <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
       </div>
             <div class="secondary-btn">
-              <a class="btn-outline" href="./kura" target="_blank" data-i18n="hero.see.program"></a>
+              <a class="btn-outline" href="./kura" data-vote-closed="true" data-i18n="hero.see.program"></a>
               </div>
           </div>
           <div class="submit-button-container ">
@@ -588,8 +588,8 @@
   <div class="container text-center">
 
     <!-- Title & Subtitle -->
-    <h2 class="partners-title mb-2">Official Sponsors & Partners</h2>
-    <p class="partners-subtitle mb-4">We are grateful for the incredible organizations that make TAFFA possible through partnership and support.</p>
+    <h2 class="partners-title mb-2" data-i18n="partners.title.festival">Official Festival Sponsors & Partners</h2>
+    <p class="partners-subtitle mb-4" data-i18n="partners.subtitle">We are grateful for the incredible organizations that make TAFFA possible through partnership and support.</p>
 <!-- 
  <h3 class="tier-label">Strategic Partners</h3>
     <div class="sponsor-logos">
@@ -660,7 +660,7 @@
     </div>
 
     <!-- CTA Button -->
-    <a href="mailto:taffapartners@studio19.co.tz" class="btn-gradient mt-5">Become a Partner & Sponsor </a>
+    <a href="mailto:taffapartners@studio19.co.tz" class="btn-gradient mt-5" data-i18n="partners.cta">Become a Partner & Sponsor </a>
 
   </div>
 </section>
@@ -765,7 +765,7 @@
                           <div class="footer-widget">
                               <h4 data-i18n="footer.forfilmmakers">For Filmmakers</h4>
                               <ul>
-                                  <li ><a href="https://taffafestival.or.tz/kura" target="_blank" data-i18n="footer.forfilmmakers.submityourfilm">Submit Your Film</a></li>
+                                  <li ><a href="https://taffafestival.or.tz/kura" data-vote-closed="true" data-i18n="footer.forfilmmakers.submityourfilm">Submit Your Film</a></li>
                                   <!-- <li><a href="#submissions">Submission Guidelines</a></li> -->
                                   <li ><a href="./tuzo/" data-i18n="footer.forfilmmakers.awardcategories">Award Categories</a></li>
                                   <!-- <li><a href="#deadlines">Important Dates</a></li>
@@ -846,6 +846,23 @@
       <div class="modal-actions">
         <button class="modal-btn confirm" onclick="redirectToSubmission()" data-i18n="modal.yes">Yes, continue</button>
         <button class="modal-btn cancel" onclick="closeSubmissionModal()" data-i18n="modal.no">No, stay here</button>
+      </div>
+    </div>
+  </div>
+  <!-- Voting Closed Modal -->
+  <div class="modal fade" id="votingClosedModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" data-i18n="modal.vote_closed.title">Voting Closed</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" data-i18n="modal.vote_closed.body">
+          Voting time is over. Thank you for participating.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="modal.vote_closed.close">Close</button>
+        </div>
       </div>
     </div>
   </div>
@@ -955,6 +972,17 @@
     <script src="js/main.js"></script>
     <script src="js/language/translations.js"></script>
     <script src="js/language/language.js"></script>
+    <script>
+      document.addEventListener("click", (event) => {
+        const trigger = event.target.closest("[data-vote-closed]");
+        if (!trigger) return;
+        event.preventDefault();
+        const modalEl = document.getElementById("votingClosedModal");
+        if (!modalEl || !window.bootstrap || !window.bootstrap.Modal) return;
+        const modal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
+        modal.show();
+      });
+    </script>
 </body>
 
 </html>
