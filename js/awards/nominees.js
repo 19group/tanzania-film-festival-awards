@@ -69,7 +69,7 @@ fetch("../js/data/nominees.json")
                                         <div class="nominee-info">
                                             <h5 class="nominee-name">${nominee.name}</h5>
                                             <p class="nominee-work">${nominee.work || 'Nominee'}</p>
-                                            <a href="${VOTE_URL}" target="_blank" class="vote-btn">
+                                            <a href="${VOTE_URL}" class="vote-btn" data-vote-closed="true">
                                                 <i class="fas fa-vote-yea"></i>
                                                 <span data-i18n="awards.cta.vote"></span>
                                             </a>
@@ -111,4 +111,14 @@ fetch("../js/data/nominees.json")
                     firstCategory.querySelector(".category-header").click();
                 }
             }, 500);
+        });
+
+        document.addEventListener("click", (event) => {
+            const trigger = event.target.closest("[data-vote-closed]");
+            if (!trigger) return;
+            event.preventDefault();
+            const modalEl = document.getElementById("votingClosedModal");
+            if (!modalEl || !window.bootstrap || !window.bootstrap.Modal) return;
+            const modal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
+            modal.show();
         });

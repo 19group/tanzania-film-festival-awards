@@ -2267,6 +2267,29 @@ p.error { color: red }
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
+/* Voting Closed Modal */
+#votingClosedModal .modal-content {
+  background: #111;
+  color: #fff3c9;
+  border: 1px solid #333;
+}
+#votingClosedModal .modal-header,
+#votingClosedModal .modal-footer {
+  border-color: #333;
+}
+#votingClosedModal .btn-close {
+  filter: invert(1);
+}
+#votingClosedModal .btn-secondary {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  color: #fff3c9;
+}
+#votingClosedModal .btn-secondary:hover {
+  background: #2a2a2a;
+  color: #fcd462;
+}
+
 .btn-yellow {
   background: linear-gradient(
     135deg,

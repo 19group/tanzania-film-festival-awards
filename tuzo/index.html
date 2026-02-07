@@ -271,7 +271,7 @@
 
                 <!-- RIGHT: CTA -->
                 <div class="col-lg-4 col-md-12 awards-hero-cta">
-                    <a href="https://taffafestival.or.tz/kura" class="btn btn-yellow " target="_blank">
+                    <a href="https://taffafestival.or.tz/kura" class="btn btn-yellow" data-vote-closed="true">
                         <i class="zmdi zmdi-thumb-up mx-md-2"></i> <span data-i18n="awards.cta.vote">Vote Now</span>
                     </a>
                     <a href="/tickets/" class="btn btn-outline ">
@@ -374,7 +374,7 @@
   <div class="container text-center">
 
     <!-- Title & Subtitle -->
-    <h2 class="partners-title mb-2" data-i18n="partners.title">Official Sponsors & Partners</h2>
+    <h2 class="partners-title mb-2" data-i18n="partners.title.awards">Official Awards Sponsors & Partners</h2>
     <p class="partners-subtitle mb-4" data-i18n="partners.subtitle">We are grateful for the incredible organizations that make TAFFA possible through partnership and support.</p>
 <!-- 
  <h3 class="tier-label">Strategic Partners</h3>
@@ -407,46 +407,23 @@
         <img src="/img/brand/azam-media.webp" class="partner-logo" alt="Azam Media Logo">
       </div>
       <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/CDEA-master-logo -1.png" class="partner-logo" alt="CDEA Logo">
+        <img src="/img/brand/tz-crdb-logo.webp" class="partner-logo" alt="CRDB Logo">
       </div>
       <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/TAFF-LOGO.png" class="partner-logo" alt="TAFF Logo">
+        <img src="/img/brand/CROWN LOGOS - 005@2x.webp" class="partner-logo" alt="Crown Media Logo">
       </div>
       <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/alliance-francaise-logo.webp" class="partner-logo" alt="Alliance Francaise Logo">
+        <img src="/img/brand/TheSuperDome-Logo.webp" class="partner-logo" alt="The Super Dome Logo">
       </div>
       <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/19-RENTALS-LOGO-PNG-1.png" class="partner-logo" alt="19 Rentals Logo">
+        <img src="/img/brand/tukiio-logo-round.webp" class="partner-logo" alt="Tukiio Logo">
       </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/NEW-DOCUBOX-LOGO-VARIATIONS-04.png" class="partner-logo" alt="Docubox Logo">
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/taiplus.png" class="partner-logo" alt="Taiplus Logo">
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/Nafasi-Logo-1.webp" class="partner-logo" alt="Nafasi Logo">
-      </div>
-      <div class="col-6 col-md-3 col-lg-2 partner-container">
-        <img src="/img/brand/tasa-Logo.png" class="partner-logo" alt="Tasa Logo">
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/Simulizi-Festival-Logo.webp" class="partner-logo" alt="Simulizi Festival Logo">
-      </div>
-      <div class="col-6 col-md-3 col-lg-2 partner-container">
-        <img src="/img/brand/afri-roots.webp" class="partner-logo" alt="Afri Roots Logo">
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/kijiweni-production-logo.webp" class="partner-logo" alt="Kijiweni Production Logo">
-      </div>
-      <div class="col-6 col-md-3 col-lg-2">
-        <img src="/img/brand/ajabu-logo-black.webp" class="partner-logo" alt="Ajabu Logo">
-      </div>
+      
 
     </div>
 
     <!-- CTA Button -->
-    <a href="mailto:taffapartners@studio19.co.tz" class="btn-gradient mt-5" data-i18n="partners.cta">Become a Partner & Sponsor </a>
+    <!-- <a href="mailto:taffapartners@studio19.co.tz" class="btn-gradient mt-5" data-i18n="partners.cta">Become a Partner & Sponsor </a> -->
 
   </div>
 </section>
@@ -567,6 +544,23 @@
           </div>
         </footer>
         <!--footer area are start-->
+    </div>
+    <!-- Voting Closed Modal -->
+    <div class="modal fade" id="votingClosedModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" data-i18n="modal.vote_closed.title">Voting Closed</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" data-i18n="modal.vote_closed.body">
+            Voting time is over. Thank you for participating.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="modal.vote_closed.close">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!--body-wraper-are-end-->
     <script>
