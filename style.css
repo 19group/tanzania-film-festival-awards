@@ -2269,8 +2269,8 @@ p.error { color: red }
 
 /* Voting Closed Modal */
 #votingClosedModal .modal-content {
-  background: #111;
-  color: #fff3c9;
+  background: #111 !important;
+  color: #fff3c9 !important;
   border: 1px solid #333;
 }
 #votingClosedModal .modal-header,
