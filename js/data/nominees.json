@@ -21,7 +21,8 @@
           "name": "My Son",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "My Son"
     },
     {
       "id": "best-series",
@@ -48,7 +49,8 @@
           "name": "FAHARI",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Baraluko"
     },
     {
       "id": "best-female-director",
@@ -71,7 +73,8 @@
           "name": "Pascalia Silanda (Special Kid)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Cece Mlay"
     },
     {
       "id": "best-male-director",
@@ -94,7 +97,8 @@
           "name": "Ramar King (My Son)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Ramar King"
     },
     {
       "id": "best-actor-film",
@@ -113,7 +117,8 @@
           "name": "SALIM AHMEDY ISSA (Mwamwindi)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Isarito Mwakalindile"
     },
     {
       "id": "best-actress-film",
@@ -136,7 +141,8 @@
           "name": "Mulky Salum (My Son)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Mariam Ismail"
     },
     {
       "id": "best-actor-series",
@@ -155,7 +161,8 @@
           "name": "SALIM AHMEDY ISSA (Baraluko)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Salim Ahmed Isa"
     },
     {
       "id": "best-actress-series",
@@ -178,7 +185,8 @@
           "name": "Stella Mbuge (Kiwembe)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Shamira Ndwangila"
     },
     {
       "id": "best-screenplay",
@@ -201,7 +209,8 @@
           "name": "My Son",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Business in Dar"
     },
     {
       "id": "best-documentary",
@@ -220,7 +229,8 @@
           "name": "Guardians of the Peak",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "The Empty Grave"
     },
     {
       "id": "best-short-film",
@@ -251,7 +261,8 @@
           "name": "My Friend",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Unasemaje???"
     },
     {
       "id": "best-sound",
@@ -270,7 +281,8 @@
           "name": "MY SON",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "My Son"
     },
     {
       "id": "best-music",
@@ -293,7 +305,8 @@
           "name": "Baraluko",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Barakatatu"
     },
     {
       "id": "best-costume",
@@ -316,7 +329,8 @@
           "name": "My Son",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Baraluko"
     },
     {
       "id": "best-production-design",
@@ -339,7 +353,8 @@
           "name": "Bunji",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "My Son"
     },
     {
       "id": "best-cinematography",
@@ -362,7 +377,8 @@
           "name": "My Son",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "My Son"
     },
     {
       "id": "best-editing",
@@ -385,7 +401,8 @@
           "name": "My Friend",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "My Friend"
     },
     {
       "id": "best-set-design",
@@ -408,7 +425,8 @@
           "name": "Baraluko",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Barakatatu"
     },
     {
       "id": "best-upcoming-actor",
@@ -427,7 +445,8 @@
           "name": "Mwinyihamisi Bakari (The One at Home)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Mwinyihamisi Bakari"
     },
     {
       "id": "best-upcoming-actress",
@@ -454,7 +473,8 @@
           "name": "Jasmine Nathani Sanga (Subira)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Jasmine Nathani Sanga"
     },
     {
       "id": "best-supporting-actress",
@@ -473,7 +493,8 @@
           "name": "Careen Justine (Oh S**t It's My Birthday)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Theresia Patrick"
     },
     {
       "id": "best-supporting-actor",
@@ -492,7 +513,8 @@
           "name": "Daniel Faber (The One at Home)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Ally Migomba"
     },
     {
       "id": "best-east-africa-series",
@@ -515,7 +537,8 @@
           "name": "Sanyu (Uganda)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Ties that Bind Us"
     },
     {
       "id": "best-east-africa-feature",
@@ -542,12 +565,13 @@
           "name": "Tagged (Kenya)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Nkinzi"
     },
     {
       "id": "audience-choice-actor",
       "title": "Muigizaji Bora wa Kiume Chaguo la Watazamaji",
-      "subtitle": "Best Actor \u2013 Audience Choice",
+      "subtitle": "Best Actor – Audience Choice",
       "nominees": [
         {
           "name": "Ernest Napoleon (Kiwembe)",
@@ -573,12 +597,13 @@
           "name": "Rashid Ramadhani (Barakatatu)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Rashid Ramadhani"
     },
     {
       "id": "audience-choice-actress",
       "title": "Muigizaji Bora wa Kike Chaguo la Watazamaji",
-      "subtitle": "Best Actress \u2013 Audience Choice",
+      "subtitle": "Best Actress – Audience Choice",
       "nominees": [
         {
           "name": "Shamira Ndwangila (Kombolela)",
@@ -612,7 +637,20 @@
           "name": "Mulky Salum (My Son)",
           "image": "../img/nominee/award-nominee-thumb.webp"
         }
-      ]
+      ],
+      "winner": "Shamira Ndwangila"
+    }
+  ],
+  "honoraryAwards": [
+    {
+      "titleKey": "awards.honorary.female",
+      "title": "Tuzo ya Heshima - Mwanamke",
+      "name": "Prof. Amandina Lihamba"
+    },
+    {
+      "titleKey": "awards.honorary.male",
+      "title": "Tuzo ya Heshima - Mwanamme",
+      "name": "Abdallah Mkumbillah"
     }
   ]
 }
